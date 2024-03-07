@@ -1,6 +1,8 @@
 import { unstable_setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/global-components/navbar";
+import Footer from "./components/global-components/footer";
 
 const locales = ["en", "de", "pl"];
 
@@ -23,6 +25,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
+      {/* <Navbar /> */}
       <body className={inter.className}>
         {/* <Navbar
           start={t("start")}
@@ -40,6 +43,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
           contact={tf("contact")}
           locale={locale}
         /> */}
+        <Footer />
       </body>
     </html>
   );

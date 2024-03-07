@@ -7,6 +7,9 @@ import ParagraphWithImage from "./components/global-components/paragraph-with-im
 import ButtonWithArrows from "./components/global-components/button-with-arrows";
 import ContactForm from "./components/global-components/contact-form";
 import MapPoland from "./components/global-components/map-poland";
+import Logo from "./components/global-components/logo";
+import Navbar from "./components/global-components/navbar";
+import WelcomeSection from "./components/homepage/welcome-section";
 
 export default function Home({ params: { locale } }) {
   unstable_setRequestLocale(locale);
@@ -14,7 +17,9 @@ export default function Home({ params: { locale } }) {
   return (
     <>
       <div>
+        <Navbar />
         <HeroSection />
+        <WelcomeSection />
         {/* <h1>{t("title")}</h1> */}
 
         <div className="w-full h-screen">

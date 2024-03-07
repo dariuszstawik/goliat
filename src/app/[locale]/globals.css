@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+
+  body {
+    @apply w-screen antialiased overflow-x-hidden
+  }
+
   h1 {
     @apply text-3xl lg:text-4xl
   }
