@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599 599">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #010000;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: Poppins-Medium, Poppins;
+        font-size: 17.03px;
+        font-weight: 500;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-7 {
+        stroke: #ca151a;
+        stroke-width: 13px;
+      }
+
+      .cls-8, .cls-3 {
+        font-family: Poppins-Bold, Poppins;
+        font-size: 32.93px;
+        font-weight: 700;
+      }
+
+      .cls-4, .cls-9 {
+        fill: #ca151a;
+      }
+
+      .cls-10 {
+        fill: #fdd203;
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        filter: url(#drop-shadow-1);
+        stroke: #fdd203;
+        stroke-width: 13.81px;
+      }
+
+      .cls-6, .cls-7 {
+        fill: none;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="19.84"/>
+      <feFlood flood-color="#000" flood-opacity=".47"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <circle class="cls-5" cx="299.41" cy="297.42" r="218.93"/>
+    <circle class="cls-7" cx="299.41" cy="299.32" r="218.93"/>
+    <text class="cls-2" transform="translate(119.55 229.82) scale(.96 1)"><tspan x="0" y="0">meblowe, specjalistyczne i budowlane</tspan></text>
+    <text class="cls-3" transform="translate(119.54 268.18) scale(.96 1)"><tspan x="0" y="0">płyty drewnopochodne</tspan></text>
+    <text class="cls-8" transform="translate(196.64 354.82) scale(.96 1)"><tspan class="cls-1"><tspan x="0" y="0">parku </tspan></tspan><tspan class="cls-1" x="0" y="39.51">maszynowym</tspan><tspan class="cls-9" x="240.09" y="39.51">.</tspan></text>
+    <path class="cls-10" d="M186.76,282.15v28.34h27.65v13.14h-27.65v28.33h-14.52v-28.33h-27.65v-13.14h27.65v-28.34h14.52Z"/>
+    <text class="cls-4" transform="translate(194.75 298.21) scale(.96 1)"><tspan x="0" y="0">obrabiane w bogato wyposażonym</tspan></text>
+    <circle class="cls-6" cx="299.41" cy="299.32" r="232.52"/>
+  </g>
+</svg>

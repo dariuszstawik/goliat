@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599 599">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: #010000;
+      }
+
+      .cls-5, .cls-7 {
+        font-family: Poppins-Medium, Poppins;
+        font-size: 17.03px;
+        font-weight: 500;
+      }
+
+      .cls-8, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-8, .cls-9, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-8, .cls-10 {
+        stroke: #ca151a;
+        stroke-width: 13px;
+      }
+
+      .cls-6 {
+        font-size: 25.46px;
+      }
+
+      .cls-6, .cls-11 {
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+
+      .cls-7, .cls-12 {
+        fill: #ca151a;
+      }
+
+      .cls-11 {
+        font-size: 27.56px;
+      }
+
+      .cls-3 {
+        fill: #fdd203;
+      }
+
+      .cls-9 {
+        filter: url(#drop-shadow-1);
+        stroke: #fdd203;
+        stroke-width: 13.81px;
+      }
+
+      .cls-9, .cls-10 {
+        fill: none;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="19.84"/>
+      <feFlood flood-color="#000" flood-opacity=".47"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <circle class="cls-8" cx="299.78" cy="299.21" r="218.93"/>
+    <circle class="cls-10" cx="299.78" cy="299.21" r="218.93"/>
+    <text class="cls-5" transform="translate(137.48 236.82) scale(.96 1)"><tspan x="0" y="0">Witamy na naszej stronie produktowej. </tspan></text>
+    <path class="cls-3" d="M386.24,134.08v28.34h27.65v13.14h-27.65v28.33h-14.52v-28.33h-27.65v-13.14h27.65v-28.34h14.52Z"/>
+    <text class="cls-7" transform="translate(137.48 259.94) scale(.96 1)"><tspan x="0" y="0">Znajdziesz tu:</tspan></text>
+    <circle class="cls-9" cx="299.78" cy="299.21" r="232.52"/>
+    <g>
+      <text class="cls-6" transform="translate(232.67 313.77) scale(.96 1)"><tspan x="0" y="0">pełną ofertę płyt</tspan></text>
+      <text class="cls-11" transform="translate(232.01 349.52) scale(.96 1)"><tspan class="cls-4" x="0" y="0">opakowaniowych</tspan><tspan class="cls-12" x="252.91" y="0">.</tspan></text>
+      <g>
+        <rect class="cls-1" x="141.93" y="291.27" width="64.72" height="64.21"/>
+        <circle class="cls-2" cx="145.94" cy="312.43" r=".97"/>
+        <circle class="cls-2" cx="145.94" cy="334.08" r=".97"/>
+        <circle class="cls-2" cx="163.44" cy="351.59" r=".97"/>
+        <circle class="cls-2" cx="185.1" cy="351.59" r=".97"/>
+        <circle class="cls-2" cx="202.6" cy="334.08" r=".97"/>
+        <circle class="cls-2" cx="202.6" cy="312.43" r=".97"/>
+        <circle class="cls-2" cx="185.1" cy="294.93" r=".97"/>
+        <circle class="cls-2" cx="163.44" cy="294.93" r=".97"/>
+        <path class="cls-1" d="M206.49,290.06h-64.44c-.54,0-.97.44-.97.97v64.44c0,.54.44.97.97.97h64.44c.54,0,.97-.44.97-.97v-64.44c0-.54-.44-.97-.97-.97ZM205.52,354.51h-62.5v-62.5h62.5v62.5Z"/>
+        <g>
+          <path class="cls-1" d="M203.58,339.93v11.67c0,.51-.46.97-.97.97h-11.67c-.26,0-.51-.11-.69-.29l-3.6-3.6h-24.74l-3.6,3.6c-.2.17-.43.29-.69.29h-11.7c-.51,0-.97-.46-.97-.97v-11.67c0-.29.11-.51.29-.71l3.6-3.6v-10.41c0,.54.43.97.94,1,.54.06,1.03-.43,1.03-1v10.81c0,.29-.11.51-.29.71l-3.63,3.6v10.3h10.3l3.6-3.63c.2-.17.46-.26.71-.26h25.54c.26,0,.49.09.69.26l3.6,3.63h10.3v-10.3l-3.6-3.6c-.2-.2-.29-.43-.29-.71v-25.54c0-.26.09-.49.29-.69l3.6-3.6v-10.3h-10.3l-3.6,3.6c-.2.2-.43.29-.69.29h-25.54c-.26,0-.51-.09-.71-.29l-3.6-3.6h-10.3v10.3l3.63,3.6c.17.2.29.43.29.69v14.73c0-.54-.46-.97-1-.97-.51,0-.97.43-.97.97v-14.33l-3.6-3.6c-.17-.17-.29-.43-.29-.69v-11.67c0-.51.46-.97.97-.97h11.7c.26,0,.49.11.69.29l3.6,3.6h24.74l3.6-3.6c.17-.17.43-.29.69-.29h11.67c.51,0,.97.46.97.97v11.67c0,.26-.11.51-.29.69l-3.6,3.6v24.74l3.6,3.6c.17.2.29.43.29.71Z"/>
+          <path class="cls-2" d="M201.64,340.33v10.3h-10.3l-3.6-3.63c-.2-.17-.43-.26-.69-.26h-25.54c-.26,0-.51.09-.71.26l-3.6,3.63h-10.3v-10.3l3.63-3.6c.17-.2.29-.43.29-.71v-25.54c0-.26-.11-.49-.29-.69l-3.63-3.6v-10.3h10.3l3.6,3.6c.2.2.46.29.71.29h25.54c.26,0,.49-.09.69-.29l3.6-3.6h10.3v10.3l-3.6,3.6c-.2.2-.29.43-.29.69v25.54c0,.29.09.51.29.71l3.6,3.6Z"/>
+          <path class="cls-1" d="M150.82,325.2c0,.57-.49,1.06-1.03,1-.51-.03-.94-.46-.94-1s.46-.97.97-.97c.54,0,1,.43,1,.97Z"/>
+        </g>
+        <path class="cls-1" d="M164.42,309.51h19.71c2.14,0,3.89-1.75,3.89-3.89s-1.75-3.89-3.89-3.89h-19.71c-2.14,0-3.89,1.74-3.89,3.89s1.75,3.89,3.89,3.89ZM164.42,303.68h19.71c1.07,0,1.94.87,1.94,1.94s-.87,1.94-1.94,1.94h-19.71c-1.07,0-1.94-.87-1.94-1.94s.87-1.94,1.94-1.94Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

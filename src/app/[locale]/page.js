@@ -17,8 +17,10 @@ export default function Home({ params: { locale } }) {
   return (
     <>
       <div>
-        <Navbar />
-        <HeroSection />
+        <HeroSection
+          backgroundImage="/hero-homepage.jpg"
+          heroCircle="/hero-circle-homepage.svg"
+        />
         <WelcomeSection />
         {/* <h1>{t("title")}</h1> */}
 

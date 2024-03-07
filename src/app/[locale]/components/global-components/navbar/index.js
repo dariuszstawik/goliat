@@ -39,7 +39,7 @@ const Navbar = ({
   };
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-32 flex justify-between items-center px-10 lg:px-16 py-4 z-50 bg-white shadow-y ">
+    <div className="fixed top-0 left-0 w-screen h-32 flex justify-between items-center px-10 lg:px-16 py-4 z-50 bg-white shadow-lg ">
       <Logo closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
       <NavbarAsset />
       <div className="flex justify-end items-center h-full">
@@ -69,13 +69,55 @@ const Navbar = ({
               <div
                 className={`
 
-              } absolute w-44 h-64 bg-white top-full -left-10 z-200 flex flex-col`}
+              } absolute w-60 bg-white top-full -left-10 z-200 flex flex-col`}
               >
                 <ul className="flex flex-col gap-4 p-4">
-                  <li>Produkt 1</li>
-                  <li>Produkt 2</li>
-                  <li>Produkt 3</li>
-                  <li>Produkt 4</li>
+                  <Link href="/produkty/plyty-meblowe">
+                    <li className="flex gap-4 items-center">
+                      <span>
+                        <img src="/icon-plyty-meblowe.svg" className="w-5" />
+                      </span>
+                      płyty meblowe
+                    </li>
+                  </Link>
+
+                  <li className="flex gap-4 items-center">
+                    <span>
+                      <img src="/icon-plyty-budowlane.svg" className="w-5" />
+                    </span>
+                    płyty budowlane
+                  </li>
+
+                  <li className="flex gap-4 items-center">
+                    <span>
+                      <img
+                        src="/icon-plyty-specjalistyczne.svg"
+                        className="w-5"
+                      />
+                    </span>
+                    płyty specjalistyczne
+                  </li>
+
+                  <li className="flex gap-4 items-center">
+                    <span>
+                      <img src="/icon-sklejki.svg" className="w-5" />
+                    </span>
+                    sklejki
+                  </li>
+
+                  <li className="flex gap-4 items-center">
+                    <span>
+                      <img src="/icon-plyty-opakowaniowe.svg" className="w-5" />
+                    </span>
+                    płyty opakowaniowe
+                  </li>
+
+                  <li className="flex gap-4 items-center">
+                    <span>
+                      <img src="/icon-plyty-pilsniowe.svg" className="w-5" />
+                    </span>
+                    płyty pilśniowe
+                  </li>
                 </ul>
               </div>
             )}

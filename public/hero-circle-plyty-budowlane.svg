@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599 599">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #010000;
+      }
+
+      .cls-2, .cls-6 {
+        font-family: Poppins-Medium, Poppins;
+        font-size: 17.03px;
+        font-weight: 500;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-7, .cls-8 {
+        stroke: #ca151a;
+      }
+
+      .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7, .cls-9 {
+        stroke-width: 13px;
+      }
+
+      .cls-8 {
+        filter: url(#drop-shadow-1);
+        stroke-width: 13.81px;
+      }
+
+      .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-3 {
+        font-size: 25.46px;
+      }
+
+      .cls-3, .cls-10 {
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+
+      .cls-10 {
+        font-size: 35.32px;
+      }
+
+      .cls-6, .cls-11 {
+        fill: #ca151a;
+      }
+
+      .cls-9 {
+        stroke: #fdd203;
+      }
+
+      .cls-4, .cls-5, .cls-12 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-12 {
+        fill: #fdd203;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="19.84"/>
+      <feFlood flood-color="#000" flood-opacity=".47"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <circle class="cls-8" cx="299.8" cy="299.21" r="232.52"/>
+    <circle class="cls-7" cx="299.8" cy="299.21" r="218.93"/>
+    <circle class="cls-9" cx="299.8" cy="299.21" r="218.93"/>
+    <text class="cls-2" transform="translate(137.5 236.82) scale(.96 1)"><tspan x="0" y="0">Witamy na naszej stronie produktowej. </tspan></text>
+    <path class="cls-12" d="M386.26,134.08v28.34h27.65v13.14h-27.65v28.33h-14.52v-28.33h-27.65v-13.14h27.65v-28.34h14.52Z"/>
+    <text class="cls-6" transform="translate(137.5 259.94) scale(.96 1)"><tspan x="0" y="0">Znajdziesz tu:</tspan></text>
+    <text class="cls-3" transform="translate(232.7 313.77) scale(.96 1)"><tspan x="0" y="0">pełną ofertę płyt</tspan></text>
+    <text class="cls-10" transform="translate(232.15 353.48) scale(.96 1)"><tspan class="cls-1" x="0" y="0">budowlanych</tspan><tspan class="cls-11" x="250.56" y="0">.</tspan></text>
+    <path id="Path" class="cls-5" d="M136.97,335.24h6.41c4.37-2.41,8.35-5.47,11.8-9.09v-6.34c-4.52,6.73-10.82,12.07-18.2,15.43h0Z"/>
+    <path id="Path-2" data-name="Path" class="cls-5" d="M155.18,335.24v-4.68c-1.86,1.7-3.84,3.27-5.92,4.68h5.92Z"/>
+    <path id="Path-3" data-name="Path" class="cls-5" d="M136.47,294.71v4.22c1.94-1.19,3.73-2.61,5.33-4.22h-5.33Z"/>
+    <path id="Path-4" data-name="Path" class="cls-5" d="M151.24,294.71h-5.32c-2.59,3.22-5.81,5.89-9.46,7.83v3.92c5.91-2.49,11.02-6.55,14.78-11.75Z"/>
+    <path id="Path-5" data-name="Path" class="cls-5" d="M159.73,294.71h-4.85c-3.67,6.36-10.13,11.68-18.42,15.14v2.99c10.66-3.82,18.97-10.31,23.27-18.14Z"/>
+    <path id="Shape" class="cls-4" d="M161.41,316.53h-3.12v18.71h49.89v-17.15c0-.86-.7-1.56-1.56-1.56h-45.21ZM164.53,322.77c0-.86.7-1.56,1.56-1.56h28.06c.86,0,1.56.7,1.56,1.56s-.7,1.56-1.56,1.56h-28.06c-.86,0-1.56-.7-1.56-1.56ZM203.5,329.01c0,.86-.7,1.56-1.56,1.56h-28.06c-.86,0-1.56-.7-1.56-1.56s.7-1.56,1.56-1.56h28.06c.86,0,1.56.7,1.56,1.56Z"/>
+    <path id="Shape-2" data-name="Shape" class="cls-4" d="M200.39,294.71h-35.86v18.71h37.42v-17.15c0-.86-.7-1.56-1.56-1.56ZM167.65,300.94c0-.86.7-1.56,1.56-1.56h20.27c.86,0,1.56.7,1.56,1.56s-.7,1.56-1.56,1.56h-20.27c-.86,0-1.56-.7-1.56-1.56ZM197.27,308.74h-20.27c-.86,0-1.56-.7-1.56-1.56s.7-1.56,1.56-1.56h20.27c.86,0,1.56.7,1.56,1.56s-.7,1.56-1.56,1.56Z"/>
+    <path id="Path-6" data-name="Path" class="cls-5" d="M143.21,313.42h6.41c4.37-2.41,8.35-5.47,11.8-9.09v-6.34c-4.52,6.73-10.82,12.07-18.2,15.43Z"/>
+    <path id="Path-7" data-name="Path" class="cls-5" d="M161.41,313.42v-4.68c-1.86,1.7-3.84,3.27-5.92,4.68h5.92Z"/>
+    <path id="Path-8" data-name="Path" class="cls-5" d="M130.23,316.53v4.22c1.94-1.19,3.73-2.61,5.33-4.22h-5.33Z"/>
+    <path id="Path-9" data-name="Path" class="cls-5" d="M150.5,341.63c-4.52,6.73-10.82,12.07-18.2,15.43h6.41c4.37-2.41,8.35-5.47,11.8-9.09v-6.34Z"/>
+    <path id="Path-10" data-name="Path" class="cls-5" d="M148.82,338.36h-4.85c-3.67,6.36-10.14,11.68-18.42,15.14v2.99c10.66-3.82,18.97-10.31,23.27-18.14Z"/>
+    <path id="Path-11" data-name="Path" class="cls-5" d="M144.57,357.07h5.92v-4.68c-1.86,1.7-3.84,3.27-5.92,4.68Z"/>
+    <path id="Path-12" data-name="Path" class="cls-5" d="M145.01,316.53h-5.32c-2.59,3.22-5.81,5.89-9.46,7.83v3.92c5.91-2.49,11.02-6.55,14.78-11.75h0Z"/>
+    <path id="Shape-3" data-name="Shape" class="cls-4" d="M208.18,338.36h-54.56v18.71h57.68c.86,0,1.56-.7,1.56-1.56v-15.59c0-.86-.7-1.56-1.56-1.56h-3.12,0ZM159.85,344.6c0-.86.7-1.56,1.56-1.56h37.42c.86,0,1.56.7,1.56,1.56s-.7,1.56-1.56,1.56h-37.42c-.86,0-1.56-.7-1.56-1.56h0ZM206.62,352.39h-37.42c-.86,0-1.56-.7-1.56-1.56s.7-1.56,1.56-1.56h37.42c.86,0,1.56.7,1.56,1.56,0,.86-.7,1.56-1.56,1.56Z"/>
+    <path id="Path-13" data-name="Path" class="cls-5" d="M153.5,316.53h-4.85c-3.67,6.36-10.13,11.68-18.42,15.14v2.99c10.66-3.82,18.97-10.31,23.27-18.14h0Z"/>
+    <path id="Path-14" data-name="Path" class="cls-5" d="M140.33,338.36h-5.32c-2.59,3.22-5.81,5.89-9.46,7.83v3.92c5.91-2.49,11.02-6.55,14.78-11.75Z"/>
+    <path id="Path-15" data-name="Path" class="cls-5" d="M130.23,338.36h-4.68v4.22c1.94-1.19,3.73-2.61,5.33-4.22h-.65Z"/>
+  </g>
+</svg>

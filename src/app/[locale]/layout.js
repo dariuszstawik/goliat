@@ -25,8 +25,8 @@ export default function LocaleLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      {/* <Navbar /> */}
       <body className={inter.className}>
+        <Navbar />
         {/* <Navbar
           start={t("start")}
           about={t("about")}

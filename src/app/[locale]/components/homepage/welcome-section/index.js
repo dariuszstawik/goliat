@@ -6,7 +6,7 @@ import Logo from "../../global-components/logo";
 
 export default function WelcomeSection() {
   return (
-    <div className="w-full h-screen mx-0 my-20 relative">
+    <div className="w-full h-screen mx-0 relative">
       <Image
         src="/welcome-left-asset.png"
         alt="Welcome to our website"
@@ -21,10 +21,10 @@ export default function WelcomeSection() {
         height={329}
         className="absolute bottom-0 -right-24"
       />
-      <div className="flex justify-end gap-20 pr-20">
-        <div>
-          <h1 className="">Welcome to our website</h1>
-          <p className="pl-20">
+      <div className="flex justify-end items-center gap-20 pr-20 pt-20">
+        <div className="flex flex-col items-end gap-4">
+          <h1 className="">Witamy w grupie Goliat</h1>
+          <p className="">
             U nas dostaniesz sprawdzone produkty drewnopochodne!
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function WelcomeSection() {
             height={494}
             className=""
           />
-          <Logo />
+          <Logo v2 />
         </div>
         <div className="flex flex-col gap-16">
           <Image

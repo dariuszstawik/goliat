@@ -9,10 +9,10 @@
   }
 
   h1 {
-    @apply text-3xl lg:text-4xl
+    @apply text-3xl lg:text-[44px] font-semibold
   }
   h2 {
-    @apply text-3xl lg:text-4xl
+    @apply text-3xl lg:text-[44px] font-semibold
   }
 }
 
