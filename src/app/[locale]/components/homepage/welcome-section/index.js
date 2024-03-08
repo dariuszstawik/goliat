@@ -6,7 +6,7 @@ import Logo from "../../global-components/logo";
 
 export default function WelcomeSection() {
   return (
-    <div className="w-full h-screen mx-0 relative">
+    <div className="w-full min-h-screen mx-0 relative">
       <Image
         src="/welcome-left-asset.png"
         alt="Welcome to our website"
