@@ -42,7 +42,7 @@ const HeroCircleHomepage = (props) => (
       />
       <text
         style={{
-          fontFamily: "Poppins-Medium,Poppins",
+          fontFamily: "Poppins",
           fontSize: "17.03px",
           fontWeight: 500,
           fill: "#010000",
@@ -55,7 +55,7 @@ const HeroCircleHomepage = (props) => (
       </text>
       <text
         style={{
-          fontFamily: "Poppins-Bold,Poppins",
+          fontFamily: "Poppins",
           fontSize: "32.93px",
           fontWeight: 700,
           fill: "#010000",
@@ -68,7 +68,7 @@ const HeroCircleHomepage = (props) => (
       </text>
       <text
         style={{
-          fontFamily: "Poppins-Bold,Poppins",
+          fontFamily: "Poppins",
           fontSize: "32.93px",
           fontWeight: 700,
         }}
@@ -102,7 +102,7 @@ const HeroCircleHomepage = (props) => (
       <text
         style={{
           fill: "#ca151a",
-          fontFamily: "Poppins-Medium,Poppins",
+          fontFamily: "Poppins",
           fontSize: "17.03px",
           fontWeight: 500,
         }}
