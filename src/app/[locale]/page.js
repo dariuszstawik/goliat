@@ -19,7 +19,7 @@ export default function Home({ params: { locale } }) {
       <div>
         <HeroSection
           backgroundImage="/hero-homepage.jpg"
-          heroCircle="/hero-circle-homepage.svg"
+          // heroCircle="/hero-circle-homepage.svg"
         />
         <WelcomeSection />
         {/* <h1>{t("title")}</h1> */}
