@@ -1,12 +1,19 @@
 import { unstable_setRequestLocale } from "next-intl/server";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/global-components/navbar";
 import Footer from "./components/global-components/footer";
 
 const locales = ["en", "de", "pl"];
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Goliat",
@@ -25,7 +32,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Navbar />
         {/* <Navbar
           start={t("start")}
