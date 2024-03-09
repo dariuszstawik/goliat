@@ -1,6 +1,6 @@
 export default function HeroIconsBar() {
   return (
-    <div className="w-full h-40 bg-yellow-400 flax justify-center items-center shrink-0">
+    <div className="w-full h-40 bg-primaryYellow flax justify-center items-center shrink-0">
       <ul className="w-full h-full flex gap-16 justify-center items-center">
         <li className="flex justify-center items-center gap-4">
           <img src="/icon-terminy.png" alt="icon-terminy" className="" />

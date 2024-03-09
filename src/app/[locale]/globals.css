@@ -5,7 +5,7 @@
 @layer base {
 
   body {
-    @apply w-screen antialiased overflow-x-hidden
+    @apply w-screen antialiased overflow-x-hidden lg:text-lg
   }
 
   h1 {
@@ -13,6 +13,14 @@
   }
   h2 {
     @apply text-3xl lg:text-[44px] font-semibold
+  }
+
+  h3 {
+    @apply text-2xl lg:text-3xl font-semibold
+  }
+
+  h4 {
+    @apply text-xl font-semibold
   }
 }
 
