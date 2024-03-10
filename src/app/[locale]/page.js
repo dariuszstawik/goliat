@@ -60,7 +60,10 @@ export default function Home({ params: { locale } }) {
           </p>
         </ParagraphWithImage>
 
-        <ProductsCarousel title="Przykładowe płyty meblowe" />
+        <ProductsCarousel
+          title="Przykładowe płyty meblowe"
+          content="plytyMeblowe"
+        />
         <ButtonWithArrows>Pełna oferta płyt meblowych</ButtonWithArrows>
 
         <ParagraphWithImage
@@ -87,6 +90,11 @@ export default function Home({ params: { locale } }) {
             wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
           </p>
         </ParagraphWithImage>
+        <ProductsCarousel
+          title="Przykładowe płyty budowlane"
+          content="plytyBudowlane"
+        />
+        <ButtonWithArrows>Pełna oferta płyt budowlanych</ButtonWithArrows>
 
         <ParagraphWithImage
           title="Płyty specjalistyczne"
@@ -111,6 +119,11 @@ export default function Home({ params: { locale } }) {
             wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
           </p>
         </ParagraphWithImage>
+        <ProductsCarousel
+          title="Przykładowe płyty specjalistyczne"
+          content="plytySpecjalistyczne"
+        />
+        <ButtonWithArrows>Pełna oferta płyt specjalistycznych</ButtonWithArrows>
 
         <ParagraphWithImage
           title="Sklejki"
@@ -138,6 +151,8 @@ export default function Home({ params: { locale } }) {
             bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
           </p>
         </ParagraphWithImage>
+        <ProductsCarousel title="Przykładowe sklejki" content="sklejki" />
+        <ButtonWithArrows>Pełna oferta sklejek</ButtonWithArrows>
 
         <ParagraphWithImage
           title="Płyty opakowaniowe"
@@ -162,6 +177,11 @@ export default function Home({ params: { locale } }) {
             wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
           </p>
         </ParagraphWithImage>
+        <ProductsCarousel
+          title="Przykładowe płyty opakowaniowe"
+          content="plytyOpakowaniowe"
+        />
+        <ButtonWithArrows>Pełna oferta płyt opakowaniowych</ButtonWithArrows>
 
         <ParagraphWithImage
           title="Płyty pilśniowe"
@@ -187,6 +207,11 @@ export default function Home({ params: { locale } }) {
             wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
           </p>
         </ParagraphWithImage>
+        <ProductsCarousel
+          title="Przykładowe płyty pilśniowe"
+          content="plytyPilsniowe"
+        />
+        <ButtonWithArrows>Pełna oferta płyt pilśniowych</ButtonWithArrows>
 
         <ServicesBar />
 
@@ -311,8 +336,7 @@ export default function Home({ params: { locale } }) {
             </li>
           </ul>
         </ParagraphWithImage>
-        {/* <CardCarousel /> */}
-        <ProductsCarousel title="Przykładowe płyty meblowe" />
+
         <ContactForm />
 
         <MapPoland />

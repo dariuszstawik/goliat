@@ -4,6 +4,7 @@ import MapPoland from "../../components/global-components/map-poland";
 import ParagraphWithIcons from "../../components/global-components/paragraph-with-icons";
 import ParagraphWithImage from "../../components/global-components/paragraph-with-image";
 import ProductCard from "../../components/global-components/product-card";
+import ProductsCarousel from "../../components/global-components/products-carousel";
 import plytyMeblowe from "../../data/plyty-meblowe";
 
 export default function PlytyMeblowe() {
@@ -81,6 +82,9 @@ export default function PlytyMeblowe() {
           telefonu i rozmowy o szczegółach z naszym handlowcem!
         </p>
       </ParagraphWithIcons>
+
+      <ProductsCarousel content="productCategories" />
+
       <ContactForm />
 
       <MapPoland />

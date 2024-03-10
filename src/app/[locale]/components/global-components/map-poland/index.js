@@ -16,7 +16,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "podkarpackie" || isClicked === "podkarpackie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -31,7 +31,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "malopolskie" || isClicked === "malopolskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -46,7 +46,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "slaskie" || isClicked === "slaskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -61,7 +61,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "opolskie" || isClicked === "opolskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -76,7 +76,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "dolnoslaskie" || isClicked === "dolnoslaskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -92,7 +92,7 @@ const MapPoland = () => {
                   isHovered === "swietokrzyskie" ||
                   isClicked === "swietokrzyskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -107,7 +107,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "lubelskie" || isClicked === "lubelskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -123,7 +123,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "lodzkie" || isClicked === "lodzkie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -138,7 +138,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "mazowieckie" || isClicked === "mazowieckie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -154,7 +154,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "wielkopolskie" || isClicked === "wielkopolskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -169,7 +169,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "lubuskie" || isClicked === "lubuskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -185,7 +185,7 @@ const MapPoland = () => {
                   isHovered === "kujawsko-pomorskie" ||
                   isClicked === "kujawsko-pomorskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -201,7 +201,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "podlaskie" || isClicked === "podlaskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -217,7 +217,7 @@ const MapPoland = () => {
                   isHovered === "zachodniopomorskie" ||
                   isClicked === "zachodniopomorskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -234,7 +234,7 @@ const MapPoland = () => {
                   isHovered === "warminsko-mazurskie" ||
                   isClicked === "warminsko-mazurskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}
@@ -250,7 +250,7 @@ const MapPoland = () => {
                 fill:
                   isHovered === "pomorskie" || isClicked === "pomorskie"
                     ? "#fdd203"
-                    : "#94add6",
+                    : "#ffffff",
                 fillOpacity: 1,
                 strokeWidth: 0.264583,
               }}

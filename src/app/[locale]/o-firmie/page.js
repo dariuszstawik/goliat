@@ -4,6 +4,7 @@ import HeroSection from "../components/global-components/hero-section";
 import MapPoland from "../components/global-components/map-poland";
 import ParagraphWithImage from "../components/global-components/paragraph-with-image";
 import ParagraphWithIcons from "../components/global-components/paragraph-with-icons";
+import ProductsCarousel from "../components/global-components/products-carousel";
 
 export default function OFirmie() {
   return (
@@ -107,6 +108,10 @@ export default function OFirmie() {
           className="w-full object-cover -mt-32"
         />
       </div>
+      <ProductsCarousel
+        content="productCategories"
+        title="Sprawdź ofertę naszych płyt drewnopochodnych"
+      />
       <MapPoland />
       <ContactForm />
     </div>

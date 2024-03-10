@@ -4,6 +4,7 @@ import MapPoland from "../../components/global-components/map-poland";
 import ParagraphWithIcons from "../../components/global-components/paragraph-with-icons";
 import ParagraphWithImage from "../../components/global-components/paragraph-with-image";
 import ProductCard from "../../components/global-components/product-card";
+import ProductsCarousel from "../../components/global-components/products-carousel";
 import plytyPilsniowe from "../../data/plyty-pilsniowe";
 
 export default function PlytyPilsniowe() {
@@ -75,6 +76,7 @@ export default function PlytyPilsniowe() {
           telefonu i rozmowy o szczegółach z naszym handlowcem!
         </p>
       </ParagraphWithIcons>
+      <ProductsCarousel content="productCategories" />
       <ContactForm />
 
       <MapPoland />

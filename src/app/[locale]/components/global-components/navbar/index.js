@@ -39,12 +39,12 @@ const Navbar = ({
   };
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-32 flex justify-between items-center px-10 lg:px-16 py-4 z-50 bg-white shadow-lg ">
+    <div className="text-base fixed top-0 left-0 w-screen h-32 flex justify-between items-center px-10 lg:px-16 py-4 z-50 bg-white shadow-lg ">
       <Link href="/">
         <Logo closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
       </Link>
       <NavbarAsset />
-      <div className="flex justify-end items-center h-full">
+      <div className="relative flex justify-end items-center h-full">
         <ul
           className={
             isMobileMenuActive
@@ -72,9 +72,9 @@ const Navbar = ({
               <div
                 className={`
 
-              } absolute w-60 bg-white top-full -left-10 z-200 flex flex-col`}
+              } absolute w-64 bg-white -left-10 top-full flex flex-col shadow-lg rounded`}
               >
-                <ul className="flex flex-col gap-4 p-4">
+                <ul className="flex flex-col gap-4 p-6">
                   <Link href={`/${locale}/produkty/plyty-meblowe`}>
                     <li className="flex gap-4 items-center">
                       <span>

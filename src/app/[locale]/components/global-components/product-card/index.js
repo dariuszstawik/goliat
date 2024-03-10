@@ -14,7 +14,7 @@ export default function ProductCard({
         <img
           src={productCardImg ? productCardImg : "/plyta-budowlana-osb.png"}
           alt={alt ? alt : "product-card"}
-          className="h-full object-cover"
+          className="min-h-full object-cover"
         />
       </div>
       <div className="bg-gray-200 grow">

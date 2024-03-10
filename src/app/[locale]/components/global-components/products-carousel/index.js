@@ -3,8 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../product-card";
+import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
+import plytyBudowlane from "@/app/[locale]/data/plyty-budowlane";
+import plytySpecjalistyczne from "@/app/[locale]/data/plyty-specjalistyczne";
+import plytyOpakowaniowe from "@/app/[locale]/data/plyty-opakowaniowe";
+import plytyPilsniowe from "@/app/[locale]/data/plyty-pilsniowe";
+import sklejki from "@/app/[locale]/data/sklejki";
+import productCategories from "@/app/[locale]/data/product-categories";
 
-export default function ProductsCarousel({ title }) {
+export default function ProductsCarousel({ title, content }) {
   const settingsLg = {
     dots: false,
     arrows: true,
@@ -83,15 +90,99 @@ export default function ProductsCarousel({ title }) {
 
   return (
     <section className="relative bg-white py-5 px-0 lg:p-8 w-[90%] mx-auto ">
-      <h3 className="mx-auto text-center mb-8">{title}</h3>
+      {title && <h3 className="mx-auto text-center mb-8">{title}</h3>}
       <div className="hidden lg:block">
         <Slider {...settingsLg} className="relative flex gap-6 pl-20">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {content === "plytyMeblowe" &&
+            plytyMeblowe.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
+
+          {content === "plytyBudowlane" &&
+            plytyBudowlane.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
+
+          {content === "plytySpecjalistyczne" &&
+            plytySpecjalistyczne.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
+
+          {content === "plytyOpakowaniowe" &&
+            plytyOpakowaniowe.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
+
+          {content === "plytyPilsniowe" &&
+            plytyPilsniowe.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
+
+          {content === "sklejki" &&
+            sklejki.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
+
+          {content === "productCategories" &&
+            productCategories.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
         </Slider>
       </div>
 
