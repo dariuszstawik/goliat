@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fdd203;
+        stroke-width: 3.2px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #000;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-8 {
+        opacity: .47;
+      }
+
+      .cls-8, .cls-7 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #ca151a;
+        stroke-width: 3.02px;
+      }
+
+      .cls-2, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-6 {
+        fill: #fdd203;
+      }
+
+      .cls-7 {
+        opacity: .56;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <g>
+      <circle class="cls-7" cx="70.18" cy="69.69" r="50.8"/>
+      <circle class="cls-2" cx="70.18" cy="69.69" r="50.8"/>
+      <g>
+        <circle class="cls-3" cx="70.18" cy="69.69" r="50.8"/>
+        <g>
+          <image class="cls-8" width="141" height="141" transform="" xlink:href="../../../wzorpodstona-kontakt-ofirmie/675335FA78198AC7.png"/>
+          <circle class="cls-1" cx="70.18" cy="69.69" r="54"/>
+        </g>
+        <g>
+          <g id="Page-1">
+            <g id="_097---Cut-Wood-Pile" data-name="097---Cut-Wood-Pile">
+              <path id="Path" class="cls-5" d="M52.18,77.09h3.3c2.3-1.2,4.3-2.8,6.1-4.7v-3.3c-2.4,3.5-5.6,6.3-9.4,8h0Z"/>
+              <path id="Path-2" data-name="Path" class="cls-5" d="M61.58,77.09v-2.4c-1,.9-2,1.7-3.1,2.4h3.1Z"/>
+              <path id="Path-3" data-name="Path" class="cls-5" d="M51.88,56.19v2.2c1-.6,1.9-1.3,2.7-2.2h-2.7Z"/>
+              <path id="Path-4" data-name="Path" class="cls-5" d="M59.48,56.19h-2.7c-1.3,1.7-3,3-4.9,4v2c3.1-1.2,5.7-3.3,7.6-6Z"/>
+              <path id="Path-5" data-name="Path" class="cls-5" d="M63.88,56.19h-2.5c-1.9,3.3-5.2,6-9.5,7.8v1.5c5.5-1.9,9.8-5.2,12-9.3Z"/>
+              <path id="Shape" class="cls-4" d="M64.78,67.49h-1.6v9.7h25.7v-8.8c0-.4-.4-.8-.8-.8h-23.3v-.1ZM66.38,70.69c0-.4.4-.8.8-.8h14.5c.4,0,.8.4.8.8s-.4.8-.8.8h-14.5c-.4,0-.8-.4-.8-.8ZM86.48,73.89c0,.4-.4.8-.8.8h-14.5c-.4,0-.8-.4-.8-.8s.4-.8.8-.8h14.5c.4,0,.8.4.8.8Z"/>
+              <path id="Shape-2" data-name="Shape" class="cls-4" d="M84.88,56.19h-18.5v9.7h19.3v-8.8c0-.5-.4-.9-.8-.9ZM67.98,59.39c0-.4.4-.8.8-.8h10.5c.4,0,.8.4.8.8s-.4.8-.8.8h-10.5c-.4,0-.8-.3-.8-.8ZM83.28,63.49h-10.5c-.4,0-.8-.4-.8-.8s.4-.8.8-.8h10.5c.4,0,.8.4.8.8s-.4.8-.8.8Z"/>
+              <g>
+                <path id="Path-6" data-name="Path" class="cls-5" d="M55.38,65.89h3.3c2.3-1.2,4.3-2.8,6.1-4.7v-3.3c-2.3,3.5-5.6,6.2-9.4,8Z"/>
+                <path id="Path-7" data-name="Path" class="cls-5" d="M64.78,65.89v-2.4c-1,.9-2,1.7-3.1,2.4h3.1Z"/>
+                <path id="Path-8" data-name="Path" class="cls-5" d="M48.68,67.49v2.2c1-.6,1.9-1.3,2.7-2.2h-2.7Z"/>
+                <path id="Path-9" data-name="Path" class="cls-5" d="M59.18,80.39c-2.3,3.5-5.6,6.2-9.4,8h3.3c2.3-1.2,4.3-2.8,6.1-4.7v-3.3Z"/>
+                <path id="Path-10" data-name="Path" class="cls-5" d="M58.28,78.69h-2.5c-1.9,3.3-5.2,6-9.5,7.8v1.5c5.5-1.9,9.8-5.2,12-9.3Z"/>
+                <path id="Path-11" data-name="Path" class="cls-5" d="M56.08,88.39h3.1v-2.4c-1,.9-2,1.7-3.1,2.4Z"/>
+                <path id="Path-12" data-name="Path" class="cls-5" d="M56.28,67.49h-2.7c-1.3,1.7-3,3-4.9,4v2c3.1-1.3,5.7-3.3,7.6-6h0Z"/>
+              </g>
+              <path id="Shape-3" data-name="Shape" class="cls-4" d="M88.88,78.69h-28.1v9.7h29.8c.4,0,.8-.4.8-.8v-8c0-.4-.4-.8-.8-.8l-1.7-.1h0ZM63.98,81.99c0-.4.4-.8.8-.8h19.3c.4,0,.8.4.8.8s-.4.8-.8.8h-19.3c-.5,0-.8-.4-.8-.8h0ZM88.08,85.99h-19.3c-.4,0-.8-.4-.8-.8s.4-.8.8-.8h19.3c.4,0,.8.4.8.8,0,.4-.3.8-.8.8Z"/>
+              <path id="Path-13" data-name="Path" class="cls-5" d="M60.68,67.49h-2.5c-1.9,3.3-5.2,6-9.5,7.8v1.5c5.5-1.9,9.8-5.3,12-9.3h0Z"/>
+              <path id="Path-14" data-name="Path" class="cls-5" d="M53.88,78.69h-2.7c-1.3,1.7-3,3-4.9,4v2c3-1.2,5.7-3.3,7.6-6Z"/>
+              <path id="Path-15" data-name="Path" class="cls-5" d="M48.68,78.69h-2.4v2.2c1-.6,1.9-1.3,2.7-2.2h-.3Z"/>
+            </g>
+          </g>
+          <path class="cls-6" d="M95.18,42.29v6.6h6.4v3.1h-6.4v6.6h-3.4v-6.6h-6.4v-3.1h6.4v-6.6h3.4Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

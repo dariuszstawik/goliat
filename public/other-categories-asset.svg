@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487.14 487.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 13.8px;
+      }
+
+      .cls-4 {
+        fill: #ca151a;
+      }
+
+      .cls-5 {
+        fill: #fdd203;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <g>
+      <rect class="cls-2" x="77.26" y="65.42" width="332.61" height="356.31" transform="translate(-100.89 243.57) rotate(-45)"/>
+      <g>
+        <path class="cls-3" d="M347.55,348.36c-61.61,61.61-161.5,61.61-223.11,0-61.61-61.61-61.61-161.5,0-223.11,61.61-61.61,161.5-61.61,223.11,0,12.05,12.05,21.74,25.57,29.08,39.97"/>
+        <path class="cls-1" d="M354.14,367.46l-25.7-25.7c-1.89-1.89-1.03-5.13,1.56-5.83l35.11-9.4c2.59-.69,4.96,1.68,4.26,4.26l-9.4,35.11c-.69,2.59-3.93,3.45-5.83,1.56"/>
+      </g>
+    </g>
+    <g>
+      <circle class="cls-4" cx="237.1" cy="236.24" r="119"/>
+      <circle class="cls-5" cx="237.1" cy="236.24" r="92.18"/>
+    </g>
+  </g>
+</svg>

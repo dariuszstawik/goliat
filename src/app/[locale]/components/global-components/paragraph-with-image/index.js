@@ -6,6 +6,7 @@ export default function ParagraphWithImage({
   icon,
   productCardImg,
   productCardTitle,
+  img,
   href,
   isRed,
   hasGrayBg,
@@ -14,15 +15,24 @@ export default function ParagraphWithImage({
   return (
     <div className={`w-screen ${hasGrayBg && "bg-primaryGray"}`}>
       <section
-        className={`w-[80%] mx-auto py-16 flex gap-16 justify-center items-center 
+        className={`${
+          img ? "w-[100%] pr-28" : "w-[80%]"
+        } mx-auto py-16 flex gap-16 justify-center items-center
       }`}
       >
-        <ProductCard
-          productCardImg={productCardImg}
-          productCardTitle={productCardTitle}
-          icon={icon}
-          href={href}
-        />
+        {img ? (
+          <div className="relative w-[530px] h-[488px] shrink-0">
+            <img src={img} alt="asset" className="absolute -top-20 left-0" />
+          </div>
+        ) : (
+          <ProductCard
+            productCardImg={productCardImg}
+            productCardTitle={productCardTitle}
+            icon={icon}
+            href={href}
+          />
+        )}
+
         <div className="flex flex-col">
           <div className="flex gap-16 mb-9">
             <h2 className="mt-auto">{title}</h2>

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Button from "../button";
+import ButtonSm from "../button-sm";
 
 const ContactForm = () => {
   const form = useRef(null);
@@ -129,7 +130,7 @@ const ContactForm = () => {
                 </label>
               </span>
             </div>
-            <Button> Wyślij zapytanie</Button>
+            <ButtonSm> Wyślij zapytanie</ButtonSm>
           </div>
         </div>
       </form>

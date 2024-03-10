@@ -33,7 +33,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className={poppins.className}>
-        <Navbar />
+        <Navbar locale={locale} />
         {/* <Navbar
           start={t("start")}
           about={t("about")}

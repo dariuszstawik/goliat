@@ -40,7 +40,9 @@ const Navbar = ({
 
   return (
     <div className="fixed top-0 left-0 w-screen h-32 flex justify-between items-center px-10 lg:px-16 py-4 z-50 bg-white shadow-lg ">
-      <Logo closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
+      <Link href="/">
+        <Logo closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
+      </Link>
       <NavbarAsset />
       <div className="flex justify-end items-center h-full">
         <ul
@@ -57,9 +59,10 @@ const Navbar = ({
             className="relative h-full flex justify-center items-center"
           >
             <Link
-              href="/"
+              href={`/${locale}/produkty`}
               // className={`${isActive && "text-primaryBlue"}`}
-              classNaem="cursor-pointer hover:text-slate-500"
+
+              className="cursor-pointer hover:text-slate-500"
               onClick={handleRefresh}
             >
               {/* {start} */}
@@ -72,7 +75,7 @@ const Navbar = ({
               } absolute w-60 bg-white top-full -left-10 z-200 flex flex-col`}
               >
                 <ul className="flex flex-col gap-4 p-4">
-                  <Link href="/produkty/plyty-meblowe">
+                  <Link href={`/${locale}/produkty/plyty-meblowe`}>
                     <li className="flex gap-4 items-center">
                       <span>
                         <img src="/icon-plyty-meblowe.svg" className="w-5" />
@@ -80,44 +83,56 @@ const Navbar = ({
                       płyty meblowe
                     </li>
                   </Link>
+                  <Link href={`/${locale}/produkty/plyty-budowlane`}>
+                    <li className="flex gap-4 items-center">
+                      <span>
+                        <img src="/icon-plyty-budowlane.svg" className="w-5" />
+                      </span>
+                      płyty budowlane
+                    </li>
+                  </Link>
 
-                  <li className="flex gap-4 items-center">
-                    <span>
-                      <img src="/icon-plyty-budowlane.svg" className="w-5" />
-                    </span>
-                    płyty budowlane
-                  </li>
+                  <Link href={`/${locale}/produkty/plyty-specjalistyczne`}>
+                    <li className="flex gap-4 items-center">
+                      <span>
+                        <img
+                          src="/icon-plyty-specjalistyczne.svg"
+                          className="w-5"
+                        />
+                      </span>
+                      płyty specjalistyczne
+                    </li>
+                  </Link>
 
-                  <li className="flex gap-4 items-center">
-                    <span>
-                      <img
-                        src="/icon-plyty-specjalistyczne.svg"
-                        className="w-5"
-                      />
-                    </span>
-                    płyty specjalistyczne
-                  </li>
+                  <Link href={`/${locale}/produkty/sklejki`}>
+                    <li className="flex gap-4 items-center">
+                      <span>
+                        <img src="/icon-sklejki.svg" className="w-5" />
+                      </span>
+                      sklejki
+                    </li>
+                  </Link>
 
-                  <li className="flex gap-4 items-center">
-                    <span>
-                      <img src="/icon-sklejki.svg" className="w-5" />
-                    </span>
-                    sklejki
-                  </li>
+                  <Link href={`/${locale}/produkty/plyty-opakowaniowe`}>
+                    <li className="flex gap-4 items-center">
+                      <span>
+                        <img
+                          src="/icon-plyty-opakowaniowe.svg"
+                          className="w-5"
+                        />
+                      </span>
+                      płyty opakowaniowe
+                    </li>
+                  </Link>
 
-                  <li className="flex gap-4 items-center">
-                    <span>
-                      <img src="/icon-plyty-opakowaniowe.svg" className="w-5" />
-                    </span>
-                    płyty opakowaniowe
-                  </li>
-
-                  <li className="flex gap-4 items-center">
-                    <span>
-                      <img src="/icon-plyty-pilsniowe.svg" className="w-5" />
-                    </span>
-                    płyty pilśniowe
-                  </li>
+                  <Link href={`/${locale}/produkty/plyty-pilsniowe`}>
+                    <li className="flex gap-4 items-center">
+                      <span>
+                        <img src="/icon-plyty-pilsniowe.svg" className="w-5" />
+                      </span>
+                      płyty pilśniowe
+                    </li>
+                  </Link>
                 </ul>
               </div>
             )}
@@ -128,7 +143,7 @@ const Navbar = ({
             className="hover:text-slate-500 cursor-pointer"
           >
             <Link
-              href="/"
+              href={`/${locale}/uslugi`}
               // className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
@@ -141,7 +156,7 @@ const Navbar = ({
             className="hover:text-slate-500 cursor-pointer"
           >
             <Link
-              href="/"
+              href={`/${locale}/o-firmie`}
               // className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
@@ -166,7 +181,7 @@ const Navbar = ({
             className="hover:text-slate-500 cursor-pointer"
           >
             <Link
-              href="/"
+              href={`/${locale}/kontakt`}
               // className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
