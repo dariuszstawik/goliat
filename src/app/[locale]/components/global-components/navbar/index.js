@@ -43,8 +43,10 @@ const Navbar = ({
       <Link href="/">
         <Logo closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
       </Link>
-      <NavbarAsset />
-      <div className="relative flex justify-end items-center h-full">
+      <div className="hidden xl:block">
+        <NavbarAsset />
+      </div>
+      <div className="flex justify-end items-center h-full">
         <ul
           className={
             isMobileMenuActive

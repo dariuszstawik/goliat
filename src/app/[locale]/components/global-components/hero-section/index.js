@@ -10,6 +10,7 @@ export default function HeroSection({
   contactIcon,
   isServicesPage,
   hasProductsIcons,
+  hasRedBg,
 }) {
   console.log("backgroundImage", backgroundImage);
   return (
@@ -92,7 +93,7 @@ export default function HeroSection({
 
       {/* <div className="w-full h-40 bg-yellow-400"></div> */}
 
-      {isServicesPage ? <ServicesBar /> : <HeroIconsBar />}
+      {isServicesPage ? <ServicesBar /> : <HeroIconsBar hasRedBg={hasRedBg} />}
     </section>
   );
 }

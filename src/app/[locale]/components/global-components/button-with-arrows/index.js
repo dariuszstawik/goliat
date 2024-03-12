@@ -1,4 +1,4 @@
-export default function ButtonWithArrows({ isRed, children }) {
+export default function ButtonWithArrows({ isRed, children, href }) {
   return (
     <div className="w-full flex justify-center gap-7 py-5">
       {isRed ? (
