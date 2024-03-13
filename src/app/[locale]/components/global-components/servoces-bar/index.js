@@ -1,6 +1,6 @@
 export default function ServicesBar() {
   return (
-    <div className="text-base w-full h-32 flex bg-primaryYellow justify-center items-center gap-32">
+    <div className="text-base w-full h-32 flex bg-primaryYellow justify-center items-center gap-32 shadow-lg">
       <h2>Nasze usługi</h2>
       <ul className="h-full flex gap-16 justify-center items-center">
         <li className="flex justify-center items-center gap-4">

@@ -90,7 +90,7 @@ export default function ProductsCarousel({ title, content }) {
   };
 
   return (
-    <section className="relative bg-white py-5 px-0 lg:p-8 w-[90%] mx-auto ">
+    <section className="relative py-5 px-0 lg:p-8 w-[90%] mx-auto ">
       {title && <h3 className="mx-auto text-center mb-8">{title}</h3>}
       <div className="hidden lg:block">
         <Slider {...settingsLg} className="relative flex gap-6 pl-20">

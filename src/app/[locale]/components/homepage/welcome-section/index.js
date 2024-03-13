@@ -6,7 +6,7 @@ import Logo from "../../global-components/logo";
 
 export default function WelcomeSection() {
   return (
-    <div className="w-full min-h-screen mx-0 relative">
+    <div className="w-full mx-0 relative mb-6">
       <Image
         src="/welcome-left-asset.png"
         alt="Welcome to our website"
@@ -19,7 +19,7 @@ export default function WelcomeSection() {
         alt="Welcome to our website"
         width={312}
         height={329}
-        className="absolute bottom-0 -right-24"
+        className="absolute bottom-4 -right-24"
       />
       <div className="flex justify-end items-center gap-20 pr-20 pt-20">
         <div className="flex flex-col items-end gap-4">
@@ -30,14 +30,14 @@ export default function WelcomeSection() {
         </div>
         <NavbarAsset />
       </div>
-      <div className="w-[75%] mx-auto flex items-end gap-20">
+      <div className="w-[75%] mx-auto flex items-center gap-20">
         <div>
           <Image
             src="/hood-worker.png"
             alt="Welcome to our website"
             width={377}
             height={494}
-            className=""
+            className="-translate-y-16 w-[90%]"
           />
           <Logo v2 />
         </div>
@@ -49,19 +49,21 @@ export default function WelcomeSection() {
             height={121}
             className=""
           />
-          <div className="flex gap-8">
-            <ButtonSm isYellow>Produkty</ButtonSm>
-            <ButtonSm>Usługi</ButtonSm>
-            <ButtonSm>Kontakt</ButtonSm>
-          </div>
-          <div>
-            <Image
-              src="/vertical-arrow.png"
-              alt="arrow"
-              width={116}
-              height={214}
-              className="mx-auto"
-            />
+          <div className="flex flex-col gap-12 pr-32">
+            <div className="flex gap-8">
+              <ButtonSm isYellow>Produkty</ButtonSm>
+              <ButtonSm>Usługi</ButtonSm>
+              <ButtonSm>Kontakt</ButtonSm>
+            </div>
+            <div>
+              <Image
+                src="/vertical-arrow.png"
+                alt="arrow"
+                width={116}
+                height={214}
+                className="mx-auto"
+              />
+            </div>
           </div>
         </div>
       </div>

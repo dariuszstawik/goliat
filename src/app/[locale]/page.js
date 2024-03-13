@@ -25,134 +25,148 @@ export default function Home({ params: { locale } }) {
           heroCircle="/hero-circle-homepage.png"
         />
         <WelcomeSection />
-        {/* <h1>{t("title")}</h1> */}
-
-        {/* <ProductCard /> */}
-        <ParagraphWithImage
-          title="Płyty meblowe"
-          icon="icon-plyty-meblowe.svg"
-          productCardImg="/plyta-wiorowa.jpg"
-          productCardTitle="płyta biurowa laminowana biała"
-        >
-          <p className="mb-9">
-            Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do
-            wykończenia wnętrza mieszkania. Płyty meblowe to nic innego jak
-            płyty drewnopochodne, czyli rodzaj kompozytu drzewnego, w którym
-            zawartość cząstek pochodzenia drzewnego powinna przekraczać 50%.
-            Głównym materiałem do produkcji płyt drewniopochodnych jest odpad
-            powstający podczas uzyskiwania tarcicy oraz paździerze, czyli
-            zdrewniałe części łodyg roślin włóknistych. Aby płyta drewnopochodna
-            osiągnęła swój końcowy wygląd, wióry drzewne (trociny, wióry,
-            gałęzie drzew oraz paździerze) łączone są ze sobą za pomocą kleju
-            syntetycznego o odpowiednich właściwościach. Następnie mieszanka z
-            wiórów drzewnych oraz kleju syntetycznego poddawana jest obróbce
-            termicznej oraz prasie, która działa na powstały półprodukt z
-            odpowiednim ciśnieniem. Jest to proces tworzenia najczęściej
-            występującej na rynku płyty wiórowej. Może ona mieć wykończenie
-            “surowe” szlifowane, bądź być pokryta fornirem, lakierem czy też
-            laminatem.
-          </p>
-          <p>
-            Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
-            zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
-            zapraszamy do zapoznania się z całą ofertą płyt meblowych bądź
-            wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-          </p>
-        </ParagraphWithImage>
-
         <ProductsCarousel
-          title="Przykładowe płyty meblowe"
+          // title="Przykładowe płyty meblowe"
           content="plytyMeblowe"
         />
-        <ButtonWithArrows>Pełna oferta płyt meblowych</ButtonWithArrows>
 
-        <ParagraphWithImage
-          title="Płyty budowlane"
-          icon="icon-plyty-budowlane.svg"
-          productCardImg="/plyta-durelis.jpg"
-          productCardTitle="płyta Durelis"
-          hasGrayBg
-        >
-          <p className="mb-9">
-            Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
-            ofercie płyt budowlanych znajdują się klasyczne rozwiązania na bazie
-            płyt drewnopochodnych takie jak: OSB, Durelis, V100, MFP, JDS oraz
-            płyty wiórowo-cementowe. Te ostatnie idealnie nadzadzą się do prac
-            zewnętrznych oraz wewnętrznych. Zbudowane są z betonu lekkiego i
-            mają obustronne zbrojenie siatką z włókna szklanego. Sprawdź
-            dokładny opis poszczególnych płyt i przekonaj się, która z nich
-            będzie najbardzej odpowiedna do twojego projektu.
-          </p>
-          <p>
-            Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
-            zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
-            zapraszamy do zapoznania się z całą ofertą płyt budowlanych bądź
-            wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-          </p>
-        </ParagraphWithImage>
-        <ProductsCarousel
-          title="Przykładowe płyty budowlane"
-          content="plytyBudowlane"
-        />
-        <ButtonWithArrows>Pełna oferta płyt budowlanych</ButtonWithArrows>
+        {/* <ProductCard /> */}
+        <div className="pb-4">
+          <ParagraphWithImage
+            title="Płyty meblowe"
+            icon="icon-plyty-meblowe.svg"
+            productCardImg="/plyta-wiorowa.jpg"
+            productCardTitle="płyta biurowa laminowana biała"
+          >
+            <p className="mb-9">
+              Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do
+              wykończenia wnętrza mieszkania. Płyty meblowe to nic innego jak
+              płyty drewnopochodne, czyli rodzaj kompozytu drzewnego, w którym
+              zawartość cząstek pochodzenia drzewnego powinna przekraczać 50%.
+              Głównym materiałem do produkcji płyt drewniopochodnych jest odpad
+              powstający podczas uzyskiwania tarcicy oraz paździerze, czyli
+              zdrewniałe części łodyg roślin włóknistych. Aby płyta
+              drewnopochodna osiągnęła swój końcowy wygląd, wióry drzewne
+              (trociny, wióry, gałęzie drzew oraz paździerze) łączone są ze sobą
+              za pomocą kleju syntetycznego o odpowiednich właściwościach.
+              Następnie mieszanka z wiórów drzewnych oraz kleju syntetycznego
+              poddawana jest obróbce termicznej oraz prasie, która działa na
+              powstały półprodukt z odpowiednim ciśnieniem. Jest to proces
+              tworzenia najczęściej występującej na rynku płyty wiórowej. Może
+              ona mieć wykończenie “surowe” szlifowane, bądź być pokryta
+              fornirem, lakierem czy też laminatem.
+            </p>
+            <p>
+              Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
+              zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
+              zapraszamy do zapoznania się z całą ofertą płyt meblowych bądź
+              wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
+            </p>
+          </ParagraphWithImage>
 
-        <ParagraphWithImage
-          title="Płyty specjalistyczne"
-          icon="icon-plyty-specjalistyczne.svg"
-          productCardImg="/plyta-mdf.jpg"
-          productCardTitle="płyta MDF ognioodporna"
-        >
-          <p className="mb-9">
-            Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
-            ofercie płyt budowlanych znajdują się klasyczne rozwiązania na bazie
-            płyt drewnopochodnych takie jak: OSB, Durelis, V100, MFP, JDS oraz
-            płyty wiórowo-cementowe. Te ostatnie idealnie nadzadzą się do prac
-            zewnętrznych oraz wewnętrznych. Zbudowane są z betonu lekkiego i
-            mają obustronne zbrojenie siatką z włókna szklanego. Sprawdź
-            dokładny opis poszczególnych płyt i przekonaj się, która z nich
-            będzie najbardzej odpowiedna do twojego projektu.
-          </p>
-          <p>
-            Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
-            zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
-            zapraszamy do zapoznania się z całą ofertą płyt budowlanych bądź
-            wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-          </p>
-        </ParagraphWithImage>
-        <ProductsCarousel
-          title="Przykładowe płyty specjalistyczne"
-          content="plytySpecjalistyczne"
-        />
-        <ButtonWithArrows>Pełna oferta płyt specjalistycznych</ButtonWithArrows>
+          <ProductsCarousel
+            title="Przykładowe płyty meblowe"
+            content="plytyMeblowe"
+          />
+          <ButtonWithArrows>Pełna oferta płyt meblowych</ButtonWithArrows>
+        </div>
 
-        <ParagraphWithImage
-          title="Sklejki"
-          icon="icon-sklejki.svg"
-          productCardImg="/sklejki.jpg"
-          productCardTitle="sklejka antypoślizgowa HEXA"
-        >
-          <p className="mb-9">
-            Sklejka jest materiałem drewnopochodnym często wykorzystywanym w
-            branży stolarskiej. Jej stosowanie pomaga uniknąć wielu
-            niepożądanych sytuacji. W porównaniu do litego drewna nie pęka i nie
-            wypacza się. Posiada wysoką wytrzymałość na gięcie statyczne, przez
-            co często sprawdza się lepiej niż stal. Sklejka powstaje ze
-            sklejonych ze sobą fornirów (cienkich warstw drewna). Układanie
-            warstw następuje naprzemiennie-krzyżowo (są zatem ułożone do siebie
-            prostopadle). Kolejne warstwy są klejone w prasach o dużym nacisku.
-            Sklejka może mieć od 3 do nawet 50 mm grubości. Sklejki dzielą się w
-            zależności od drewna, z którego są wytwarzane. W naszej ofercie
-            znajdą Państwo sklejkę brzozową, olchową, bukową i sosnową.
-          </p>
-          <p>
-            Szczegółowe informacje o materiałach, rozmiarach, grubościach,
-            parametrach oraz zastosowaniu danych sklejek znajdą Państwo w karcie
-            danego produktu - zapraszamy do zapoznania się z całą ofertą sklejek
-            bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-          </p>
-        </ParagraphWithImage>
-        <ProductsCarousel title="Przykładowe sklejki" content="sklejki" />
-        <ButtonWithArrows>Pełna oferta sklejek</ButtonWithArrows>
+        <div className="w-screen bg-primaryGray pb-4">
+          <ParagraphWithImage
+            title="Płyty budowlane"
+            icon="icon-plyty-budowlane.svg"
+            productCardImg="/plyta-durelis.jpg"
+            productCardTitle="płyta Durelis"
+          >
+            <p className="mb-9">
+              Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
+              ofercie płyt budowlanych znajdują się klasyczne rozwiązania na
+              bazie płyt drewnopochodnych takie jak: OSB, Durelis, V100, MFP,
+              JDS oraz płyty wiórowo-cementowe. Te ostatnie idealnie nadzadzą
+              się do prac zewnętrznych oraz wewnętrznych. Zbudowane są z betonu
+              lekkiego i mają obustronne zbrojenie siatką z włókna szklanego.
+              Sprawdź dokładny opis poszczególnych płyt i przekonaj się, która z
+              nich będzie najbardzej odpowiedna do twojego projektu.
+            </p>
+            <p>
+              Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
+              zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
+              zapraszamy do zapoznania się z całą ofertą płyt budowlanych bądź
+              wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
+            </p>
+          </ParagraphWithImage>
+          <ProductsCarousel
+            title="Przykładowe płyty budowlane"
+            content="plytyBudowlane"
+          />
+          <ButtonWithArrows>Pełna oferta płyt budowlanych</ButtonWithArrows>
+        </div>
+
+        <div className="pb-4">
+          <ParagraphWithImage
+            title="Płyty specjalistyczne"
+            icon="icon-plyty-specjalistyczne.svg"
+            productCardImg="/plyta-mdf.jpg"
+            productCardTitle="płyta MDF ognioodporna"
+          >
+            <p className="mb-9">
+              Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
+              ofercie płyt budowlanych znajdują się klasyczne rozwiązania na
+              bazie płyt drewnopochodnych takie jak: OSB, Durelis, V100, MFP,
+              JDS oraz płyty wiórowo-cementowe. Te ostatnie idealnie nadzadzą
+              się do prac zewnętrznych oraz wewnętrznych. Zbudowane są z betonu
+              lekkiego i mają obustronne zbrojenie siatką z włókna szklanego.
+              Sprawdź dokładny opis poszczególnych płyt i przekonaj się, która z
+              nich będzie najbardzej odpowiedna do twojego projektu.
+            </p>
+            <p>
+              Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
+              zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
+              zapraszamy do zapoznania się z całą ofertą płyt budowlanych bądź
+              wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
+            </p>
+          </ParagraphWithImage>
+          <ProductsCarousel
+            title="Przykładowe płyty specjalistyczne"
+            content="plytySpecjalistyczne"
+          />
+          <ButtonWithArrows>
+            Pełna oferta płyt specjalistycznych
+          </ButtonWithArrows>
+        </div>
+
+        <div className="w-screen bg-primaryGray pb-4">
+          <ParagraphWithImage
+            title="Sklejki"
+            icon="icon-sklejki.svg"
+            productCardImg="/sklejki.jpg"
+            productCardTitle="sklejka antypoślizgowa HEXA"
+          >
+            <p className="mb-9">
+              Sklejka jest materiałem drewnopochodnym często wykorzystywanym w
+              branży stolarskiej. Jej stosowanie pomaga uniknąć wielu
+              niepożądanych sytuacji. W porównaniu do litego drewna nie pęka i
+              nie wypacza się. Posiada wysoką wytrzymałość na gięcie statyczne,
+              przez co często sprawdza się lepiej niż stal. Sklejka powstaje ze
+              sklejonych ze sobą fornirów (cienkich warstw drewna). Układanie
+              warstw następuje naprzemiennie-krzyżowo (są zatem ułożone do
+              siebie prostopadle). Kolejne warstwy są klejone w prasach o dużym
+              nacisku. Sklejka może mieć od 3 do nawet 50 mm grubości. Sklejki
+              dzielą się w zależności od drewna, z którego są wytwarzane. W
+              naszej ofercie znajdą Państwo sklejkę brzozową, olchową, bukową i
+              sosnową.
+            </p>
+            <p>
+              Szczegółowe informacje o materiałach, rozmiarach, grubościach,
+              parametrach oraz zastosowaniu danych sklejek znajdą Państwo w
+              karcie danego produktu - zapraszamy do zapoznania się z całą
+              ofertą sklejek bądź wykonania telefonu i rozmowy o szczegółach z
+              naszym handlowcem!
+            </p>
+          </ParagraphWithImage>
+          <ProductsCarousel title="Przykładowe sklejki" content="sklejki" />
+          <ButtonWithArrows>Pełna oferta sklejek</ButtonWithArrows>
+        </div>
 
         <ParagraphWithImage
           title="Płyty opakowaniowe"
@@ -183,35 +197,38 @@ export default function Home({ params: { locale } }) {
         />
         <ButtonWithArrows>Pełna oferta płyt opakowaniowych</ButtonWithArrows>
 
-        <ParagraphWithImage
-          title="Płyty pilśniowe"
-          icon="icon-plyty-pilsniowe.svg"
-          productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
-          productCardTitle="płyta pilśniowa surowa twarda"
-        >
-          <p className="mb-9">
-            Płyty pilśniowe - zwane potocznie dyktą, to wyrób z drewna w postaci
-            płyty wykonanej z rozwłóknionej tkanki drzewnej przez spilśnienie
-            jej i uformowanie w odpowiedniej temperaturze pod (normalnym lub
-            zwiększonym) ciśnieniem. Powstaje tym samym zwarty i solidny
-            produkt, który ma wiele praktycznych zalet. Płyty pilśniowe służą
-            jako materiał do izolacji ścian, wygłuszenia stropów i poprawy
-            parametrów akustycznych pomieszczeń, a także jako okładziny ścienne,
-            sufitowe oraz materiał na podłogi. Płyty pilśniowe dzielą się na 3
-            kategorie: miękka - porowata, twarda - surowa oraz lakierowana.
-          </p>
-          <p>
-            Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
-            zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
-            zapraszamy do zapoznania się z całą ofertą płyt pilśniowych bądź
-            wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-          </p>
-        </ParagraphWithImage>
-        <ProductsCarousel
-          title="Przykładowe płyty pilśniowe"
-          content="plytyPilsniowe"
-        />
-        <ButtonWithArrows>Pełna oferta płyt pilśniowych</ButtonWithArrows>
+        <div className="w-screen bg-primaryGray pb-4">
+          <ParagraphWithImage
+            title="Płyty pilśniowe"
+            icon="icon-plyty-pilsniowe.svg"
+            productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
+            productCardTitle="płyta pilśniowa surowa twarda"
+          >
+            <p className="mb-9">
+              Płyty pilśniowe - zwane potocznie dyktą, to wyrób z drewna w
+              postaci płyty wykonanej z rozwłóknionej tkanki drzewnej przez
+              spilśnienie jej i uformowanie w odpowiedniej temperaturze pod
+              (normalnym lub zwiększonym) ciśnieniem. Powstaje tym samym zwarty
+              i solidny produkt, który ma wiele praktycznych zalet. Płyty
+              pilśniowe służą jako materiał do izolacji ścian, wygłuszenia
+              stropów i poprawy parametrów akustycznych pomieszczeń, a także
+              jako okładziny ścienne, sufitowe oraz materiał na podłogi. Płyty
+              pilśniowe dzielą się na 3 kategorie: miękka - porowata, twarda -
+              surowa oraz lakierowana.
+            </p>
+            <p>
+              Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
+              zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
+              zapraszamy do zapoznania się z całą ofertą płyt pilśniowych bądź
+              wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
+            </p>
+          </ParagraphWithImage>
+          <ProductsCarousel
+            title="Przykładowe płyty pilśniowe"
+            content="plytyPilsniowe"
+          />
+          <ButtonWithArrows>Pełna oferta płyt pilśniowych</ButtonWithArrows>
+        </div>
 
         <ServicesBar />
 

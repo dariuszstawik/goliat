@@ -15,7 +15,7 @@ export default function HeroSection({
 }) {
   console.log("backgroundImage", backgroundImage);
   return (
-    <section className="relative pt-32 w-screen min-h-[90vh] flex flex-col bg-green-400 overflow-hidden z-20">
+    <section className="relative pt-32 w-screen min-h-[90vh] flex flex-col bg-green-400 z-20">
       <div
         className="relative w-full bg-primaryGray flex justify-center items-center grow"
         style={{

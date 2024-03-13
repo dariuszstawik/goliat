@@ -1,6 +1,6 @@
 export default function ButtonWithArrows({ isRed, children, href }) {
   return (
-    <div className="w-full flex justify-center gap-7 py-5">
+    <div className="w-full flex justify-center gap-7 py-8">
       {isRed ? (
         <img src="/red-right-arrow.png" alt="icon" className="" />
       ) : (
