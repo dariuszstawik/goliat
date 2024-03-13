@@ -4,6 +4,7 @@ import ProductCard from "../product-card";
 export default function ParagraphWithImage({
   title,
   icon,
+  whiteIcon,
   hasNoTitleIcon,
   productCardImg,
   productCardTitle,
@@ -31,6 +32,7 @@ export default function ParagraphWithImage({
             productCardImg={productCardImg}
             productCardTitle={productCardTitle}
             icon={icon}
+            whiteIcon={whiteIcon}
             href={href}
             productCardSubtitle={productCardSubtitle}
             isRed={isRed}
@@ -55,11 +57,16 @@ export default function ParagraphWithImage({
             <span className="text-red-500 lg:ml-4 mr-8 lg:mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>
-            <img
-              src="/icon-porozmawiaj.png"
-              alt="icon"
-              className="w-20"
-            />
+
+            {isRed ? (
+              <img
+                src="/icon-porozmawiaj-red.svg"
+                alt="icon"
+                className="w-20"
+              />
+            ) : (
+              <img src="/icon-porozmawiaj.png" alt="icon" className="w-20" />
+            )}
           </div>
         </div>
       </section>

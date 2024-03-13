@@ -13,14 +13,16 @@ export default function PlytyBudowlane() {
       <HeroSection
         backgroundImage="/hero-plyty-budowlane.jpg"
         heroCircle="/hero-circle-plyty-budowlane.png"
+        hasRedBg
       />
 
       <ParagraphWithImage
         title="Płyty budowlane"
         icon="/icon-plyty-budowlane.svg"
+        whiteIcon="/icon-plyty-budowlane-white.svg"
         productCardImg="/plyta-durelis.jpg"
         productCardTitle="płyta Durelis"
-        hasGrayBg
+        isRed
       >
         <p className="mb-9">
           Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej ofercie
@@ -48,7 +50,9 @@ export default function PlytyBudowlane() {
                 alt={plyta.name}
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
+                whiteIcon={plyta.whiteIcon}
                 href={plyta.href}
+                isRed
               />
             </li>
           ))}

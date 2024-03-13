@@ -13,12 +13,15 @@ export default function Sklejki() {
       <HeroSection
         backgroundImage="/hero-sklejki.jpg"
         heroCircle="/hero-circle-sklejki.png"
+        hasRedBg
       />
       <ParagraphWithImage
         title="Sklejki"
         icon="/icon-sklejki.svg"
+        whiteIcon="/icon-sklejki-white.svg"
         productCardImg="/sklejki.jpg"
         productCardTitle="sklejka antypoślizgowa HEXA"
+        isRed
       >
         <p className="mb-9">
           Sklejka jest materiałem drewnopochodnym często wykorzystywanym w
@@ -50,7 +53,9 @@ export default function Sklejki() {
                 alt={plyta.name}
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
+                whiteIcon={plyta.whiteIcon}
                 href={plyta.href}
+                isRed
               />
             </li>
           ))}

@@ -93,7 +93,9 @@ export default function ProductsCarousel({ title, content }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
+                    whiteIcon={plyta.whiteIcon}
                     href={plyta.href}
+                    isRed
                     isInCarousel
                   />
                 </li>
@@ -135,7 +137,9 @@ export default function ProductsCarousel({ title, content }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
+                    whiteIcon={plyta.whiteIcon}
                     href={plyta.href}
+                    isRed
                     isInCarousel
                   />
                 </li>
@@ -149,7 +153,9 @@ export default function ProductsCarousel({ title, content }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
+                    whiteIcon={plyta.whiteIcon}
                     href={plyta.href}
+                    isRed
                     isInCarousel
                   />
                 </li>

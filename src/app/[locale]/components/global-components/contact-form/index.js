@@ -47,9 +47,9 @@ const ContactForm = () => {
       <form
         // ref={form}
         // onSubmit={sendEmail}
-        className="w-full bg-primaryYellow flex flex-cil lg:flex-row gap-14 py-9 px-14"
+        className="text-sm lg:text-base w-full bg-primaryYellow flex flex-col justify-center items-center lg:items-start lg:flex-row gap-14 py-9 px-14"
       >
-        <div className="w-1/2 flex flex-col gap-9">
+        <div className="w-full lg:w-1/2 flex flex-col gap-9">
           <input
             id="userName"
             name="userName"
@@ -80,7 +80,7 @@ const ContactForm = () => {
             // className="relative border border-primaryGreen rounded-xl leading-8 px-4"
           ></input>
         </div>
-        <div className="w-1/2 flex flex-col gap-9">
+        <div className="w-full lg:w-1/2 flex flex-col gap-9">
           <textarea
             id="message"
             name="message"
@@ -130,7 +130,7 @@ const ContactForm = () => {
                 </label>
               </span>
             </div>
-            <ButtonSm> Wyślij zapytanie</ButtonSm>
+            <ButtonSm hasSmallerText> Wyślij zapytanie</ButtonSm>
           </div>
         </div>
       </form>

@@ -75,6 +75,7 @@ export default function Home({ params: { locale } }) {
           <ParagraphWithImage
             title="Płyty budowlane"
             icon="icon-plyty-budowlane.svg"
+            whiteIcon="/icon-plyty-budowlane-white.svg"
             productCardImg="/plyta-durelis.jpg"
             productCardTitle="płyta Durelis"
             isRed
@@ -140,8 +141,10 @@ export default function Home({ params: { locale } }) {
           <ParagraphWithImage
             title="Sklejki"
             icon="icon-sklejki.svg"
+            whiteIcon="/icon-sklejki-white.svg"
             productCardImg="/sklejki.jpg"
             productCardTitle="sklejka antypoślizgowa HEXA"
+            isRed
           >
             <p className="mb-9">
               Sklejka jest materiałem drewnopochodnym często wykorzystywanym w
@@ -202,8 +205,10 @@ export default function Home({ params: { locale } }) {
           <ParagraphWithImage
             title="Płyty pilśniowe"
             icon="icon-plyty-pilsniowe.svg"
+            whiteIcon={"/icon-plyty-pilsniowe-white.svg"}
             productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
             productCardTitle="płyta pilśniowa surowa twarda"
+            isRed
           >
             <p className="mb-9">
               Płyty pilśniowe - zwane potocznie dyktą, to wyrób z drewna w

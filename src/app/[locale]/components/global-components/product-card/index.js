@@ -6,6 +6,7 @@ export default function ProductCard({
   productCardTitle,
   productCardSubtitle,
   icon,
+  whiteIcon,
   isRed,
   href,
   isInCarousel,
@@ -30,9 +31,9 @@ export default function ProductCard({
           } flex justify-center items-center border-[1px] border-black rounded-full mx-auto -translate-y-1/2`}
         >
           <img
-            src={icon ? icon : "/icon-plyta-budowlana-osb.png"}
+            src={whiteIcon ? whiteIcon : icon}
             alt="asset"
-            className={`object-cover w-8 ${isRed && "text-white"}`}
+            className={`object-cover w-8 ${isRed && "text-white white"}`}
           />
         </div>
         <div className="flex flex-col justify-center items-center gap-2 grow -translate-y-1/4 px-6">

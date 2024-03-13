@@ -13,12 +13,15 @@ export default function PlytyPilsniowe() {
       <HeroSection
         backgroundImage="/hero-plyty-pilsniowe.jpg"
         heroCircle="/hero-circle-plyty-pilsniowe.png"
+        hasRedBg
       />
       <ParagraphWithImage
         title="Płyty pilśniowe"
         icon="/icon-plyty-pilsniowe.svg"
+        whiteIcon={"/icon-plyty-pilsniowe-white.svg"}
         productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
         productCardTitle="płyta pilśniowa surowa twarda"
+        isRed
       >
         <p className="mb-9">
           Płyty pilśniowe - zwane potocznie dyktą, to wyrób z drewna w postaci
@@ -48,7 +51,9 @@ export default function PlytyPilsniowe() {
                 alt={plyta.name}
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
+                whiteIcon={plyta.whiteIcon}
                 href={plyta.href}
+                isRed
               />
             </li>
           ))}
