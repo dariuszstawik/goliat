@@ -4,8 +4,10 @@ import ProductCard from "../product-card";
 export default function ParagraphWithImage({
   title,
   icon,
+  hasNoTitleIcon,
   productCardImg,
   productCardTitle,
+  productCardSubtitle,
   img,
   href,
   isRed,
@@ -30,18 +32,21 @@ export default function ParagraphWithImage({
             productCardTitle={productCardTitle}
             icon={icon}
             href={href}
+            productCardSubtitle={productCardSubtitle}
           />
         )}
 
         <div className="flex flex-col">
           <div className="flex gap-16 mb-9">
             <h2 className="mt-auto">{title}</h2>
-            <Image
-              src={icon ? icon : "/icon-plyty-meblowe.svg"}
-              alt="icon"
-              width={72}
-              height={66}
-            />
+            {!hasNoTitleIcon && (
+              <Image
+                src={icon ? icon : "/icon-plyty-meblowe.svg"}
+                alt="icon"
+                width={72}
+                height={66}
+              />
+            )}
           </div>
           <div>{children}</div>
           <div className="flex items-center ml-auto">

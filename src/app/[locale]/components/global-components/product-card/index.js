@@ -4,6 +4,7 @@ export default function ProductCard({
   productCardImg,
   alt,
   productCardTitle,
+  productCardSubtitle,
   icon,
   isRed,
   href,
@@ -27,7 +28,11 @@ export default function ProductCard({
         </div>
         <div className="flex flex-col justify-center items-center gap-2 grow -translate-y-1/4 px-6">
           <h4 className="text-center">{productCardTitle}</h4>
-          <Link href={href ? href : "/"}>Zobacz więcej</Link>
+          {productCardSubtitle ? (
+            productCardSubtitle
+          ) : (
+            <Link href={href ? href : "/"}>Zobacz więcej</Link>
+          )}
         </div>
       </div>
     </div>

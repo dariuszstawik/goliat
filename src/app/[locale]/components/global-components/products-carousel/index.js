@@ -10,6 +10,7 @@ import plytyOpakowaniowe from "@/app/[locale]/data/plyty-opakowaniowe";
 import plytyPilsniowe from "@/app/[locale]/data/plyty-pilsniowe";
 import sklejki from "@/app/[locale]/data/sklejki";
 import productCategories from "@/app/[locale]/data/product-categories";
+import servicesData from "@/app/[locale]/data/services";
 
 export default function ProductsCarousel({ title, content }) {
   const settingsLg = {
@@ -173,6 +174,19 @@ export default function ProductsCarousel({ title, content }) {
 
           {content === "productCategories" &&
             productCategories.map((plyta) => (
+              <li key={plyta.id}>
+                <ProductCard
+                  productCardImg={plyta.img}
+                  alt={plyta.name}
+                  productCardTitle={plyta.name}
+                  icon={plyta.icon}
+                  href={plyta.href}
+                />
+              </li>
+            ))}
+
+          {content === "servicesData" &&
+            servicesData.map((plyta) => (
               <li key={plyta.id}>
                 <ProductCard
                   productCardImg={plyta.img}

@@ -10,6 +10,7 @@ export default function HeroSection({
   contactIcon,
   isServicesPage,
   hasProductsIcons,
+  hasProductIcon,
   hasRedBg,
 }) {
   console.log("backgroundImage", backgroundImage);
@@ -88,6 +89,16 @@ export default function HeroSection({
               />
             </div>
           </>
+        )}
+
+        {hasProductIcon && (
+          <Image
+            src="/product-icon1.svg"
+            width={140}
+            height={140}
+            alt="contact-icon"
+            className="absolute top-10 right-20"
+          />
         )}
       </div>
 
