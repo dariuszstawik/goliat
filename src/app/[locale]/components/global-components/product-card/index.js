@@ -8,9 +8,14 @@ export default function ProductCard({
   icon,
   isRed,
   href,
+  isInCarousel,
 }) {
   return (
-    <div className="w-[372px] h-[488px] flex flex-col border-[1px] border-black rounded-xl overflow-hidden shrink-0">
+    <div
+      className={`${
+        isInCarousel ? "w-[300px] 2xl:w-[372px]" : "w-[372px]"
+      }  h-[488px] flex flex-col border-[1px] border-black rounded-xl overflow-hidden shrink-0`}
+    >
       <div className="h-[312px]">
         <img
           src={productCardImg ? productCardImg : "/plyta-budowlana-osb.png"}
@@ -19,11 +24,15 @@ export default function ProductCard({
         />
       </div>
       <div className="bg-gray-200 grow">
-        <div className="w-20 h-20 bg-yellow-400 flex justify-center items-center border-[1px] border-black rounded-full mx-auto -translate-y-1/2">
+        <div
+          className={`w-20 h-20 ${
+            isRed ? "bg-primaryRed" : "bg-primaryYellow"
+          } flex justify-center items-center border-[1px] border-black rounded-full mx-auto -translate-y-1/2`}
+        >
           <img
             src={icon ? icon : "/icon-plyta-budowlana-osb.png"}
             alt="asset"
-            className="object-cover w-8"
+            className={`object-cover w-8 ${isRed && "text-white"}`}
           />
         </div>
         <div className="flex flex-col justify-center items-center gap-2 grow -translate-y-1/4 px-6">

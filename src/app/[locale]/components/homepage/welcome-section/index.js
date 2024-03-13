@@ -12,14 +12,14 @@ export default function WelcomeSection() {
         alt="Welcome to our website"
         width={225}
         height={258}
-        className="absolute top-0 left-0"
+        className="absolute top-0 left-0 hidden xl:block"
       />
       <Image
         src="/welcome-right-asset.png"
         alt="Welcome to our website"
         width={312}
         height={329}
-        className="absolute bottom-4 -right-24"
+        className="absolute bottom-4 -right-24 hidden lg:block"
       />
       <div className="flex justify-end items-center gap-20 pr-20 pt-20">
         <div className="flex flex-col items-end gap-4">

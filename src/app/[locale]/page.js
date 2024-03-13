@@ -77,6 +77,7 @@ export default function Home({ params: { locale } }) {
             icon="icon-plyty-budowlane.svg"
             productCardImg="/plyta-durelis.jpg"
             productCardTitle="płyta Durelis"
+            isRed
           >
             <p className="mb-9">
               Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej

@@ -19,7 +19,7 @@ export default function ParagraphWithImage({
       <section
         className={`${
           img ? "w-[100%] pr-28" : "w-[80%]"
-        } mx-auto py-16 flex gap-16 justify-center items-center
+        } mx-auto py-16 flex flex-col lg:flex-row gap-16 lg:justify-center lg:items-center
       }`}
       >
         {img ? (
@@ -33,6 +33,7 @@ export default function ParagraphWithImage({
             icon={icon}
             href={href}
             productCardSubtitle={productCardSubtitle}
+            isRed={isRed}
           />
         )}
 
@@ -49,12 +50,16 @@ export default function ParagraphWithImage({
             )}
           </div>
           <div>{children}</div>
-          <div className="flex items-center ml-auto">
-            <h4>Porozmawiaj z handlowcem</h4>
-            <span className="text-red-500 ml-4 mr-3">
+          <div className="flex items-center ml-auto mt-2 lg:mt-0">
+            <h4 className="">Porozmawiaj z handlowcem</h4>
+            <span className="text-red-500 lg:ml-4 mr-8 lg:mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>
-            <img src="/icon-porozmawiaj.png" alt="icon" className="w-20" />
+            <img
+              src="/icon-porozmawiaj.png"
+              alt="icon"
+              className="w-20"
+            />
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ import productCategories from "@/app/[locale]/data/product-categories";
 import servicesData from "@/app/[locale]/data/services";
 
 export default function ProductsCarousel({ title, content }) {
-  const settingsLg = {
+  const settings2xl = {
     dots: false,
     arrows: true,
     infinite: true,
@@ -39,170 +39,263 @@ export default function ProductsCarousel({ title, content }) {
     ),
   };
 
-  const settingsSm = {
+  const settingsXl = {
     dots: false,
     arrows: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: false,
-    // prevArrow: (
-    //   <img
-    //     width="60"
-    //     height="60"
-    //     src="https://img.icons8.com/ios-glyphs/60/chevron-left.png"
-    //     alt="chevron-left"
-    //     className="absolute top-0 left-32 z-200"
-    //   />
-    // ),
-    // nextArrow: (
-    //   <div className="bg-gray-400 w-16 rounded-full">
-    //     <img
-    //       width="60"
-    //       height="60"
-    //       src="https://img.icons8.com/ios-glyphs/60/chevron-right.png"
-    //       alt="chevron-right"
-    //       className="translate-x-full pr-[200px]"
-    //     />
-    //   </div>
-    // ),
     prevArrow: (
       <img
         width="60"
         height="60"
         src="https://img.icons8.com/ios-glyphs/60/chevron-left.png"
         alt="chevron-left"
-        className="absolute top-0 left-32 z-200 !ml-32"
       />
     ),
     nextArrow: (
-      <div className="bg-gray-400 w-16 rounded-full">
-        <img
-          width="60"
-          height="60"
-          src="https://img.icons8.com/ios-glyphs/60/chevron-right.png"
-          alt="chevron-right"
-          className="translate-x-full pr-[200px]"
-        />
-      </div>
+      <img
+        width="100"
+        height="100"
+        src="https://img.icons8.com/ios-glyphs/60/chevron-right.png"
+        alt="chevron-right"
+      />
     ),
   };
 
   return (
-    <section className="relative py-5 px-0 lg:p-8 w-[90%] mx-auto ">
-      {title && <h3 className="mx-auto text-center mb-8">{title}</h3>}
-      <div className="hidden lg:block">
-        <Slider {...settingsLg} className="relative flex gap-6 pl-20">
-          {content === "plytyMeblowe" &&
-            plytyMeblowe.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
+    <>
+      <section className="relative py-5 px-0 hidden xl:block lg:p-8 w-[90%] mx-auto ">
+        {title && <h3 className="mx-auto text-center mb-8">{title}</h3>}
+        <div className="hidden lg:block">
+          <Slider {...settings2xl} className="relative flex gap-6 pl-20">
+            {content === "plytyMeblowe" &&
+              plytyMeblowe.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
 
-          {content === "plytyBudowlane" &&
-            plytyBudowlane.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
+            {content === "plytyBudowlane" &&
+              plytyBudowlane.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
 
-          {content === "plytySpecjalistyczne" &&
-            plytySpecjalistyczne.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
+            {content === "plytySpecjalistyczne" &&
+              plytySpecjalistyczne.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
 
-          {content === "plytyOpakowaniowe" &&
-            plytyOpakowaniowe.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
+            {content === "plytyOpakowaniowe" &&
+              plytyOpakowaniowe.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
 
-          {content === "plytyPilsniowe" &&
-            plytyPilsniowe.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
+            {content === "plytyPilsniowe" &&
+              plytyPilsniowe.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
 
-          {content === "sklejki" &&
-            sklejki.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
+            {content === "sklejki" &&
+              sklejki.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
 
-          {content === "productCategories" &&
-            productCategories.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
+            {content === "productCategories" &&
+              productCategories.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
 
-          {content === "servicesData" &&
-            servicesData.map((plyta) => (
-              <li key={plyta.id}>
-                <ProductCard
-                  productCardImg={plyta.img}
-                  alt={plyta.name}
-                  productCardTitle={plyta.name}
-                  icon={plyta.icon}
-                  href={plyta.href}
-                />
-              </li>
-            ))}
-        </Slider>
-      </div>
+            {content === "servicesData" &&
+              servicesData.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
+          </Slider>
+        </div>
+      </section>
 
-      <div className="lg:hidden">
-        <Slider {...settingsSm}></Slider>
-      </div>
-    </section>
+      {/* <section className="relative py-5 px-0 hidden xl:block 2xl:hidden lg:p-8 w-[90%] mx-auto ">
+        {title && <h3 className="mx-auto text-center mb-8">{title}</h3>}
+        <div className="hidden lg:block">
+          <Slider {...settingsXl} className="relative flex gap-6 pl-20">
+            {content === "plytyMeblowe" &&
+              plytyMeblowe.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+
+            {content === "plytyBudowlane" &&
+              plytyBudowlane.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+
+            {content === "plytySpecjalistyczne" &&
+              plytySpecjalistyczne.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+
+            {content === "plytyOpakowaniowe" &&
+              plytyOpakowaniowe.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+
+            {content === "plytyPilsniowe" &&
+              plytyPilsniowe.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+
+            {content === "sklejki" &&
+              sklejki.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+
+            {content === "productCategories" &&
+              productCategories.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+
+            {content === "servicesData" &&
+              servicesData.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                  />
+                </li>
+              ))}
+          </Slider>
+        </div>
+      </section> */}
+    </>
   );
 }
