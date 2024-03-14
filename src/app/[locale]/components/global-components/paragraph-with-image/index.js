@@ -59,13 +59,17 @@ export default function ParagraphWithImage({
             </span>
 
             {isRed ? (
-              <img
-                src="/icon-porozmawiaj-red.svg"
-                alt="icon"
-                className="w-20"
-              />
+              <a href="tel:+48 502 266 492">
+                <img
+                  src="/icon-porozmawiaj-red.svg"
+                  alt="icon"
+                  className="w-20"
+                />
+              </a>
             ) : (
-              <img src="/icon-porozmawiaj.png" alt="icon" className="w-20" />
+              <a href="tel:+48 502 266 492">
+                <img src="/icon-porozmawiaj.png" alt="icon" className="w-20" />
+              </a>
             )}
           </div>
         </div>

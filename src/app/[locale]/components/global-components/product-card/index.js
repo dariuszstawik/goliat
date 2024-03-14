@@ -14,7 +14,7 @@ export default function ProductCard({
   return (
     <div
       className={`${
-        isInCarousel ? "w-[300px] 2xl:w-[372px]" : "w-[372px]"
+        isInCarousel ? "w-[372px] xl:w-[300px] 2xl:w-[372px]" : "w-[372px]"
       }  h-[488px] flex flex-col border-[1px] border-black rounded-xl overflow-hidden shrink-0`}
     >
       <div className="h-[312px]">
@@ -24,7 +24,7 @@ export default function ProductCard({
           className="min-h-full object-cover"
         />
       </div>
-      <div className="bg-gray-200 grow">
+      <div className="bg-white border-t-[1px] border-t-black grow">
         <div
           className={`w-20 h-20 ${
             isRed ? "bg-primaryRed" : "bg-primaryYellow"
@@ -41,7 +41,13 @@ export default function ProductCard({
           {productCardSubtitle ? (
             productCardSubtitle
           ) : (
-            <Link href={href ? href : "/"}>Zobacz więcej</Link>
+            <Link
+              href={
+                href ? href : `/pl/produkty/plyty-meblowe/plyta-wiorowa-surowa`
+              }
+            >
+              Zobacz więcej
+            </Link>
           )}
         </div>
       </div>

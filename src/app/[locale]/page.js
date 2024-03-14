@@ -68,7 +68,9 @@ export default function Home({ params: { locale } }) {
             title="Przykładowe płyty meblowe"
             content="plytyMeblowe"
           />
-          <ButtonWithArrows>Pełna oferta płyt meblowych</ButtonWithArrows>
+          <ButtonWithArrows href={`/${locale}/produkty/plyty-meblowe`}>
+            Pełna oferta płyt meblowych
+          </ButtonWithArrows>
         </div>
 
         <div className="w-screen bg-primaryGray pb-4">
@@ -101,7 +103,9 @@ export default function Home({ params: { locale } }) {
             title="Przykładowe płyty budowlane"
             content="plytyBudowlane"
           />
-          <ButtonWithArrows>Pełna oferta płyt budowlanych</ButtonWithArrows>
+          <ButtonWithArrows href={`/${locale}/produkty/plyty-budowlane`}>
+            Pełna oferta płyt budowlanych
+          </ButtonWithArrows>
         </div>
 
         <div className="pb-4">
@@ -132,7 +136,7 @@ export default function Home({ params: { locale } }) {
             title="Przykładowe płyty specjalistyczne"
             content="plytySpecjalistyczne"
           />
-          <ButtonWithArrows>
+          <ButtonWithArrows href={`/${locale}/produkty/plyty-specjalistyczne`}>
             Pełna oferta płyt specjalistycznych
           </ButtonWithArrows>
         </div>
@@ -169,7 +173,9 @@ export default function Home({ params: { locale } }) {
             </p>
           </ParagraphWithImage>
           <ProductsCarousel title="Przykładowe sklejki" content="sklejki" />
-          <ButtonWithArrows>Pełna oferta sklejek</ButtonWithArrows>
+          <ButtonWithArrows href={`/${locale}/produkty/sklejki`}>
+            Pełna oferta sklejek
+          </ButtonWithArrows>
         </div>
 
         <ParagraphWithImage
@@ -199,7 +205,9 @@ export default function Home({ params: { locale } }) {
           title="Przykładowe płyty opakowaniowe"
           content="plytyOpakowaniowe"
         />
-        <ButtonWithArrows>Pełna oferta płyt opakowaniowych</ButtonWithArrows>
+        <ButtonWithArrows href={`/${locale}/produkty/plyty-opakowaniowe`}>
+          Pełna oferta płyt opakowaniowych
+        </ButtonWithArrows>
 
         <div className="w-screen bg-primaryGray pb-4">
           <ParagraphWithImage
@@ -233,7 +241,9 @@ export default function Home({ params: { locale } }) {
             title="Przykładowe płyty pilśniowe"
             content="plytyPilsniowe"
           />
-          <ButtonWithArrows>Pełna oferta płyt pilśniowych</ButtonWithArrows>
+          <ButtonWithArrows href={`/${locale}/produkty/plyty-pilsniowe`}>
+            Pełna oferta płyt pilśniowych
+          </ButtonWithArrows>
         </div>
 
         <ServicesBar />

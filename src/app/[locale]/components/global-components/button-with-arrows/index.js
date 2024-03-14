@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ButtonWithArrows({ isRed, children, href }) {
   return (
     <div className="w-full flex justify-center gap-7 py-8">
@@ -19,7 +21,7 @@ export default function ButtonWithArrows({ isRed, children, href }) {
           isRed ? "bg-primaryRed" : "bg-primaryYellow"
         } px-6 py-4 shadow-lg`}
       >
-        {children}
+        <Link href={href ? href : ""}>{children}</Link>
       </button>
       {isRed ? (
         <img src="/red-left-arrow.png" alt="icon" className="hidden lg:block" />
