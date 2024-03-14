@@ -36,7 +36,7 @@ export default function PlytaWiorowaSurowa() {
           doskonale nadaje się na korpusy i fronty.
         </p>
       </ParagraphWithImage>
-      <div className="grid grid-cols-3 w-[80%] mx-auto mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-[80%] gap-6 mx-auto mb-24">
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
@@ -68,16 +68,19 @@ export default function PlytaWiorowaSurowa() {
         title="Sprawdź usługi powiązane z tą płytą"
         content="servicesData"
       />
-      <ButtonWithArrows>
-        Przejdź na stronę główną naszych usług
-      </ButtonWithArrows>
+      <div className="mb-8">
+        <ButtonWithArrows>
+          Przejdź na stronę główną naszych usług
+        </ButtonWithArrows>
+      </div>
       <ContactForm />
       <ProductsCarousel
         title="Sprawdź pozostałe płyty meblowe"
         content="plytyMeblowe"
       />
-      <ButtonWithArrows>Wróć do oferty płyt meblowych</ButtonWithArrows>
-
+      <div className="mb-8">
+        <ButtonWithArrows>Wróć do oferty płyt meblowych</ButtonWithArrows>
+      </div>
       <MapPoland />
     </div>
   );

@@ -27,8 +27,8 @@ export default function ParagraphWithIcons({
           <img src={img} alt="asset" className={`${isOnAboutPage && "w-64"}`} />
         </div>
         <div className="flex flex-col">
-          <div className="flex-col md:flex-row lg:flex-col xl:flex-row mb-9">
-            <h2 className="mt-auto mb-6">{title}</h2>
+          <div className="flex flex-col md:flex-row lg:flex-col 2xl:flex-row gap-2 md:gap-8 lg:gap-2 2xl:gap-8 mb-9">
+            <h2 className="mt-auto mb-6 xl:mr-4">{title}</h2>
             {(icon1 || icon2 || icon3 || icon4 || icon5) && (
               <div className="flex gap-4">
                 <Image
@@ -36,7 +36,7 @@ export default function ParagraphWithIcons({
                   alt="icon"
                   width={49}
                   height={35}
-                  className="w-12"
+                  className="h-9"
                 />
                 <Image
                   src={icon2 ? icon2 : "/icon-plyty-meblowe.svg"}

@@ -15,16 +15,22 @@ export default function ProductCard({
     <div
       className={`${
         isInCarousel ? "w-[372px] xl:w-[300px] 2xl:w-[372px]" : "w-[372px]"
-      }  h-[488px] flex flex-col border-[1px] border-black rounded-xl overflow-hidden shrink-0`}
+      }  h-[488px] flex flex-col border-[1px] border-black rounded-xl overflow-hidden shrink-0 ${
+        isRed ? "hover:bg-primaryRed" : "hover:bg-primaryYellow"
+      }   hover:shadow-2xl transition-all duration-200`}
     >
-      <div className="h-[312px]">
+      <div className="h-[312px] overflow-hidden">
         <img
           src={productCardImg ? productCardImg : "/plyta-budowlana-osb.png"}
           alt={alt ? alt : "product-card"}
           className="min-h-full object-cover"
         />
       </div>
-      <div className="bg-white border-t-[1px] border-t-black grow">
+      <div
+        className={`border-t-[1px] border-t-black grow bg-transparent hover:${
+          isRed ? "bg-primaryRed" : "bg-primaryYellow"
+        }`}
+      >
         <div
           className={`w-20 h-20 ${
             isRed ? "bg-primaryRed" : "bg-primaryYellow"

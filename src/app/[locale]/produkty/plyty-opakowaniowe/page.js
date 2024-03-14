@@ -75,7 +75,9 @@ export default function PlytyOpakowaniowe() {
           telefonu i rozmowy o szczegółach z naszym handlowcem!
         </p>
       </ParagraphWithIcons>
-      <ProductsCarousel content="productCategories" />
+      <div className="mb-8">
+        <ProductsCarousel content="productCategories" />
+      </div>
       <ContactForm />
 
       <MapPoland />

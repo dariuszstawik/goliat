@@ -84,8 +84,9 @@ export default function PlytyMeblowe() {
         </p>
       </ParagraphWithIcons>
 
-      <ProductsCarousel content="productCategories" />
-
+      <div className="mb-8">
+        <ProductsCarousel content="productCategories" />
+      </div>
       <ContactForm />
 
       <MapPoland />

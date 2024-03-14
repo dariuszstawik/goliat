@@ -48,7 +48,7 @@ export default function HeroSection({
 
         {hasProductsIcons && (
           <>
-            <div className="flex gap-6 absolute top-10 right-20">
+            <div className="lg:flex gap-6 absolute top-10 right-20 hidden">
               <Image
                 src="/product-icon1.svg"
                 width={140}
@@ -68,7 +68,7 @@ export default function HeroSection({
                 alt="contact-icon"
               />
             </div>
-            <div className="flex gap-6 absolute bottom-10 left-20">
+            <div className="lg:flex gap-6 absolute bottom-10 left-20 hidden">
               <Image
                 src="/product-icon4.svg"
                 width={140}
