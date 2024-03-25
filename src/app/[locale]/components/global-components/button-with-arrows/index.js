@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ButtonWithArrows({ isRed, children, href }) {
   return (
-    <div className="w-full flex justify-center gap-7 py-8">
+    <div className="w-full flex justify-center gap-7 pt-6 pb-8">
       {isRed ? (
         <img
           src="/red-right-arrow.png"

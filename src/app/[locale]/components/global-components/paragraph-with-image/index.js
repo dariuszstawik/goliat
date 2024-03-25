@@ -20,7 +20,7 @@ export default function ParagraphWithImage({
       <section
         className={`${
           img ? "w-[100%] pr-28" : "w-[80%]"
-        } mx-auto py-16 flex flex-col lg:flex-row gap-16 lg:justify-center lg:items-center
+        } mx-auto py-8 lg:py-16 flex flex-col lg:flex-row gap-16 lg:justify-center lg:items-center
       }`}
       >
         {img ? (

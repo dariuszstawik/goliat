@@ -2,7 +2,7 @@ import Logo from "../logo";
 
 export default function Footer() {
   return (
-    <section className="text-base w-full px-32 py-10 flex flex-col gap-10">
+    <section className="text-base w-full px-10 md:px-20 lg:px-32 py-10 flex flex-col gap-10">
       <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-32">
         <Logo hasNoMargin />
         <div className="flex gap-4 shrink-0 items-center">
