@@ -14,7 +14,9 @@ export default function ProductCard({
   return (
     <div
       className={`${
-        isInCarousel ? "w-[372px] xl:w-[300px] 2xl:w-[372px]" : "w-[372px]"
+        isInCarousel
+          ? "w-[372px] xl:w-[300px] 2xl:w-[372px]"
+          : "w-[300px] lg:w-[372px]"
       }  h-[488px] flex flex-col border-[1px] border-black rounded-xl overflow-hidden shrink-0 ${
         isRed ? "hover:bg-primaryRed" : "hover:bg-primaryYellow"
       }   hover:shadow-2xl transition-all duration-200`}
