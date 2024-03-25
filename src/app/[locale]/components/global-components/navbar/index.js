@@ -41,7 +41,7 @@ const Navbar = ({
   return (
     <div className="text-base fixed top-0 left-0 w-screen h-32 flex justify-between items-center px-10 lg:px-16 py-4 z-50 bg-white shadow-lg ">
       <Link href="/">
-        <Logo closeMobileMenu={closeMobileMenu} onClick={handleRefresh} />
+        <Logo onClick={closeMobileMenu} />
       </Link>
       <div className="hidden xl:block">
         <NavbarAsset />

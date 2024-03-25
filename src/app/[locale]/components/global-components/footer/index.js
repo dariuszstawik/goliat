@@ -1,6 +1,7 @@
+import Link from "next/link";
 import Logo from "../logo";
 
-export default function Footer() {
+export default function Footer({ locale }) {
   return (
     <section className="text-base w-full px-10 md:px-20 lg:px-32 py-10 flex flex-col gap-10">
       <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-32">
@@ -18,7 +19,7 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="w-full min-h-40 flex flex-wrap gap-10 lg:gap-32">
+      <div className="w-full min-h-44 flex flex-wrap gap-10 lg:gap-32">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-40 grow">
           <div className="h-full flex flex-col justify-between">
             <div className="flex flex-col gap-1">
@@ -51,11 +52,19 @@ export default function Footer() {
           <div>
             <ul className="flex flex-col gap-1">
               <li className="text-lg font-semibold uppercase">Menu </li>
-              <li>Produkty</li>
-              <li>Usługi</li>
-              <li>O firmie</li>
-              <li>Do pobrania</li>
-              <li>Kontakt</li>
+              <li>
+                <Link href={`/${locale}/produkty`}>Produkty</Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/uslugi`}>Usługi</Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/o-firmie`}>O firmie</Link>
+              </li>
+              {/* <li><Link  href={`/${locale}/do-pobrania`}>Do pobrania </Link></li> */}
+              <li>
+                <Link href={`/${locale}/kontakt`}>Kontakt</Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -50,7 +50,7 @@ export default function LocaleLayout({ children, params: { locale } }) {
           contact={tf("contact")}
           locale={locale}
         /> */}
-        <Footer />
+        <Footer locale={locale} />
       </body>
     </html>
   );
