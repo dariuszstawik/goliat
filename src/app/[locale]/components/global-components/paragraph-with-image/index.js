@@ -53,8 +53,8 @@ export default function ParagraphWithImage({
           </div>
           <div>{children}</div>
           <div className="flex items-center ml-auto mt-2 lg:mt-0">
-            <h4 className="">Porozmawiaj z handlowcem</h4>
-            <span className="text-red-500 lg:ml-4 mr-8 lg:mr-3">
+            <h4 className="">Porozmawiaj&nbsp;z&nbsp;handlowcem</h4>
+            <span className="text-red-500 ml-2 lg:ml-4 mr-8 lg:mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>
 
