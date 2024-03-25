@@ -131,7 +131,9 @@ export default function Uslugi() {
       </ParagraphWithImage>
 
       <ContactForm />
-      <WelcomeSection />
+      <div className="hidden lg:block">
+        <WelcomeSection />
+      </div>
       <MapPoland />
     </div>
   );

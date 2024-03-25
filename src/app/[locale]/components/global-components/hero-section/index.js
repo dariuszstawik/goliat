@@ -41,7 +41,7 @@ export default function HeroSection({
             width={140}
             height={140}
             alt="contact-icon"
-            className="absolute top-10 right-20"
+            className="absolute top-10 right-20 hidden md:block"
           />
         )}
 

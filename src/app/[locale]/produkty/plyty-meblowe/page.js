@@ -84,7 +84,7 @@ export default function PlytyMeblowe() {
         </p>
       </ParagraphWithIcons>
 
-      <div className="mb-8">
+      <div className="mb-8 hidden lg:block">
         <ProductsCarousel content="productCategories" />
       </div>
       <ContactForm />

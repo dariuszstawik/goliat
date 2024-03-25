@@ -7,7 +7,7 @@ export default function ContactParagraph({ isRed, hasGrayBg, children, img }) {
         className={`w-[80%] mx-auto py-16 flex flex-col lg:flex-row gap-0 lg:gap-16 lg:justify-center lg:items-center
       }`}
       >
-        <div className="w-[372px] h-[488px] flex justify-center items-center shrink-0">
+        <div className="w-[372px] h-[488px] justify-center items-center shrink-0 hidden lg:flex">
           <img src={img} alt="asset" className="" />
         </div>
         <div className="flex flex-col">

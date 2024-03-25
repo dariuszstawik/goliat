@@ -42,7 +42,7 @@ export default function PlytyBudowlane() {
         </p>
       </ParagraphWithImage>
       <div className="w-screen bg-primaryGray py-16 flex justify-center">
-        <ul className="grid grid-cols-3 gap-16">
+        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
           {plytyBudowlane.map((plyta) => (
             <li key={plyta.id}>
               <ProductCard
