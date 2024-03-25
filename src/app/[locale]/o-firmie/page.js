@@ -35,13 +35,12 @@ export default function OFirmie() {
           który jest głównym składnikiem naszych produktów.
         </p>
       </ParagraphWithImage>
-      <div className="w-screen h-[440px] overflow-hidden">
+      <div className="relative w-screen h-[300px] lg:h-[440px] overflow-hidden">
         <Image
           src="/smiling-man.jpg"
           alt="zdjęcie pracownika"
-          width={2000}
-          height={440}
-          className="w-full object-cover -mt-32"
+          fill={true}
+          className="w-full object-cover"
         />
       </div>
 
@@ -67,14 +66,19 @@ export default function OFirmie() {
           stawali się ekspertami w tym, co robią.
         </p>
       </ParagraphWithIcons>
-      <div className="w-screen h-[440px] overflow-hidden">
+      <div className="relative w-screen h-[300px] lg:h-[440px] overflow-hidden">
         <Image
           src="/foto-ofirmie2.jpg"
           alt="zdjęcie pracownika"
-          width={2000}
-          height={440}
-          className="w-full object-cover -mt-32"
+          fill={true}
+          className="w-full object-cover"
         />
+
+        {/* <img
+          src="/foto-ofirmie2.jpg"
+          alt="zdjęcie pracownika"
+          className="w-full object-cover"
+        /> */}
       </div>
       <ParagraphWithIcons
         title="Nowoczesne centrum obróbcze to..."
@@ -99,13 +103,12 @@ export default function OFirmie() {
           współpracy!
         </p>
       </ParagraphWithIcons>
-      <div className="w-screen h-[440px] overflow-hidden">
+      <div className="relative w-screen h-[300px] lg:h-[440px] overflow-hidden">
         <Image
           src="/foto-ofirmie3.jpg"
           alt="zdjęcie pracownika"
-          width={2000}
-          height={440}
-          className="w-full object-cover -mt-32"
+          fill={true}
+          className="w-full object-cover"
         />
       </div>
       <ProductsCarousel

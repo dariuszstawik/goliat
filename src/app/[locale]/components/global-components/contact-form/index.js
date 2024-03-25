@@ -9,44 +9,44 @@ const ContactForm = () => {
 
   const [showNotification, setShowNotification] = useState(false);
 
-  //   useEffect(() => {
-  //     if (showNotification) {
-  //       const timer = setTimeout(() => {
-  //         setShowNotification(false);
-  //       }, 3000);
-  //       return () => clearTimeout(timer);
-  //     }
-  //   }, [showNotification]);
+  useEffect(() => {
+    if (showNotification) {
+      const timer = setTimeout(() => {
+        setShowNotification(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showNotification]);
 
-  //   const sendEmail = async (e) => {
-  //     e.preventDefault();
-  //     const response = await fetch("/api/send", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         userName: e.target.userName.value,
-  //         phone: e.target.phone.value,
-  //         email: e.target.email.value,
-  //         message: e.target.message.value,
-  //       }),
-  //     });
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    const response = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userName: e.target.userName.value,
+        phone: e.target.phone.value,
+        email: e.target.email.value,
+        message: e.target.message.value,
+      }),
+    });
 
-  //     if (response.status === 200) {
-  //       setShowNotification(true);
-  //     } else {
-  //       console.log("Email not sent");
-  //     }
+    if (response.status === 200) {
+      setShowNotification(true);
+    } else {
+      console.log("Email not sent");
+    }
 
-  //     e.target && e.target.reset();
-  //   };
+    e.target && e.target.reset();
+  };
 
   return (
     <>
       <form
-        // ref={form}
-        // onSubmit={sendEmail}
+        ref={form}
+        onSubmit={sendEmail}
         className="text-sm lg:text-base w-full bg-primaryYellow flex flex-col justify-center items-center lg:items-start lg:flex-row gap-14 py-9 px-14"
       >
         <div className="w-full lg:w-1/2 flex flex-col gap-9">
@@ -96,7 +96,7 @@ const ContactForm = () => {
                 <input
                   type="checkbox"
                   id="marketingTermsCheckbox"
-                  // required
+                  required
                   className=""
                 />
                 <label
@@ -113,7 +113,7 @@ const ContactForm = () => {
                 <input
                   type="checkbox"
                   id="marketingTermsCheckbox"
-                  // required
+                  required
                   className=""
                 />
                 <label
