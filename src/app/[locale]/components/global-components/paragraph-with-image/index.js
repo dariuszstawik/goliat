@@ -59,7 +59,7 @@ export default function ParagraphWithImage({
             </span>
 
             {isRed ? (
-              <a href="tel:+48 502 266 492">
+              <a href="tel:+48 62 737 64 80">
                 <img
                   src="/icon-porozmawiaj-red.svg"
                   alt="icon"
@@ -67,7 +67,7 @@ export default function ParagraphWithImage({
                 />
               </a>
             ) : (
-              <a href="tel:+48 502 266 492">
+              <a href="tel:+48 62 737 64 80">
                 <img src="/icon-porozmawiaj.png" alt="icon" className="w-20" />
               </a>
             )}

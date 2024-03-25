@@ -4,21 +4,21 @@ const productCategories = [
     name: "płyty meblowe",
     img: "/plyta-wiorowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
-    href: "",
+    href: "/pl/produkty/plyty-meblowe",
   },
   {
     id: 2,
     name: "płyty opakowaniowe",
     img: "/plyta-mdf-surowa.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
-    href: "",
+    href: "/pl/produkty/plyty-opakowaniowe",
   },
   {
     id: 3,
     name: "płyty pilśniowe",
     img: "/plyta-pilsniowa-porowata.png",
     icon: "/icon-plyty-pilsniowe.svg",
-    href: "",
+    href: "/pl/produkty/plyty-pilsniowe",
   },
 
   {
@@ -26,7 +26,7 @@ const productCategories = [
     name: "płyty budowlane",
     img: "/plyta-osb.jpg",
     icon: "/icon-plyty-budowlane.svg",
-    href: "",
+    href: "/pl/produkty/plyty-budowlane",
   },
 
   {
@@ -34,7 +34,7 @@ const productCategories = [
     name: "płyty specjalistyczne",
     img: "/plyta-wiorowo-cementowa.jpg",
     icon: "/icon-plyty-specjalistyczne.svg",
-    href: "",
+    href: "/pl/produkty/plyty-specjalistyczne",
   },
 
   {
@@ -42,7 +42,7 @@ const productCategories = [
     name: "sklejki",
     img: "/sklejki.jpg",
     icon: "/icon-sklejki.svg",
-    href: "",
+    href: "/pl/produkty/sklejki",
   },
 ];
 

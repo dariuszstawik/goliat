@@ -35,10 +35,10 @@ export default function ServicesBar() {
         </ul>
       </div>
       <div
-        className={`lg:hidden text-base w-full h-48 bg-primaryYellow
+        className={`lg:hidden text-base w-full min-h-48 bg-primaryYellow
         flax justify-center items-center shrink-0 shadow-lg`}
       >
-        <ul className="w-full h-full px-6 grid grid-cols-2 lg:flex gap-1 lg:gap-16 justify-center items-center">
+        <ul className="w-full h-full p-6 grid grid-cols-1 md:grid-cols-2 lg:flex gap-6 lg:gap-16 justify-center items-center">
           <li className="flex justify-center items-center gap-4">
             <h2>Nasze usługi</h2>
           </li>

@@ -32,10 +32,9 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex flex-col gap-0">
-              <p>dział detaliczny</p>
-              <p className="text-lg text-primaryRed font-semibold">
-                Goliat Olsztyn
-              </p>
+              <p>Grupa Goliat - sprzedaż </p>
+              <p>hurtowa i detaliczna</p>
+              <p className=" text-primaryRed font-semibold">Goliat Olsztyn</p>
             </div>
           </div>
           <div className="h-full flex flex-col justify-between">

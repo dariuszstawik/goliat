@@ -13,7 +13,6 @@ export default function HeroSection({
   hasProductIcon,
   hasRedBg,
 }) {
-  console.log("backgroundImage", backgroundImage);
   return (
     <section className="relative pt-32 w-screen min-h-[90vh] flex flex-col bg-green-400 z-20">
       <div
@@ -33,7 +32,7 @@ export default function HeroSection({
             width={465}
             height={465}
             alt="hero-circle"
-            className=""
+            className="w-64 md:w-96 lg:w-[465px]"
           />
         )}
         {contactIcon && (

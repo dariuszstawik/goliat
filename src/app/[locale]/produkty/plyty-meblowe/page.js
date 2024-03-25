@@ -11,14 +11,14 @@ export default function PlytyMeblowe() {
   return (
     <div>
       <HeroSection
-        backgroundImage="/hero-plyty-meblowe.jpg"
+        backgroundImage="/foto-plyty-meblowe.jpg"
         heroCircle="/hero-circle-plyty-meblowe.png"
       />
       <ParagraphWithImage
         title="Płyty meblowe"
         icon="/icon-plyty-meblowe.svg"
         productCardImg="/plyta-wiorowa.jpg"
-        productCardTitle="płyta biurowa laminowana biała"
+        productCardTitle="płyta wiórowa laminowana biała"
       >
         <p className="mb-9">
           Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do

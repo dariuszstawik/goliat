@@ -10,7 +10,7 @@ export default function Produkty({ params: { locale } }) {
   return (
     <div>
       <HeroSection
-        backgroundImage="/hero-produkty.jpg"
+        backgroundImage="/foto-produkty.jpg"
         heroCircle="/hero-circle-produkty.png"
         hasRedBg
       />
@@ -71,7 +71,7 @@ export default function Produkty({ params: { locale } }) {
           title="Płyty meblowe"
           icon="/icon-plyty-meblowe.svg"
           productCardImg="/plyta-wiorowa.jpg"
-          productCardTitle="płyta biurowa laminowana biała"
+          productCardTitle="płyta wiórowa laminowana biała"
         >
           <p className="mb-9">
             Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do

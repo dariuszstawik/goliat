@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Logo({ v2, hasNoMargin }) {
   return v2 ? (
-    <Image src="/logo2.svg" width="325" height="112" className="-mt-16" />
+    <Image src="/logo.png" width="318" height="168" className="-mt-10" />
   ) : (
     <Image
       src="/logo.png"

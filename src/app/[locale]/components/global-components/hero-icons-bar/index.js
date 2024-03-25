@@ -1,11 +1,11 @@
 export default function HeroIconsBar({ hasRedBg }) {
   return (
     <div
-      className={`text-sm md:text-base w-full h-40 ${
+      className={`text-sm md:text-base w-full min-h-40 lg:h-40 py-6 ${
         hasRedBg ? "bg-primaryRed text-white" : "bg-primaryYellow"
       } flax justify-center items-center shrink-0 shadow-lg`}
     >
-      <ul className="w-full h-full px-6 grid grid-cols-2 lg:flex gap-2 lg:gap-16 justify-center items-center">
+      <ul className="w-full h-full px-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:flex lg:gap-16 justify-center items-center">
         <li className="flex justify-center items-center gap-4">
           <img src="/icon-terminy.png" alt="icon-terminy" className="" />
           <span className="w-48 text-sm lg:text-base">

@@ -11,7 +11,7 @@ export default function PlytySpecjalistyczne() {
   return (
     <div>
       <HeroSection
-        backgroundImage="/hero-plyty-specjalistyczne.jpg"
+        backgroundImage="/foto-specjalistyczne.jpg"
         heroCircle="/hero-circle-plyty-specjalistyczne.png"
       />
       <ParagraphWithImage

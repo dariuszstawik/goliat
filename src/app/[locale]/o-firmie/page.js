@@ -69,7 +69,7 @@ export default function OFirmie() {
       </ParagraphWithIcons>
       <div className="w-screen h-[440px] overflow-hidden">
         <Image
-          src="/smiling-man.jpg"
+          src="/foto-ofirmie2.jpg"
           alt="zdjęcie pracownika"
           width={2000}
           height={440}
@@ -101,7 +101,7 @@ export default function OFirmie() {
       </ParagraphWithIcons>
       <div className="w-screen h-[440px] overflow-hidden">
         <Image
-          src="/smiling-man.jpg"
+          src="/foto-ofirmie3.jpg"
           alt="zdjęcie pracownika"
           width={2000}
           height={440}

@@ -11,7 +11,7 @@ export default function Sklejki() {
   return (
     <div>
       <HeroSection
-        backgroundImage="/hero-sklejki.jpg"
+        backgroundImage="/foto-sklejki.jpg"
         heroCircle="/hero-circle-sklejki.png"
         hasRedBg
       />

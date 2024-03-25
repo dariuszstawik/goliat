@@ -162,12 +162,12 @@ const Navbar = ({
               // className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
-              {/* {start} */}O firmie
+              {/* {start} */}o firmie
             </Link>
           </li>
           <li
             onClick={closeMobileMenu}
-            className="hover:text-slate-500 cursor-pointer"
+            className="hover:text-slate-500 cursor-pointer hidden"
           >
             <Link
               href="/"
@@ -175,7 +175,7 @@ const Navbar = ({
               onClick={handleRefresh}
             >
               {/* {start} */}
-              Do pobrania
+              do pobrania
             </Link>
           </li>
           <li
@@ -188,7 +188,7 @@ const Navbar = ({
               onClick={handleRefresh}
             >
               {/* {start} */}
-              Kontakt
+              kontakt
             </Link>
           </li>
         </ul>

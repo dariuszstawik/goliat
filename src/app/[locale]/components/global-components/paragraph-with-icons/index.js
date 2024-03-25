@@ -75,7 +75,7 @@ export default function ParagraphWithIcons({
             <span className="text-red-500 ml-4 mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>
-            <a href="tel:+48 502 266 492">
+            <a href="tel:+48 62 737 64 80">
               <img src="/icon-porozmawiaj.png" alt="icon" className="w-20" />
             </a>
           </div>

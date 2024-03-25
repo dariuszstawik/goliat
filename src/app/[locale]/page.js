@@ -24,7 +24,9 @@ export default function Home({ params: { locale } }) {
           backgroundImage="/hero-homepage.jpg"
           heroCircle="/hero-circle-homepage.png"
         />
-        <WelcomeSection />
+        <div className="hidden lg:block">
+          <WelcomeSection />
+        </div>
         <ProductsCarousel
           // title="Przykładowe płyty meblowe"
           content="plytyMeblowe"
@@ -36,7 +38,7 @@ export default function Home({ params: { locale } }) {
             title="Płyty meblowe"
             icon="icon-plyty-meblowe.svg"
             productCardImg="/plyta-wiorowa.jpg"
-            productCardTitle="płyta biurowa laminowana biała"
+            productCardTitle="płyta wiórowa laminowana biała"
           >
             <p className="mb-9">
               Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do
@@ -321,7 +323,7 @@ export default function Home({ params: { locale } }) {
         <ParagraphWithImage
           title="Okleiniarka OTT twister"
           icon="icon-ciecie-proste.svg"
-          productCardImg="/okleiniarka-ott-twister.jpg"
+          productCardImg="/okleiniarka-ott-twister1.png"
           productCardTitle="okleiniarka OTT twister"
           hasGrayBg
         >

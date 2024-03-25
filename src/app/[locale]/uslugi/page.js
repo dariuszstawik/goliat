@@ -8,7 +8,7 @@ export default function Uslugi() {
   return (
     <div>
       <HeroSection
-        backgroundImage="/hero-plyty-meblowe.jpg"
+        backgroundImage="/foto-uslugi.jpg"
         heroCircle="/hero-circle-uslugi.png"
         isServicesPage
       />
@@ -83,7 +83,7 @@ export default function Uslugi() {
       <ParagraphWithImage
         title="Okleiniarka OTT twister"
         icon="/icon-ciecie-proste.svg"
-        productCardImg="/okleiniarka-ott-twister.jpg"
+        productCardImg="/okleiniarka-ott-twister1.png"
         productCardTitle="okleiniarka OTT twister"
         hasGrayBg
       >
