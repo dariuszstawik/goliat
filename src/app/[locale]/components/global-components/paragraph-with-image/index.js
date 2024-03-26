@@ -16,7 +16,9 @@ export default function ParagraphWithImage({
   children,
 }) {
   return (
-    <div className={`w-screen ${hasGrayBg && "bg-primaryGray"}`}>
+    <div
+      className={`w-screen ${hasGrayBg && "bg-primaryGray"} overflow-x-hidden`}
+    >
       <section
         className={`${
           img ? "w-[100%] pr-28" : "w-[80%]"
@@ -39,21 +41,22 @@ export default function ParagraphWithImage({
           />
         )}
 
-        <div className="flex flex-col">
+        <div className={`${img && "pl-12 -mt-20 lg:mt-0"} flex flex-col`}>
           <div className="flex gap-16 mb-9">
-            <h2 className="mt-auto">{title}</h2>
+            <h2 className="mt-auto leading-tight">{title}</h2>
             {!hasNoTitleIcon && (
-              <Image
+              <img
                 src={icon ? icon : "/icon-plyty-meblowe.svg"}
                 alt="icon"
-                width={72}
-                height={66}
+                // width={72}
+                // height={66}
+                className="w-14 lg:w-16"
               />
             )}
           </div>
           <div>{children}</div>
           <div className="flex items-center ml-auto mt-2 lg:mt-0">
-            <h4 className="">Porozmawiaj&nbsp;z&nbsp;handlowcem</h4>
+            <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>
             <span className="text-red-500 ml-2 lg:ml-4 mr-8 lg:mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>

@@ -7,9 +7,15 @@ export default function Footer({ locale }) {
       <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-32">
         <Logo hasNoMargin />
         <div className="flex gap-4 shrink-0 items-center">
-          <img src="/fb-icon.png" alt="facebook" />
-          <img src="/linkedin-icon.png" alt="linkedin" />
-          <img src="/insta-icon.png" alt="instagram" />
+          <a href="https://www.facebook.com/GoliatPolska/">
+            <img src="/fb-icon.png" alt="facebook" />
+          </a>
+          <a href="https://www.linkedin.com/company/goliat-polska/">
+            <img src="/linkedin-icon.png" alt="linkedin" />
+          </a>
+          <a href="https://www.instagram.com/goliat.polska/">
+            <img src="/insta-icon.png" alt="instagram" />
+          </a>
         </div>
         <div className="flex gap-4 shrink-0 items-center">
           <img

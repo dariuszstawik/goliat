@@ -7,25 +7,41 @@ export default function HeroIconsBar({ hasRedBg }) {
     >
       <ul className="w-full h-full px-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:flex lg:gap-16 justify-center items-center">
         <li className="flex justify-center items-center gap-4">
-          <img src="/icon-terminy.png" alt="icon-terminy" className="" />
+          <img
+            src="/icon-terminy1.svg"
+            alt="icon-terminy"
+            className="w-[50px]"
+          />
           <span className="w-48 text-sm lg:text-base">
             Krótkie terminy realizacji
           </span>
         </li>
         <li className="flex justify-center items-center gap-4">
-          <img src="/icon-doradztwo.png" alt="icon-terminy" className="" />
+          <img
+            src="/icon-doradztwo1.svg"
+            alt="icon-terminy"
+            className="w-[50px]"
+          />
           <span className="w-48 text-sm lg:text-base">
             Doradztwo, które pomoże Ci oszczędzić
           </span>
         </li>
         <li className="flex justify-center items-center gap-4">
-          <img src="/icon-asortyment.png" alt="icon-terminy" className="" />
+          <img
+            src="/icon-asortyment1.svg"
+            alt="icon-terminy"
+            className="w-[50px]"
+          />
           <span className="w-48 text-sm lg:text-base">
             Szeroki asortyment produktów i usług
           </span>
         </li>
         <li className="flex justify-center items-center gap-4">
-          <img src="/icon-jakosc.png" alt="icon-terminy" className="" />
+          <img
+            src="/icon-jakosc1.svg"
+            alt="icon-terminy"
+            className="w-[50px]"
+          />
           <span className="w-48 text-sm lg:text-base">
             Najwyższa jakość produktów
           </span>

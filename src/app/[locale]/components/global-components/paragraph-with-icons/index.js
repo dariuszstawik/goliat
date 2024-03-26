@@ -71,7 +71,7 @@ export default function ParagraphWithIcons({
           </div>
           <div>{children}</div>
           <div className="flex items-center ml-auto">
-            <h4 className="">Porozmawiaj&nbsp;z&nbsp;handlowcem</h4>
+            <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>
             <span className="text-red-500 ml-4 mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>

@@ -13,8 +13,8 @@ export default function OFirmie() {
       {/* <ContactParagraph img="/contact-poland.svg" /> */}
       <ParagraphWithImage
         title="Parę słów o grupie Goliat"
-        icon="/logo-icon.svg"
-        img="/europe.png"
+        icon="/icon-logo1.svg"
+        img="/europa4.svg"
       >
         <p className="mb-8">
           Nasza firma istnieje na rynku od 30 lat. Zdobyte doświadczenie pozwala
