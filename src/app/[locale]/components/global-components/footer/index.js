@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "../logo";
+import Image from "next/image";
 
 export default function Footer({ locale }) {
   return (
@@ -8,18 +9,30 @@ export default function Footer({ locale }) {
         <Logo hasNoMargin />
         <div className="flex gap-4 shrink-0 items-center">
           <a href="https://www.facebook.com/GoliatPolska/">
-            <img src="/fb-icon.png" alt="facebook" />
+            <Image src="/fb-icon.svg" width={42} height={42} alt="facebook" />
           </a>
           <a href="https://www.linkedin.com/company/goliat-polska/">
-            <img src="/linkedin-icon.png" alt="linkedin" />
+            <Image
+              src="/linkedin-icon.svg"
+              width={42}
+              height={42}
+              alt="linkedin"
+            />
           </a>
           <a href="https://www.instagram.com/goliat.polska/">
-            <img src="/insta-icon.png" alt="instagram" />
+            <Image
+              src="/insta-icon.svg"
+              width={42}
+              height={42}
+              alt="instagram"
+            />
           </a>
         </div>
         <div className="flex gap-4 shrink-0 items-center">
           <img
-            src="/rzetelna-firma.png"
+            src="/rzetelna-firma.svg"
+            width={142}
+            height={61}
             alt="rzetelna firma"
             className="items-center shrink-0"
           />
@@ -75,8 +88,13 @@ export default function Footer({ locale }) {
           </div>
         </div>
         <div className="flex items-start gap-16">
-          <img src="/fsc-logo.png" alt="fsc logo" />
-          <img src="/gazele-logo.png" alt="gazele biznesu logo" />
+          <img src="/fsc.svg" alt="fsc logo" width={65} height={84} />
+          <img
+            src="/gazele-biznesu.svg"
+            alt="gazele biznesu logo"
+            width={156}
+            height={45}
+          />
         </div>
       </div>
     </section>

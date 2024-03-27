@@ -50,7 +50,7 @@ export default function ParagraphWithImage({
                 alt="icon"
                 // width={72}
                 // height={66}
-                className="w-14 lg:w-16"
+                className={`w-14 lg:w-16 ${img && "hidden lg:block"}`}
               />
             )}
           </div>

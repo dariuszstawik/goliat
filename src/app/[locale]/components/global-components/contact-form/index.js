@@ -49,7 +49,7 @@ const ContactForm = () => {
         // onSubmit={sendEmail}
         className="text-sm lg:text-base w-full bg-primaryYellow flex flex-col justify-center items-center lg:items-start lg:flex-row gap-14 py-9 px-14"
       >
-        <div className="w-full lg:w-1/2 flex flex-col gap-9">
+        <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-9">
           <input
             id="userName"
             name="userName"
