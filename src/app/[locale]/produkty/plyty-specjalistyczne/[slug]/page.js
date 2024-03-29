@@ -4,26 +4,28 @@ import HeroSection from "@/app/[locale]/components/global-components/hero-sectio
 import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
-import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
+import plytySpecjalistyczne from "@/app/[locale]/data/plyty-specjalistyczne";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const slugs = plytyMeblowe.map((product) => ({
+  const slugs = plytySpecjalistyczne.map((product) => ({
     slug: product.slug,
   }));
 
   return slugs;
 }
 
-export default function PlytaMeblowa({ params }) {
-  const product = plytyMeblowe.find((product) => product.slug === params.slug);
+export default function PlytaSpecjalistyczna({ params }) {
+  const product = plytySpecjalistyczne.find(
+    (product) => product.slug === params.slug
+  );
 
   return (
     <div>
       <HeroSection
-        backgroundImage="/foto-plyty-meblowe.jpg"
-        productIcon="/product-icon1.svg"
+        backgroundImage="/foto-specjalistyczne.jpg"
+        productIcon="/product-icon3.svg"
       />
       <ParagraphWithImage
         title={product.name}
@@ -51,12 +53,12 @@ export default function PlytaMeblowa({ params }) {
       </div>
       <ContactForm />
       <ProductsCarousel
-        title="Sprawdź pozostałe płyty meblowe"
-        content="plytyMeblowe"
+        title="Sprawdź pozostałe płyty specjalistyczne"
+        content="plytySpecjalistyczne"
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/plyty-meblowe">
-          Wróć do oferty płyt meblowych
+        <ButtonWithArrows href="/pl/produkty/plyty-specjalistyczne">
+          Wróć do oferty płyt specjalistycznych
         </ButtonWithArrows>
       </div>
       <MapPoland />

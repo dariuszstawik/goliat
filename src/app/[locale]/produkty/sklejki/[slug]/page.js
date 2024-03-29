@@ -5,25 +5,27 @@ import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
 import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
+import sklejki from "@/app/[locale]/data/sklejki";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const slugs = plytyMeblowe.map((product) => ({
+  const slugs = sklejki.map((product) => ({
     slug: product.slug,
   }));
 
   return slugs;
 }
 
-export default function PlytaMeblowa({ params }) {
-  const product = plytyMeblowe.find((product) => product.slug === params.slug);
+export default function Sklejka({ params }) {
+  const product = sklejki.find((product) => product.slug === params.slug);
 
   return (
     <div>
       <HeroSection
-        backgroundImage="/foto-plyty-meblowe.jpg"
-        productIcon="/product-icon1.svg"
+        backgroundImage="/foto-sklejki.jpg"
+        productIcon="/product-icon4.svg"
+        hasRedBg
       />
       <ParagraphWithImage
         title={product.name}
@@ -33,10 +35,11 @@ export default function PlytaMeblowa({ params }) {
         productCardTitle={product.name}
         productCardSubtitle="płyta meblowa"
         href={product.href}
+        isRed
       >
-        <div className="mb-9">{product.description}</div>
-        {product.description1 && (
-          <div className="mb-9">{product.description1}</div>
+        <p className="mb-9">{product.description}</p>
+        {product.description2Paragraph && (
+          <div className="mb-9">{product.description2Paragraph}</div>
         )}
       </ParagraphWithImage>
       {product.content}
@@ -50,13 +53,10 @@ export default function PlytaMeblowa({ params }) {
         </ButtonWithArrows>
       </div>
       <ContactForm />
-      <ProductsCarousel
-        title="Sprawdź pozostałe płyty meblowe"
-        content="plytyMeblowe"
-      />
+      <ProductsCarousel title="Sprawdź pozostałe sklejki" content="sklejki" />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/plyty-meblowe">
-          Wróć do oferty płyt meblowych
+        <ButtonWithArrows href="/pl/produkty/sklejki" isRed>
+          Wróć do oferty sklejek
         </ButtonWithArrows>
       </div>
       <MapPoland />

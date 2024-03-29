@@ -4,26 +4,29 @@ import HeroSection from "@/app/[locale]/components/global-components/hero-sectio
 import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
-import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
+import plytyPilsniowe from "@/app/[locale]/data/plyty-pilsniowe";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const slugs = plytyMeblowe.map((product) => ({
+  const slugs = plytyPilsniowe.map((product) => ({
     slug: product.slug,
   }));
 
   return slugs;
 }
 
-export default function PlytaMeblowa({ params }) {
-  const product = plytyMeblowe.find((product) => product.slug === params.slug);
+export default function PlytaPilsniowa({ params }) {
+  const product = plytyPilsniowe.find(
+    (product) => product.slug === params.slug
+  );
 
   return (
     <div>
       <HeroSection
-        backgroundImage="/foto-plyty-meblowe.jpg"
-        productIcon="/product-icon1.svg"
+        backgroundImage="/hero-plyty-pilsniowe.jpg"
+        productIcon="/product-icon6.svg"
+        hasRedBg
       />
       <ParagraphWithImage
         title={product.name}
@@ -31,12 +34,13 @@ export default function PlytaMeblowa({ params }) {
         hasNoTitleIcon
         productCardImg={product.img}
         productCardTitle={product.name}
-        productCardSubtitle="płyta meblowa"
+        productCardSubtitle="płyta pilśniowa"
         href={product.href}
+        isRed
       >
-        <div className="mb-9">{product.description}</div>
-        {product.description1 && (
-          <div className="mb-9">{product.description1}</div>
+        <p className="mb-9">{product.description}</p>
+        {product.description2Paragraph && (
+          <div className="mb-9">{product.description2Paragraph}</div>
         )}
       </ParagraphWithImage>
       {product.content}
@@ -51,12 +55,12 @@ export default function PlytaMeblowa({ params }) {
       </div>
       <ContactForm />
       <ProductsCarousel
-        title="Sprawdź pozostałe płyty meblowe"
-        content="plytyMeblowe"
+        title="Sprawdź pozostałe płyty pilśniowe"
+        content="plytyPilsniowe"
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/plyty-meblowe">
-          Wróć do oferty płyt meblowych
+        <ButtonWithArrows href="/pl/produkty/plyty-pilsniowe" isRed>
+          Wróć do oferty płyt pilśniowych
         </ButtonWithArrows>
       </div>
       <MapPoland />

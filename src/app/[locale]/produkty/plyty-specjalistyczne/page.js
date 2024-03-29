@@ -19,6 +19,7 @@ export default function PlytySpecjalistyczne() {
         icon="/icon-plyty-specjalistyczne.svg"
         productCardImg="/plyta-mdf.jpg"
         productCardTitle="płyta MDF ognioodporna"
+        href="/pl/produkty/plyty-specjalistyczne/plyta-mdf-ognioodporna"
       >
         <p className="mb-9">
           Płyty specjalistyczne to płyty drewnopochodne o zwiększonych
@@ -49,7 +50,7 @@ export default function PlytySpecjalistyczne() {
                 alt={plyta.name}
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
-                href={plyta.href}
+                href={`/pl/produkty/plyty-specjalistyczne/${plyta.slug}`}
               />
             </li>
           ))}

@@ -22,6 +22,7 @@ export default function PlytyBudowlane() {
         whiteIcon="/icon-plyty-budowlane-white.svg"
         productCardImg="/plyta-durelis.jpg"
         productCardTitle="płyta Durelis"
+        href="/pl/produkty/plyty-budowlane/plyta-durelis"
         isRed
       >
         <p className="mb-9">
@@ -51,7 +52,7 @@ export default function PlytyBudowlane() {
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
                 whiteIcon={plyta.whiteIcon}
-                href={plyta.href}
+                href={`/pl/produkty/plyty-budowlane/${plyta.slug}`}
                 isRed
               />
             </li>

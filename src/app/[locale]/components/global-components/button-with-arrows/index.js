@@ -19,7 +19,7 @@ export default function ButtonWithArrows({ isRed, children, href }) {
       <button
         className={`my-auto text-xl lg:text-3xl font-semibold border-2 border-black rounded-full ${
           isRed
-            ? "bg-primaryRed hover:bg-primaryYellow"
+            ? "bg-primaryRed hover:bg-primaryYellow text-white hover:text-black"
             : "bg-primaryYellow hover:bg-primaryRed hover:text-white"
         } px-6 py-4 shadow-lg transition-colors duration-300 ease-in-out`}
       >

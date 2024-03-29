@@ -49,13 +49,7 @@ export default function ProductCard({
           {productCardSubtitle ? (
             productCardSubtitle
           ) : (
-            <Link
-              href={
-                href ? href : `/pl/produkty/plyty-meblowe/plyta-wiorowa-surowa`
-              }
-            >
-              Zobacz więcej
-            </Link>
+            <Link href={href ? href : ""}>Zobacz więcej</Link>
           )}
         </div>
       </div>

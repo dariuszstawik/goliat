@@ -79,7 +79,7 @@ export default function ProductsCarousel({ title, content }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
-                    href={plyta.href}
+                    href={`/pl/produkty/plyty-meblowe/${plyta.slug}`}
                     isInCarousel
                   />
                 </li>
@@ -94,7 +94,7 @@ export default function ProductsCarousel({ title, content }) {
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
                     whiteIcon={plyta.whiteIcon}
-                    href={plyta.href}
+                    href={`/pl/produkty/plyty-budowlane/${plyta.slug}`}
                     isRed
                     isInCarousel
                   />
@@ -109,7 +109,7 @@ export default function ProductsCarousel({ title, content }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
-                    href={plyta.href}
+                    href={`/pl/produkty/plyty-specjalistyczne/${plyta.slug}`}
                     isInCarousel
                   />
                 </li>
@@ -138,7 +138,7 @@ export default function ProductsCarousel({ title, content }) {
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
                     whiteIcon={plyta.whiteIcon}
-                    href={plyta.href}
+                    href={`/pl/produkty/plyty-pilsniowe/${plyta.slug}`}
                     isRed
                     isInCarousel
                   />
@@ -154,7 +154,7 @@ export default function ProductsCarousel({ title, content }) {
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
                     whiteIcon={plyta.whiteIcon}
-                    href={plyta.href}
+                    href={`/pl/produkty/sklejki/${plyta.slug}`}
                     isRed
                     isInCarousel
                   />
@@ -183,7 +183,8 @@ export default function ProductsCarousel({ title, content }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
-                    href={plyta.href}
+                    // href={plyta.href}
+                    href="/pl/uslugi"
                     isInCarousel
                   />
                 </li>

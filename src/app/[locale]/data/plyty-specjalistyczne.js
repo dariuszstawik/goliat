@@ -2,6 +2,7 @@ const plytySpecjalistyczne = [
   {
     id: 1,
     name: "płyta MDF wilgociouodporniona",
+    slug: "plyta-mdf-wilgociouodporniona",
     img: "/plyta-mdf-wilgociouodporniona.jpg",
     icon: "/icon-plyty-budowlane.svg",
     href: "",
@@ -20,6 +21,7 @@ const plytySpecjalistyczne = [
   {
     id: 2,
     name: "płyta o zwiększonej gęstości na antresole",
+    slug: "plyta-o-zwiekszonej-gestosci-na-antresole",
     img: "/plyta-o-zwiekszonej-gestosci-na-antresole.jpg",
     icon: "/icon-plyty-budowlane.svg",
     href: "",
@@ -37,6 +39,7 @@ const plytySpecjalistyczne = [
   {
     id: 3,
     name: "płyta wiórowa o obniżonej gęstości",
+    slug: "plyta-wiorowa-o-obnizonej-gestosci",
     img: "/plyta-wiorowa-o-obnizonej-gestosci.jpg",
     icon: "/icon-plyty-budowlane.svg",
     href: "",
@@ -59,6 +62,7 @@ const plytySpecjalistyczne = [
   {
     id: 4,
     name: "płyta MDF ognioodporna",
+    slug: "plyta-mdf-ognioodporna",
     img: "/plyta-mdf.jpg",
     icon: "/icon-plyty-budowlane.svg",
     href: "",

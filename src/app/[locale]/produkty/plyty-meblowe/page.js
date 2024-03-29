@@ -18,7 +18,8 @@ export default function PlytyMeblowe() {
         title="Płyty meblowe"
         icon="/icon-plyty-meblowe.svg"
         productCardImg="/plyta-wiorowa.jpg"
-        productCardTitle="płyta wiórowa laminowana biała"
+        productCardTitle="płyta wiórowa laminowana"
+        href="/pl/produkty/plyty-meblowe/plyta-wiorowa-laminowana-biala"
       >
         <p className="mb-9">
           Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do
@@ -54,7 +55,7 @@ export default function PlytyMeblowe() {
                 alt={plyta.name}
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
-                href={plyta.href}
+                href={`/pl/produkty/plyty-meblowe/${plyta.slug}`}
                 isInCarousel
               />
             </li>

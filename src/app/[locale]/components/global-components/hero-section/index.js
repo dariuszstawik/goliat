@@ -10,7 +10,7 @@ export default function HeroSection({
   contactIcon,
   isServicesPage,
   hasProductsIcons,
-  hasProductIcon,
+  productIcon,
   hasRedBg,
 }) {
   return (
@@ -90,9 +90,9 @@ export default function HeroSection({
           </>
         )}
 
-        {hasProductIcon && (
+        {productIcon && (
           <Image
-            src="/product-icon1.svg"
+            src={productIcon}
             width={140}
             height={140}
             alt="contact-icon"

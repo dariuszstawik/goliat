@@ -21,6 +21,7 @@ export default function Sklejki() {
         whiteIcon="/icon-sklejki-white.svg"
         productCardImg="/sklejki.jpg"
         productCardTitle="sklejka antypoślizgowa HEXA"
+        href="/pl/produkty/sklejki/sklejka-antyposlizgowa-hexa"
         isRed
       >
         <p className="mb-9">
@@ -54,7 +55,7 @@ export default function Sklejki() {
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
                 whiteIcon={plyta.whiteIcon}
-                href={plyta.href}
+                href={`/pl/produkty/sklejki/${plyta.slug}`}
                 isRed
               />
             </li>

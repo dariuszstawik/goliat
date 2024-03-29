@@ -4,26 +4,30 @@ import HeroSection from "@/app/[locale]/components/global-components/hero-sectio
 import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
-import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
+import plytyBudowlane from "@/app/[locale]/data/plyty-budowlane";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const slugs = plytyMeblowe.map((product) => ({
+  const slugs = plytyBudowlane.map((product) => ({
     slug: product.slug,
   }));
 
   return slugs;
 }
 
-export default function PlytaMeblowa({ params }) {
-  const product = plytyMeblowe.find((product) => product.slug === params.slug);
+export default function PlytaBudowlana({ params }) {
+  const product = plytyBudowlane.find(
+    (product) => product.slug === params.slug
+  );
 
   return (
     <div>
       <HeroSection
-        backgroundImage="/foto-plyty-meblowe.jpg"
-        productIcon="/product-icon1.svg"
+        backgroundImage="/hero-plyty-budowlane.jpg"
+        // heroCircle="/hero-circle-plyty-budowlane.png"
+        productIcon="/product-icon2.svg"
+        hasRedBg
       />
       <ParagraphWithImage
         title={product.name}
@@ -31,8 +35,9 @@ export default function PlytaMeblowa({ params }) {
         hasNoTitleIcon
         productCardImg={product.img}
         productCardTitle={product.name}
-        productCardSubtitle="płyta meblowa"
+        productCardSubtitle="płyta budowlana"
         href={product.href}
+        isRed
       >
         <div className="mb-9">{product.description}</div>
         {product.description1 && (
@@ -51,12 +56,12 @@ export default function PlytaMeblowa({ params }) {
       </div>
       <ContactForm />
       <ProductsCarousel
-        title="Sprawdź pozostałe płyty meblowe"
-        content="plytyMeblowe"
+        title="Sprawdź pozostałe płyty budowlane"
+        content="plytyBudowlane"
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/plyty-meblowe">
-          Wróć do oferty płyt meblowych
+        <ButtonWithArrows href="/pl/produkty/plyty-budowlane" isRed>
+          Wróć do oferty płyt budowlanych
         </ButtonWithArrows>
       </div>
       <MapPoland />

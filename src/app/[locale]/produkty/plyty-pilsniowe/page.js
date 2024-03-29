@@ -21,6 +21,7 @@ export default function PlytyPilsniowe() {
         whiteIcon={"/icon-plyty-pilsniowe-white.svg"}
         productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
         productCardTitle="płyta pilśniowa surowa twarda"
+        href="/pl/produkty/plyty-pilsniowe/plyta-pilsniowa-surowa-twarda"
         isRed
       >
         <p className="mb-9">
@@ -52,7 +53,7 @@ export default function PlytyPilsniowe() {
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
                 whiteIcon={plyta.whiteIcon}
-                href={plyta.href}
+                href={`/pl/produkty/plyty-pilsniowe/${plyta.slug}`}
                 isRed
               />
             </li>
