@@ -39,6 +39,7 @@ export default function Home({ params: { locale } }) {
             icon="icon-plyty-meblowe.svg"
             productCardImg="/plyta-wiorowa.jpg"
             productCardTitle="płyta wiórowa laminowana biała"
+            href="/pl/produkty/plyty-meblowe"
           >
             <p className="mb-9">
               Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do
@@ -82,6 +83,7 @@ export default function Home({ params: { locale } }) {
             whiteIcon="/icon-plyty-budowlane-white.svg"
             productCardImg="/plyta-durelis.jpg"
             productCardTitle="płyta Durelis"
+            href="/pl/produkty/plyty-budowlane"
             isRed
           >
             <p className="mb-9">
@@ -116,6 +118,7 @@ export default function Home({ params: { locale } }) {
             icon="icon-plyty-specjalistyczne.svg"
             productCardImg="/plyta-mdf.jpg"
             productCardTitle="płyta MDF ognioodporna"
+            href="/pl/produkty/plyty-specjalistyczne"
           >
             <p className="mb-9">
               Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
@@ -150,6 +153,7 @@ export default function Home({ params: { locale } }) {
             whiteIcon="/icon-sklejki-white.svg"
             productCardImg="/sklejki.jpg"
             productCardTitle="sklejka antypoślizgowa HEXA"
+            href="/pl/produkty/sklejki"
             isRed
           >
             <p className="mb-9">
@@ -185,6 +189,7 @@ export default function Home({ params: { locale } }) {
           icon="icon-plyty-opakowaniowe.svg"
           productCardImg="/plyta-hdf-surowa.jpg"
           productCardTitle="płyta HDF surowa"
+          href="/pl/produkty/plyty-opakowaniowe"
         >
           <p className="mb-9">
             Niektóre płyty drewnopochodne wykorzystywane są w przemyśle
@@ -218,6 +223,7 @@ export default function Home({ params: { locale } }) {
             whiteIcon={"/icon-plyty-pilsniowe-white.svg"}
             productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
             productCardTitle="płyta pilśniowa surowa twarda"
+            href="/pl/produkty/plyty-pilsniowe"
             isRed
           >
             <p className="mb-9">

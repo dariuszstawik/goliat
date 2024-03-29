@@ -16,7 +16,7 @@ const servicesData = [
   {
     id: 3,
     name: "centrum obróbcze CNC InfoTEC EVO",
-    img: "/centrum-obrobcze-cnc-infotec-evo.jpg",
+    img: "/centrum-obrobcze-cns-infotec-evo.jpg",
     icon: "/icon-ciecie-proste.svg",
     href: "",
   },
