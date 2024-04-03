@@ -201,7 +201,7 @@ const sklejki = [
     id: 6,
     name: "sklejka gruboogłobowa",
     slug: "sklejka-grubooblogowa",
-    img: "/sklejka-fornirowana.jpg",
+    img: "/sklejka-grubooblogowa2.jpg",
     icon: "/icon-sklejki.svg",
     whiteIcon: "/icon-sklejki-white.svg",
     href: "",

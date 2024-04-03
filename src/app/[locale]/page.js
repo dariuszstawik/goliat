@@ -187,7 +187,7 @@ export default function Home({ params: { locale } }) {
         <ParagraphWithImage
           title="Płyty opakowaniowe"
           icon="icon-plyty-opakowaniowe.svg"
-          productCardImg="/plyta-hdf-surowa.jpg"
+          productCardImg="/plyta-hdf-surowa2.jpg"
           productCardTitle="płyta HDF surowa"
           href="/pl/produkty/plyty-opakowaniowe"
         >

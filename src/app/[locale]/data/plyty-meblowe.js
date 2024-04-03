@@ -269,7 +269,7 @@ const plytyMeblowe = [
     id: 12,
     name: "płyta hdf surowa",
     slug: "plyta-hdf-surowa",
-    img: "/plyta-hdf-surowa1.jpg",
+    img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-meblowe.svg",
     // href: "",
     description:

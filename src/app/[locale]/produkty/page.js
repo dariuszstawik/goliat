@@ -214,7 +214,7 @@ export default function Produkty({ params: { locale } }) {
       <ParagraphWithImage
         title="Płyty opakowaniowe"
         icon="/icon-plyty-opakowaniowe.svg"
-        productCardImg="/plyta-hdf-surowa.jpg"
+        productCardImg="/plyta-hdf-surowa2.jpg"
         productCardTitle="płyta HDF surowa"
       >
         <p className="mb-9">

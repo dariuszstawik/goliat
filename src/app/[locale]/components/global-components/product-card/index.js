@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ProductCard({
   productCardImg,
@@ -11,6 +13,8 @@ export default function ProductCard({
   href,
   isInCarousel,
 }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div
       className={`${
@@ -18,8 +22,14 @@ export default function ProductCard({
           ? "w-[372px] xl:w-[300px] 2xl:w-[372px]"
           : "w-[310px] lg:w-[372px]"
       }  h-[488px] flex flex-col border-[1px] border-black rounded-xl overflow-hidden shrink-0 ${
-        isRed ? "hover:bg-primaryRed" : "hover:bg-primaryYellow"
-      }   hover:shadow-2xl transition-all duration-200`}
+        isRed
+          ? isHovered &&
+            "bg-primaryRed hover:shadow-2xl transition-all duration-200"
+          : isHovered &&
+            "bg-primaryYellow hover:shadow-2xl transition-all duration-200"
+      }   `}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="h-[312px] overflow-hidden">
         <img
@@ -35,21 +45,38 @@ export default function ProductCard({
       >
         <div
           className={`w-20 h-20 ${
-            isRed ? "bg-primaryRed" : "bg-primaryYellow"
+            isRed
+              ? isHovered
+                ? "bg-white"
+                : "bg-primaryRed"
+              : isHovered
+              ? "bg-white"
+              : "bg-primaryYellow"
           } flex justify-center items-center border-[1px] border-black rounded-full mx-auto -translate-y-1/2`}
         >
           <img
-            src={whiteIcon ? whiteIcon : icon}
+            src={isHovered ? icon : whiteIcon ? whiteIcon : icon}
             alt="asset"
-            className={`object-cover w-8 ${isRed && "text-white white"}`}
+            className={`object-cover w-8 `}
           />
         </div>
-        <div className="flex flex-col justify-center items-center gap-2 grow -translate-y-1/4 px-6">
+        <div
+          className={`flex flex-col justify-center items-center gap-2 grow -translate-y-1/4 px-6 ${
+            isRed && isHovered && "text-white"
+          }`}
+        >
           <h4 className="text-center">{productCardTitle}</h4>
           {productCardSubtitle ? (
             productCardSubtitle
+          ) : href ? (
+            <Link
+              href={href ? href : ""}
+              className={`${!isRed && isHovered && "text-primaryRed"}`}
+            >
+              Zobacz więcej
+            </Link>
           ) : (
-            <Link href={href ? href : ""}>Zobacz więcej</Link>
+            ""
           )}
         </div>
       </div>

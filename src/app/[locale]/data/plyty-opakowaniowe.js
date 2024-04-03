@@ -99,7 +99,7 @@ const plytyOpakowaniowe = [
     id: 4,
     name: "płyta hdf surowa",
     slug: "plyta-hdf-surowa",
-    img: "/plyta-hdf-surowa.jpg",
+    img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
     href: "/pl/produkty/plyty-meblowe/plyta-hdf-surowa",
     description:

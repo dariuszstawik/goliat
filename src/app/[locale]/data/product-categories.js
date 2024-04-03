@@ -9,7 +9,7 @@ const productCategories = [
   {
     id: 2,
     name: "płyty opakowaniowe",
-    img: "/plyta-mdf-surowa.jpg",
+    img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
     href: "/pl/produkty/plyty-opakowaniowe",
   },
