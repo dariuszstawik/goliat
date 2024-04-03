@@ -155,7 +155,7 @@ const plytyBudowlane = [
     id: 6,
     name: "płyta JSD",
     slug: "plyta-jsd",
-    img: "/plyta-jsd.jpg",
+    img: "/plyta-JSD.jpg",
     icon: "/icon-plyty-budowlane.svg",
     whiteIcon: "/icon-plyty-budowlane-white.svg",
     description:
