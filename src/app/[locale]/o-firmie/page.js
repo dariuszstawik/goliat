@@ -10,7 +10,6 @@ export default function OFirmie() {
   return (
     <div>
       <HeroSection backgroundImage="/hero-homepage.jpg" hasProductsIcons />
-      {/* <ContactParagraph img="/contact-poland.svg" /> */}
       <ParagraphWithImage
         title="Parę słów o grupie Goliat"
         icon="/icon-logo1.svg"
@@ -47,7 +46,6 @@ export default function OFirmie() {
       <ParagraphWithIcons
         title="W grupie siła!"
         img="/other-categories-asset.svg"
-        // isOnAboutPage
         isReverse
       >
         <p className="mb-8">
@@ -73,12 +71,6 @@ export default function OFirmie() {
           fill={true}
           className="w-full object-cover"
         />
-
-        {/* <img
-          src="/foto-ofirmie2.jpg"
-          alt="zdjęcie pracownika"
-          className="w-full object-cover"
-        /> */}
       </div>
       <ParagraphWithIcons
         title="Nowoczesne centrum obróbcze to..."

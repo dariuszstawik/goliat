@@ -56,7 +56,6 @@ export default function PlytyMeblowe() {
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
                 href={`/pl/produkty/plyty-meblowe/${plyta.slug}`}
-                isInCarousel
               />
             </li>
           ))}

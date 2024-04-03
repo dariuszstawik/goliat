@@ -21,7 +21,7 @@ export default function ParagraphWithImage({
     >
       <section
         className={`${
-          img ? "w-[100%] pr-28" : "w-[80%]"
+          img ? "w-[100%]" : "w-[80%]"
         } mx-auto py-8 lg:py-16 flex flex-col lg:flex-row gap-16 lg:justify-center lg:items-center
       }`}
       >
@@ -41,7 +41,11 @@ export default function ParagraphWithImage({
           />
         )}
 
-        <div className={`${img && "pl-12 -mt-20 lg:mt-0"} flex flex-col`}>
+        <div
+          className={`${
+            img && "w-[80%] lg:pr-16 xl:pr-32 mx-auto -mt-20 lg:mt-0"
+          } flex flex-col`}
+        >
           <div className="flex gap-16 mb-9">
             <h2 className="mt-auto leading-tight">{title}</h2>
             {!hasNoTitleIcon && (
@@ -55,7 +59,7 @@ export default function ParagraphWithImage({
             )}
           </div>
           <div>{children}</div>
-          <div className="flex items-center ml-auto mt-2 lg:mt-0">
+          <div className="flex items-center ml-auto mt-4 ">
             <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>
             <span className="text-red-500 ml-2 lg:ml-4 mr-8 lg:mr-3">
               {"\u003E\u003E\u003E\u003E"}
