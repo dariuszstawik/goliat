@@ -78,6 +78,26 @@ const plytySpecjalistyczne = [
       </div>
     ),
   },
+
+  {
+    id: 5,
+    name: "płyta hdf podłogowa",
+    slug: "plyta-hdf-podlogowa",
+    img: "/plyta-hdf-podlogowa.jpg",
+    icon: "/icon-plyty-meblowe.svg",
+    // href: "",
+    description:
+      "Płyty HDF są przeznaczone do produkcji paneli podłogowych. Są także materiałem nośnym do powlekania laminatami HPL i CPL, papierami żywiczymi i okleinami naturalnymi (tylne ściany). Produkty wykonane na bazie płyty HDF standard są przeznaczone do użytkowania w pomieszczeniach suchych. Panel podłogowy laminowany tworzy także warstwa wzoru oraz laminat, który zabezpiecza przed ścieraniem i zniszczeniem. Zaletą takiej podłogi jest nie tylko trwałość, ale też łatwość pielęgnacji i czyszczenia. Zalety płyty podłogowej HDF to gęsta struktura, gładka i twarda powierzchnia, wysoka stabilność wymiarów, nadzwyczajna płaskość. Płyta spełnia specjalne wymagania producentów podłóg, np. parkietów lub podłóg laminowanych.",
+    content: (
+      <div className="w-[80%] flex flex-col mx-auto">
+        <span className="text-[44px] font-semibold my-8">2620x2070</span>
+        <div>
+          <span className="text-xl">grubości:</span>{" "}
+          <span>5-11 mm (na zapytanie)</span>
+        </div>
+      </div>
+    ),
+  },
 ];
 
 export default plytySpecjalistyczne;

@@ -29,7 +29,7 @@ export default function Home({ params: { locale } }) {
         </div>
         <ProductsCarousel
           // title="Przykładowe płyty meblowe"
-          content="plytyMeblowe"
+          content="productsMain"
         />
 
         {/* <ProductCard /> */}
@@ -82,7 +82,7 @@ export default function Home({ params: { locale } }) {
             icon="icon-plyty-budowlane.svg"
             whiteIcon="/icon-plyty-budowlane-white.svg"
             productCardImg="/plyta-durelis.jpg"
-            productCardTitle="płyta Durelis"
+            productCardTitle="płyta Durelis - P5"
             href="/pl/produkty/plyty-budowlane"
             isRed
           >

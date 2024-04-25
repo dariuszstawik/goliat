@@ -20,18 +20,21 @@ export default function OFirmie() {
           nam nie tylko na bycie rozpoznawalnym wśród licznego grona klientów,
           ale również służyć doradztwem w wielu kwestiach związanych z
           wykorzystywaniem i zastosowaniem materiałów drewnopodobnych w
-          produkcji przemysłowej. W swojej grupie Goliat posiadamy oddział
-          zajmujący się detalem znajdujący się w Olsztynie oraz hurtem, który
-          posiada swój magazyn i halę produkcyjną w Ostrowie Wielkopolskim.
+          produkcji przemysłowej. W swojej grupie posiadamy oddział zajmujący
+          się sprzedażą detaliczną znajdujący się w Olsztynie z szerokim wyborem
+          zwłaszcza płyt wiórowych laminowanych oraz sprzedażą hurtową,
+          zlokalizowany wraz ze swoimi magazynami i nowoczesną halą produkcyjną
+          w Ostrowie Wielkopolskim.
         </p>
         <p>
           Inwestujemy w rozwój. W swojej karierze aż 8-krotnie zdobyliśmy Gazelę
           Biznesu, która jest najstarszym, najbardziej wiarygodnym i
-          najpopularniejszym rankingiem małych i średnich firm w Polsce. Możemy
+          najpopularniejszym rankingiem małych i średnich firm w Polsce.
+          {/* Możemy
           poszczycić się także certyfikatem Rzetelnej Firmy praz znakiem FSC,
           czyli odpowiedzialnej gospodarki leśnej o numerze C116227. W naszej
           branży szczególnie istotne jest, żeby dbać o pochodzenie surowca,
-          który jest głównym składnikiem naszych produktów.
+          który jest głównym składnikiem naszych produktów. */}
         </p>
       </ParagraphWithImage>
       <div className="relative w-screen h-[300px] lg:h-[440px] overflow-hidden">

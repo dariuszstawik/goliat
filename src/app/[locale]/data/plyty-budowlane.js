@@ -86,8 +86,8 @@ const plytyBudowlane = [
 
   {
     id: 3,
-    name: "płyta Durelis",
-    slug: "plyta-durelis",
+    name: "płyta Durelis - P5",
+    slug: "plyta-durelis-p5",
     img: "/plyta-durelis.jpg",
     icon: "/icon-plyty-budowlane.svg",
     whiteIcon: "/icon-plyty-budowlane-white.svg",

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer({ locale }) {
   return (
     <section className="text-base w-full px-10 md:px-20 lg:px-32 py-10 flex flex-col gap-10">
-      <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-32">
+      <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-16 xl:gap-32">
         <Logo hasNoMargin />
         <div className="flex gap-4 shrink-0 items-center">
           <a href="https://www.facebook.com/GoliatPolska/">
@@ -28,13 +28,21 @@ export default function Footer({ locale }) {
             />
           </a>
         </div>
-        <div className="flex gap-4 shrink-0 items-center">
+        <div className="flex shrink-0 items-center">
           <img
             src="/rzetelna-firma.svg"
             width={142}
             height={61}
             alt="rzetelna firma"
             className="items-center shrink-0"
+          />
+        </div>
+        <div className="flex shrink-0 items-center">
+          <img
+            src="/gazele-biznesu.svg"
+            alt="gazele biznesu logo"
+            width={156}
+            height={45}
           />
         </div>
       </div>
@@ -87,7 +95,7 @@ export default function Footer({ locale }) {
             </ul>
           </div>
         </div>
-        <div className="flex items-start gap-16">
+        {/* <div className="flex items-start gap-16">
           <img src="/fsc.svg" alt="fsc logo" width={65} height={84} />
           <img
             src="/gazele-biznesu.svg"
@@ -95,7 +103,7 @@ export default function Footer({ locale }) {
             width={156}
             height={45}
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

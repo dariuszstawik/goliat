@@ -11,6 +11,7 @@ import plytyPilsniowe from "@/app/[locale]/data/plyty-pilsniowe";
 import sklejki from "@/app/[locale]/data/sklejki";
 import productCategories from "@/app/[locale]/data/product-categories";
 import servicesData from "@/app/[locale]/data/services";
+import productsMain from "@/app/[locale]/data/products-main";
 
 export default function ProductsCarousel({ title, content }) {
   const settings2xl = {
@@ -163,6 +164,20 @@ export default function ProductsCarousel({ title, content }) {
 
             {content === "productCategories" &&
               productCategories.map((plyta) => (
+                <li key={plyta.id}>
+                  <ProductCard
+                    productCardImg={plyta.img}
+                    alt={plyta.name}
+                    productCardTitle={plyta.name}
+                    icon={plyta.icon}
+                    href={plyta.href}
+                    isInCarousel
+                  />
+                </li>
+              ))}
+
+            {content === "productsMain" &&
+              productsMain.map((plyta) => (
                 <li key={plyta.id}>
                   <ProductCard
                     productCardImg={plyta.img}

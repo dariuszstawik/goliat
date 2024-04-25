@@ -34,7 +34,7 @@ export default function WelcomeSection() {
         <div className="w-[75%] mx-auto flex items-center gap-20 mt-8">
           <div>
             <Image
-              src="/hood-worker.png"
+              src="/ziomeczek.png"
               alt="Welcome to our website"
               width={377}
               height={494}

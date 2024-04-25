@@ -114,7 +114,7 @@ export default function Produkty({ params: { locale } }) {
           icon="/icon-plyty-budowlane.svg"
           whiteIcon="/icon-plyty-budowlane-white.svg"
           productCardImg="/plyta-durelis.jpg"
-          productCardTitle="płyta Durelis"
+          productCardTitle="płyta Durelis - P5"
           isRed
         >
           <p className="mb-9">
