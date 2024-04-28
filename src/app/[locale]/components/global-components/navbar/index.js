@@ -7,14 +7,17 @@ import Hamburger from "../hamburger";
 import Logo from "../logo";
 
 const Navbar = ({
-  isActive,
   locale,
-  start,
+  products,
+  services,
   about,
-  projects,
-  getInspired,
-  news,
   contact,
+  furnitureBoards,
+  constructionBoards,
+  specialisticBoards,
+  plywood,
+  packagingBoards,
+  fiberboards,
 }) => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState("");
   const [isHovered, setIsHovered] = useState(false);
@@ -67,8 +70,7 @@ const Navbar = ({
               className="cursor-pointer hover:text-slate-500"
               onClick={handleRefresh}
             >
-              {/* {start} */}
-              produkty
+              {products}
             </Link>
             {isHovered === "produkty" && (
               <div
@@ -82,7 +84,7 @@ const Navbar = ({
                       <span>
                         <img src="/icon-plyty-meblowe.svg" className="w-5" />
                       </span>
-                      płyty meblowe
+                      {furnitureBoards}
                     </li>
                   </Link>
                   <Link href={`/${locale}/produkty/plyty-budowlane`}>
@@ -90,7 +92,7 @@ const Navbar = ({
                       <span>
                         <img src="/icon-plyty-budowlane.svg" className="w-5" />
                       </span>
-                      płyty budowlane
+                      {constructionBoards}
                     </li>
                   </Link>
 
@@ -102,7 +104,7 @@ const Navbar = ({
                           className="w-5"
                         />
                       </span>
-                      płyty specjalistyczne
+                      {specialisticBoards}
                     </li>
                   </Link>
 
@@ -111,7 +113,7 @@ const Navbar = ({
                       <span>
                         <img src="/icon-sklejki.svg" className="w-5" />
                       </span>
-                      sklejki
+                      {plywood}
                     </li>
                   </Link>
 
@@ -123,7 +125,7 @@ const Navbar = ({
                           className="w-5"
                         />
                       </span>
-                      płyty opakowaniowe
+                      {packagingBoards}
                     </li>
                   </Link>
 
@@ -132,7 +134,7 @@ const Navbar = ({
                       <span>
                         <img src="/icon-plyty-pilsniowe.svg" className="w-5" />
                       </span>
-                      płyty pilśniowe
+                      {fiberboards}
                     </li>
                   </Link>
                 </ul>
@@ -149,8 +151,7 @@ const Navbar = ({
               // className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
-              {/* {start} */}
-              usługi
+              {services}
             </Link>
           </li>
           <li
@@ -162,7 +163,7 @@ const Navbar = ({
               // className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
-              {/* {start} */}o firmie
+              {about}
             </Link>
           </li>
           <li
@@ -187,8 +188,7 @@ const Navbar = ({
               // className={`${isActive && "text-primaryBlue"}`}
               onClick={handleRefresh}
             >
-              {/* {start} */}
-              kontakt
+              {contact}
             </Link>
           </li>
         </ul>

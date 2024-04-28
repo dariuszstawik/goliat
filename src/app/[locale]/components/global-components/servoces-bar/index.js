@@ -1,4 +1,4 @@
-export default function ServicesBar() {
+export default function ServicesBar({ services1, services2, services3 }) {
   return (
     <>
       <div className="text-sm md:text-base w-full h-40 px-10 hidden lg:flex bg-primaryYellow justify-center items-center gap-32 shadow-lg">
@@ -7,7 +7,8 @@ export default function ServicesBar() {
           <li className="flex justify-center items-center gap-4">
             <img src="/icon-ciecie-proste.svg" alt="icon" className="w-10" />
             <span className="w-48 font-semibold">
-              Cięcie proste + oklejanie krawędzi
+              {/* Cięcie proste + oklejanie krawędzi */}
+              {services1}
             </span>
           </li>
 
@@ -18,7 +19,8 @@ export default function ServicesBar() {
               className="w-10"
             />
             <span className="w-48 font-semibold">
-              Cięcie na okrągło + oklejanie krawędzi
+              {/* Cięcie na okrągło + oklejanie krawędzi */}
+              {services2}
             </span>
           </li>
 
@@ -29,7 +31,8 @@ export default function ServicesBar() {
               className="w-10"
             />
             <span className="w-48 font-semibold">
-              Wycinanie kształtów na maszynie CNC
+              {/* Wycinanie kształtów na maszynie CNC */}
+              {services3}
             </span>
           </li>
         </ul>

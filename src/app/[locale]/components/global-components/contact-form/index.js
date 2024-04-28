@@ -4,7 +4,15 @@ import React, { useEffect, useRef, useState } from "react";
 import Button from "../button";
 import ButtonSm from "../button-sm";
 
-const ContactForm = () => {
+const ContactForm = ({
+  name,
+  phone,
+  email,
+  message,
+  marketing,
+  privacy,
+  submit,
+}) => {
   const form = useRef(null);
 
   const [showNotification, setShowNotification] = useState(false);
@@ -55,7 +63,7 @@ const ContactForm = () => {
             name="userName"
             type="text"
             required
-            placeholder="Imię i nazwisko"
+            placeholder={name}
             className="w-full rounded-full border border-black leading-8 px-4"
             // className="relative border border-primaryGreen rounded-xl leading-8 px-4"
           ></input>
@@ -65,7 +73,7 @@ const ContactForm = () => {
             name="userPhone"
             type="text"
             required
-            placeholder="numer telefonu"
+            placeholder={phone}
             className="w-full rounded-full border border-black leading-8 px-4"
             // className="relative border border-primaryGreen rounded-xl leading-8 px-4"
           ></input>
@@ -75,7 +83,7 @@ const ContactForm = () => {
             name="userEmail"
             type="text"
             required
-            placeholder="e-mail"
+            placeholder={email}
             className="w-full rounded-full border border-black leading-8 px-4"
             // className="relative border border-primaryGreen rounded-xl leading-8 px-4"
           ></input>
@@ -86,7 +94,7 @@ const ContactForm = () => {
             name="message"
             rows={4}
             required
-            placeholder="Treść zapytania"
+            placeholder={message}
             className="w-full border border-black rounded-2xl leading-8 px-4"
           ></textarea>
 
@@ -103,10 +111,8 @@ const ContactForm = () => {
                   htmlFor="marketingTermsCheckbox"
                   className="-translate-y-2 relative ml-2"
                 >
-                  zgoda na przesyłanie materiałów marketingowych
-                  {/* <Link href="/polityka-prywatnosci" className="text-primaryGreen">
-                Polityce Prywatności
-              </Link> */}
+                  {/* zgoda na przesyłanie materiałów marketingowych */}
+                  {marketing}
                 </label>
               </span>
               <span>
@@ -120,17 +126,17 @@ const ContactForm = () => {
                   htmlFor="marketingTermsCheckbox"
                   className="-translate-y-2 relative before:content-['*'] before:text-smartOrange before:mr-2"
                 >
-                  zaakceptowanie{" "}
                   <Link
                     href="/polityka-prywatnosci"
                     className="text-primaryGreen"
                   >
-                    polityki prywatności
+                    {/* zaakceptowanie polityki prywatności */}
+                    {privacy}
                   </Link>
                 </label>
               </span>
             </div>
-            <ButtonSm hasSmallerText> Wyślij zapytanie</ButtonSm>
+            <ButtonSm hasSmallerText> {submit}</ButtonSm>
           </div>
         </div>
       </form>

@@ -14,6 +14,7 @@ export default function ParagraphWithImage({
   isRed,
   hasGrayBg,
   children,
+  lang,
 }) {
   return (
     <div
@@ -44,7 +45,7 @@ export default function ParagraphWithImage({
         <div
           className={`${
             img && "w-[80%] lg:pr-16 xl:pr-32 mx-auto -mt-20 lg:mt-0"
-          } flex flex-col`}
+          } flex flex-col grow`}
         >
           <div className="flex gap-16 mb-9">
             <h2 className="mt-auto leading-tight">{title}</h2>
@@ -60,7 +61,11 @@ export default function ParagraphWithImage({
           </div>
           <div>{children}</div>
           <div className="flex items-center ml-auto mt-4 ">
-            <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>
+            {lang === "en" ? (
+              <h4 className="">Talk to a sales representative</h4>
+            ) : (
+              <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>
+            )}
             <span className="text-red-500 ml-2 lg:ml-4 mr-8 lg:mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>

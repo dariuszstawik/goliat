@@ -12,6 +12,10 @@ export default function HeroSection({
   hasProductsIcons,
   productIcon,
   hasRedBg,
+  icon1,
+  icon2,
+  icon3,
+  icon4,
 }) {
   return (
     <section className="relative pt-32 w-screen min-h-[90vh] flex flex-col bg-green-400 z-20">
@@ -103,7 +107,17 @@ export default function HeroSection({
 
       {/* <div className="w-full h-40 bg-yellow-400"></div> */}
 
-      {isServicesPage ? <ServicesBar /> : <HeroIconsBar hasRedBg={hasRedBg} />}
+      {isServicesPage ? (
+        <ServicesBar />
+      ) : (
+        <HeroIconsBar
+          hasRedBg={hasRedBg}
+          icon1={icon1}
+          icon2={icon2}
+          icon3={icon3}
+          icon4={icon4}
+        />
+      )}
     </section>
   );
 }

@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export default function ContactParagraph({ isRed, hasGrayBg, children, img }) {
+export default function ContactParagraph({
+  isRed,
+  hasGrayBg,
+  img,
+  paragraph1,
+  paragraph2,
+}) {
   return (
     <div className={`w-screen ${hasGrayBg && "bg-primaryGray"}`}>
       <section
@@ -21,18 +27,8 @@ export default function ContactParagraph({ isRed, hasGrayBg, children, img }) {
               </h3>
             </div>
             <div>
-              <p className="mb-8">
-                Skontaktuj się z nami bezpośrednio, klikając na numer telefonu
-                lub adres e-mail, bądź wypełnij poniższy formularz, a odezwiemy
-                się do Ciebie z bezpośrednią ofertą na nasze płyty
-                drewnopochodne i usługi cięcia.
-              </p>
-              <p>
-                Poniżej formularza znajdziesz mapkę z kontaktami do konkretnych
-                przedstawicieli działów handlowych. Wiesz co Cię interesuje -
-                wykonaj telefon bezpośrednio do handlowca odpowiedzialnego za
-                twój rejon.
-              </p>
+              <p className="mb-8">{paragraph1}</p>
+              <p>{paragraph2}</p>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/global-components/navbar";
 import Footer from "./components/global-components/footer";
+import { useTranslations } from "next-intl";
 
 const locales = ["en", "de", "pl"];
 
@@ -27,22 +28,26 @@ export function generateStaticParams() {
 export default function LocaleLayout({ children, params: { locale } }) {
   if (!locales.includes(locale)) notFound();
   unstable_setRequestLocale(locale);
-  // const t = useTranslations("Navbar");
+  const t = useTranslations("Navbar");
   // const tf = useTranslations("Footer");
 
   return (
     <html lang={locale}>
       <body className={poppins.className}>
-        <Navbar locale={locale} />
-        {/* <Navbar
-          start={t("start")}
-          about={t("about")}
-          projects={t("projects")}
-          getInspired={t("get inspired")}
-          news={t("news")}
-          contact={t("contact")}
+        <Navbar
           locale={locale}
-        /> */}
+          products={t("products")}
+          services={t("services")}
+          about={t("about")}
+          contact={t("contact")}
+          furnitureBoards={t("furnitureBoards")}
+          constructionBoards={t("constructionBoards")}
+          specialisticBoards={t("specialisticBoards")}
+          plywood={t("plywood")}
+          packagingBoards={t("packagingBoards")}
+          fiberboards={t("fiberboards")}
+        />
+
         {children}
         {/* <Footer
           about={tf("about")}

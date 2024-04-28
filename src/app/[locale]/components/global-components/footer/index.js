@@ -1,8 +1,13 @@
 import Link from "next/link";
 import Logo from "../logo";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export default function Footer({ locale }) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Footer");
+
   return (
     <section className="text-base w-full px-10 md:px-20 lg:px-32 py-10 flex flex-col gap-10">
       <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-16 xl:gap-32">
@@ -60,37 +65,37 @@ export default function Footer({ locale }) {
               </p>
             </div>
             <div className="flex flex-col gap-0">
-              <p>Grupa Goliat - sprzedaż </p>
-              <p>hurtowa i detaliczna</p>
+              <p>{t("groupLine1")} </p>
+              <p>{t("groupLine2")}</p>
               <p className=" text-primaryRed font-semibold">Goliat Olsztyn</p>
             </div>
           </div>
           <div className="h-full flex flex-col justify-between">
             <div className="flex flex-col gap-1">
-              <p>Główna siedziba</p>
-              <p>ul. Topolowa 75 63-400 Ostrów Wlkp.</p>
+              <p>{t("headOffice")}</p>
+              <p>{t("address")}</p>
               <p>NIP: 739 35 30 312, REGON: 280091860</p>
               <p>KRS: 0000251074</p>
             </div>
             <div>
-              <p>Polityka prywatności</p>
+              <p>{t("privacyPolicy")}</p>
             </div>
           </div>
           <div>
             <ul className="flex flex-col gap-1">
               <li className="text-lg font-semibold uppercase">Menu </li>
               <li>
-                <Link href={`/${locale}/produkty`}>Produkty</Link>
+                <Link href={`/${locale}/produkty`}>{t("products")}</Link>
               </li>
               <li>
-                <Link href={`/${locale}/uslugi`}>Usługi</Link>
+                <Link href={`/${locale}/uslugi`}>{t("services")}</Link>
               </li>
               <li>
-                <Link href={`/${locale}/o-firmie`}>O firmie</Link>
+                <Link href={`/${locale}/o-firmie`}>{t("about")}</Link>
               </li>
               {/* <li><Link  href={`/${locale}/do-pobrania`}>Do pobrania </Link></li> */}
               <li>
-                <Link href={`/${locale}/kontakt`}>Kontakt</Link>
+                <Link href={`/${locale}/kontakt`}>{t("contact")}</Link>
               </li>
             </ul>
           </div>

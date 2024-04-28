@@ -1,5 +1,149 @@
 {
     "Index": {
       "title": "Hello World!"
+    },
+
+    "Navbar": {
+      "products": "products",
+      "services": "services",
+      "about": "about company",
+      "contact": "contact",
+      "furnitureBoards": "furniture boards",
+      "constructionBoards": "construction boards",
+      "specialisticBoards": "specialistic boards",
+      "plywood": "plywood",
+      "packagingBoards": "packaging boards",
+      "fiberboards": "fiberboards"      
+    },
+
+    "Footer": {
+      "groupLine1": "Goliat Group - wholesale",
+      "groupLine2": "and retail",
+      "headOffice": "Head office",
+      "address": "Topolowa Street 75, 63-400 Ostrów Wlkp.",
+      "privacyPolicy": "Privacy policy",
+      "products": "products",
+      "services": "services",
+      "about": "about company",
+      "contact": "contact"
+    },
+
+    "Icons": {
+      "shortLeadTimes": "Short lead times",
+      "consulting": "Consulting to help you save",
+      "wideRange": "A wide range of products and services",
+      "quality": "Top quality products",
+      "services1": "Straight cutting + edge banding",
+      "services2": "Round cutting + edge banding",
+      "services3": "Cutting shapes on a CNC machine"
+    },
+
+    "Homepage": {
+      "title": "Welcome to the Goliat Group",
+      "subtitle": "We offer proven wood-based products!",
+      "products": "Products",
+      "services": "Services",
+      "contact": "Contact",
+      "plytyMeblowe": "Furniture boards",
+      "meblowe1Paragraph": "Furniture boards, as the name suggests, are perfect for finishing the interior of your apartment. Furniture boards are nothing else than wood-based boards, i.e. a type of wood composite in which the content of wood particles should exceed 50%. The main material for the production of wood-based boards is waste generated during the production of sawn timber and shives, i.e. woody parts of the stems of fibrous plants. In order for the wood-based board to achieve its final appearance, wood shavings (sawdust, shavings, tree branches and shives) are joined together using a synthetic glue with appropriate properties. Then, the mixture of wood shavings and synthetic glue is subjected to thermal treatment and a press that applies appropriate pressure to the resulting semi-finished product. This is the process of creating the most common chipboard on the market. It can have a 'raw' sanded finish or be covered with veneer, varnish or laminate.",
+      "meblowe2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of furniture boards or call our sales representative and discuss the details!",
+      "talkTo": "Talk to a sales representative",
+      "sampleFurnitureBoards": "Sample furniture boards",
+      "furnitureBoardsFullOffer": "Full offer of furniture boards",
+      "plytyBudowlane": "Construction boards",
+      "budowlane1Paragraph": "Construction boards are the second group of wood-based boards; Our offer of construction boards includes classic solutions based on wood-based boards such as: OSB, Durelis, V100, MFP, JDS and particle-cement boards. The latter are ideal for external and internal works. They are made of lightweight concrete and reinforced with fiberglass mesh on both sides. Check the detailed description of individual boards and see which one will be most suitable for your project.",
+      "budowlane2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of construcion boards or call our sales representative and discuss the details!",
+      "sampleConstructionBoards": "Sample construction boards",
+      "constructionBoardsFullOffer": "Full offer of construction boards",
+
+      "plytySpecjalistyczne": "Specialistic boards",
+      "specjalistyczne1Paragraph": "Specialistic boards are wood-based boards with increased parameters of resistance to given factors or boards whose weight is much lower than in classic wood-based boards, and the load-bearing parameters are at the same level. The term 'specialistic boards' also includes furniture boards which, through their coloring, make it possible to obtain a beautiful cut in a given color. Specialistic boards are divided into: fire-resistant, acoustic, cellular, moisture-resistant, mass-colored, low-weight and anti-slip boards, and those that are an ideal solution for mezzanines. You know what boards you need for your project - call our seller and place an order.",
+      "specjalistyczne2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of specialist boards or call our sales representative and discuss the details!",
+      "sampleSpecialisticBoards": "Sample specialistic boards",
+      "specialisticBoardsFullOffer": "Full offer of specialistic boards",
+
+      "sklejki": "Plywood",
+      "sklejki1Paragraph": "Plywood is a wood-based material often used in the carpentry industry. Its use helps to avoid many undesirable situations. Compared to solid wood, it does not crack or warp. It has high resistance to static bending, which is why it often performs better than steel. Plywood is made of veneers (thin layers of wood) glued together. The layers are arranged alternately and crosswise (they are arranged perpendicularly to each other). Subsequent layers are glued in presses with high pressure. Plywood can be from 3 to even 50 mm thick. Plywood is divided depending on the wood from which it is made. Our offer includes birch, alder, beech and pine plywood.",
+      "sklejki2Paragraph": "Detailed information about the materials, sizes, thicknesses, parameters and applications of given plywood can be found in the product card of a given product - please see the entire offer of plywood or call us and discuss the details with our sales representative!",
+      "samplePlaywoodBoards": "Sample plywood boards",
+      "playwoodBoardsFullOffer": "Full offer of plywood boards",
+
+      "plytyOpakowaniowe": "Packaging boards",
+      "opakowaniowe1Paragraph": "Some wood-based boards are used in the packaging industry. The best materials for this type of application are: raw HDF board, OSB board, plywood and raw chipboard. Each of these boards comes in different thicknesses and classes. Our salespeople will ensure that your product is packed in the most economical and safe way possible. We cut holes, create arches and cut elements in such a way that they can be easily connected in the further process.",
+      "opakowaniowe2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of packaging boards or call our sales representative and discuss the details!",
+      "samplePackagingBoards": "Sample packaging boards",
+      "packagingBoardsFullOffer": "Full offer of packaging boards",
+      
+      "plytyPilsniowe": "Fiberboards",
+      "pilsniowe1Paragraph": "Fiberboards are a wood product in the form of a board made of pulped wood tissue by felting it and forming it at an appropriate temperature under (normal or increased) pressure. This creates a compact and solid product that has many practical advantages. Fiberboards are used as a material for insulating walls, soundproofing ceilings and improving the acoustic parameters of rooms, as well as wall and ceiling cladding and floor material. Fiberboards are divided into three categories: soft - porous, hard - raw and varnished.",
+      "pilsniowe2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of fiberboards or call us and discuss the details with our sales representative!",
+      "sampleFiberBoards": "Sample fiberboards",
+      "fiberBoardsFullOffer": "Full offer of fiberboards",
+
+      "panelSaw1": "Panel saw 1",
+      "panelSaw11Paragraph": "The machine has a turntable for cutting panels in two planes. Automatic loading possible from three sides (left, right and rear)",
+      "panelSaw1Li1": "Maximum material size 3200mm x 1850mm (when rotated)",
+      "panelSaw1Li2": "Minimum material dimension when rotating 1500mm x 1500mm",
+      "panelSaw1Li3": "Maximum cutting thickness of a package of panels – 90 mm",
+      "panelSaw12Paragraph": "Used, cutting: 4.300 mm x 4.300 m, cutting height 105 mm, 4 front air boards 2500 x 600 mm, elevator.",
+
+      "panelSaw2": "Panel saw 2",
+      "panelSaw21Paragraph": "The solid and compact base of the machine ensures precise guidance of the saw carriage, ensuring many years of reliable operation. The use of prismatic guides reduces vibrations and guarantees better cutting speed and quality. The panel saw is an industrial solution rich in standard equipment, which guarantees the best price-performance ratio. Speed, precision, flexibility and efficiency with gabbiani. It has been designed to ensure high efficiency in industrial production. Choosing the right equipment allows you to cut plastic, boards with acrylic-coated surfaces, and composites.",
+
+      "cncMachiningCenter": "CNC machining center",
+      "cnc1Paragraph": "CNC machines specialized for hard work. They are widely used in many industries and their task is to meet all production requirements. The components used and the industrial technology used in the production of InfoTEC CNC machines make them professional devices specialized for failure-free, multi-shift operation under heavy loads.",
+      "cnc2Paragraph": "InfoTEC PRO PLUS series are automatic nesting centers dedicated to companies from the furniture industry with a large production volume. The reinforced machine bed, drives and their transmission guarantee unprecedented efficiency and profitability. Machines from this series are perfect for multi-shift work.",
+
+      "ottTwister": "OTT twister edgebander",
+      "ott1Paragraph": "Ott veneering unit for craft workshops for the use of hot melt adhesive granules. We also have a curved edge bander in our fleet of machines for banding rounded edges.",
+      "ottLi1": "Single-sided edge bander, right-hand version.",
+      "ottLi2": "Edge thickness: 0.4-12 mm",
+      "ottLi3": "Dimensions of the workpiece: Minimum width: 70 mm",
+      "ottLi4": "Minimum height: 8 mm",
+      "ottLi5": "Maximum height: 60 mm",
+      "ottLi6": "Minimum length: 150 mm",
+      "ottLi7": "Working speed: 14-20 m/min without pins",
+
+      "formatSaw": "Format saw",
+      "formatSaw1Paragraph": "TECHNICAL PARAMETERS:",
+      "formatSawLi1": "disc diameter 300 - 450 mm",
+      "formatSawLi2": "undercutter diameter 120 mm",
+      "formatSawLi3": "max. cutting height 145 mm",
+      "formatSawLi4": "cutting width on the right side 1450 mm",
+      "formatSawLi5": "trolley length 3000 mm",
+      "formatSawLi6": "dial angle adjustment 0-45°",
+      "formatSawLi7": "undercutter spindle diameter 20 mm",
+      "formatSawLi8": "main disc spindle diameter 30 mm",
+      "formatSawLi9": "disc speed adjustable 3500 / 4500 / 6000 RPM",
+      "formatSawLi10": "undercutter rotational speed 8000 RPM",
+      "formatSawLi11": "spigot diameter 80 mm and 120 mm"
+       
+    },
+
+    "ContactForm": {
+      "name": "First name and last name",
+      "phone": "Phone number",
+      "email":  "e-mail",
+      "message": "query content",
+      "marketing": "consent to sending marketing materials",
+      "privacy": "accepting the privacy policy",
+      "submit": "send inquiry"
+    },
+
+    "about":  {
+      "section1Title": "A few words about the Goliat group",
+      "section1Paragraph1": "Our company has been on the market for 30 years. The experience we have gained allows us not only to be recognized among a large group of customers, but also to provide advice on many issues related to the use and application of wood-like materials in industrial production. In our Goliat group, we have a retail branch located in Olsztyn and a wholesale branch with its warehouse and production hall in Ostrów Wielkopolski.",
+      "section1Paragraph2": "We invest in development. During our career, we have won the Gazela Biznesu award as many as 8 times. Gazela Binesu is the oldest, most credible and most popular ranking of small and medium-sized companies in Poland.",
+      "section2Title": "There is strength in a group!",
+      "section2Paragraph1": "The people who work in our company are qualified specialists in furniture boards. Thanks to their knowledge and many years of experience in our company, they efficiently handle the orders they receive. Our team includes experts in CNC machining centers, panel saws, edge banders and skilled forklift operators. Thanks to their teamwork, our orders are delivered to customers on time and are well protected during travel.",
+      "section2Paragraph2": "We invest not only in the company as an institution - we support the professional careers of our employees. We invest in training and courses. All this so that our employees expand their skills and become experts in what they do.",
+      "section3Title": "A modern machining center is...",
+      "section3Paragraph1": "… a reliable system of machines that can produce the most advanced shapes and meet the expectations of demanding customers. We are able to make wholesale cuts on our machines in a very short time. Any curves, holes, stars, waves, milling in any shape and others. Everything that can be done with a wood-based board can be done with us.",
+      "section3Paragraph2": "Our operators make the most of the board size, thereby reducing the cost of your product investment. We provide experience and support our clients in selecting the appropriate board and its format. A reliable machining center combined with an experienced team is the recipe for the success of our products. The Goliat Group develops along with the development of its clients. We invite you to cooperate!"
+    },
+
+    "contact": {
+      "paragraph1": "Contact us directly by clicking on the phone number or e-mail address, or fill out the form below and we will contact you with a direct offer for our wood-based boards and cutting services.",
+      "paragraph2": "Below the form you will find a map with contacts to specific representatives of sales departments. You know what you are interested in - call directly to the salesperson responsible for your area."
     }
 }

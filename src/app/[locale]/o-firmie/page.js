@@ -5,31 +5,33 @@ import MapPoland from "../components/global-components/map-poland";
 import ParagraphWithImage from "../components/global-components/paragraph-with-image";
 import ParagraphWithIcons from "../components/global-components/paragraph-with-icons";
 import ProductsCarousel from "../components/global-components/products-carousel";
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function OFirmie() {
+export default function OFirmie({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("about");
+  const ti = useTranslations("Icons");
+  const tc = useTranslations("ContactForm");
+
   return (
     <div>
-      <HeroSection backgroundImage="/hero-homepage.jpg" hasProductsIcons />
+      <HeroSection
+        backgroundImage="/hero-homepage.jpg"
+        hasProductsIcons
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
+      />
       <ParagraphWithImage
-        title="Parę słów o grupie Goliat"
+        title={t("section1Title")}
         icon="/icon-logo1.svg"
         img="/europa4.svg"
       >
-        <p className="mb-8">
-          Nasza firma istnieje na rynku od 30 lat. Zdobyte doświadczenie pozwala
-          nam nie tylko na bycie rozpoznawalnym wśród licznego grona klientów,
-          ale również służyć doradztwem w wielu kwestiach związanych z
-          wykorzystywaniem i zastosowaniem materiałów drewnopodobnych w
-          produkcji przemysłowej. W swojej grupie posiadamy oddział zajmujący
-          się sprzedażą detaliczną znajdujący się w Olsztynie z szerokim wyborem
-          zwłaszcza płyt wiórowych laminowanych oraz sprzedażą hurtową,
-          zlokalizowany wraz ze swoimi magazynami i nowoczesną halą produkcyjną
-          w Ostrowie Wielkopolskim.
-        </p>
+        <p className="mb-8">{t("section1Paragraph1")}</p>
         <p>
-          Inwestujemy w rozwój. W swojej karierze aż 8-krotnie zdobyliśmy Gazelę
-          Biznesu, która jest najstarszym, najbardziej wiarygodnym i
-          najpopularniejszym rankingiem małych i średnich firm w Polsce.
+          {t("section1Paragraph2")}
           {/* Możemy
           poszczycić się także certyfikatem Rzetelnej Firmy praz znakiem FSC,
           czyli odpowiedzialnej gospodarki leśnej o numerze C116227. W naszej
@@ -47,25 +49,12 @@ export default function OFirmie() {
       </div>
 
       <ParagraphWithIcons
-        title="W grupie siła!"
+        title={t("section2Title")}
         img="/other-categories-asset.svg"
         isReverse
       >
-        <p className="mb-8">
-          Ludzie, którzy pracują w naszej firmie, to wykwalifikowani specjaliści
-          od płyt meblowych. Dzięki swojej wiedzy i wieloletnim stażu w naszej
-          firmie sprawnie obsługują zamówienia, jakie wpadają w ich ręce. Mamy w
-          swoim zespole ekspertów od centrum obróbczego CNC, pił panelowych,
-          okleiniarek i wpraawnych operatorów wózków widłowych. Dzięki ich pracy
-          zespołowej nasze zamówienia są dostarczane do klientów na czas i są
-          dobrze zabezpieczone w podróży.
-        </p>
-        <p>
-          Inwestujemy nie tylko w firmę jako placówkę - wspieramy kariery
-          zawodowe naszych pracowników. Inwestujemy w szkolenia i kursy.
-          Wszystko to po to, aby nasi pracownicy poszerzali swoje umiejętności i
-          stawali się ekspertami w tym, co robią.
-        </p>
+        <p className="mb-8">{t("section2Paragraph1")}</p>
+        <p>{t("section2Paragraph2")}</p>
       </ParagraphWithIcons>
       <div className="relative w-screen h-[300px] lg:h-[440px] overflow-hidden">
         <Image
@@ -76,27 +65,12 @@ export default function OFirmie() {
         />
       </div>
       <ParagraphWithIcons
-        title="Nowoczesne centrum obróbcze to..."
+        title={t("section3Title")}
         img="/circled-left-arrow.svg"
         isOnAboutPage
       >
-        <p className="mb-8">
-          niezawodny system maszyn, które są w stanie wykonać najbardziej
-          zaawansowane kształty i spełnić oczekiwania wymagających klientów. Na
-          naszych maszynach jesteśmy w stanie wykonać hurtowe cięcia w bardzo
-          krótkim czasie. Wszelkie zaoblenia, otwory, gwiazdki, fale, frezowania
-          w dowolnym kształcie i inne. Wszystko to, co można zrobić z płytą
-          drewnopochodną - wykonają Państwo u nas.
-        </p>
-        <p>
-          Nasi operatorzy wykorzystują rozmiar płyty w maksymalny sposób,
-          zmniejszając w ten sposób koszt Państwa inwestycji w produkt. Służymy
-          doświadczeniem i wspieramy naszych klientów w doborze odpowiedniej
-          płyty i jej formatu. Niezawodne centrum obróbcze w połączeniu z
-          doświadczonym zespołem to przepis na sukces naszych produktów. Grupa
-          Goliat rozwija się wraz z rozwojem swoich klientów. Zapraszamy do
-          współpracy!
-        </p>
+        <p className="mb-8">{t("section3Paragraph1")}</p>
+        <p>{t("section3Paragraph2")}</p>
       </ParagraphWithIcons>
       <div className="relative w-screen h-[300px] lg:h-[440px] overflow-hidden">
         <Image
@@ -111,7 +85,16 @@ export default function OFirmie() {
         title="Sprawdź ofertę naszych płyt drewnopochodnych"
       />
       <MapPoland />
-      <ContactForm />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
     </div>
   );
 }

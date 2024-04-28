@@ -4,7 +4,14 @@ import Button from "../../global-components/button";
 import ButtonSm from "../../global-components/button-sm";
 import Logo from "../../global-components/logo";
 
-export default function WelcomeSection() {
+export default function WelcomeSection({
+  title,
+  subtitle,
+  products,
+  services,
+  contact,
+  locale,
+}) {
   return (
     <>
       <div className="w-full mx-0 relative mb-6 hidden lg:block">
@@ -24,9 +31,13 @@ export default function WelcomeSection() {
         />
         <div className="flex justify-end items-center gap-20 pr-20 pt-20">
           <div className="flex flex-col items-end gap-4">
-            <h1 className="">Witamy w grupie Goliat</h1>
+            <h1 className="">
+              {/* Witamy w grupie Goliat */}
+              {title}
+            </h1>
             <p className="">
-              U nas dostaniesz sprawdzone produkty drewnopochodne!
+              {/* U nas dostaniesz sprawdzone produkty drewnopochodne! */}
+              {subtitle}
             </p>
           </div>
           <NavbarAsset />
@@ -44,7 +55,11 @@ export default function WelcomeSection() {
           </div>
           <div className="flex flex-col gap-16">
             <Image
-              src="/welcome-content.png"
+              src={
+                locale === "en"
+                  ? "/welcome-content-en.svg"
+                  : "/welcome-content.png"
+              }
               alt="Nieustannie odpowiadamy na potrzeby rynku płyt drewnopodobnych"
               width={658}
               height={121}
@@ -53,13 +68,13 @@ export default function WelcomeSection() {
             <div className="flex flex-col gap-12 pr-32">
               <div className="flex gap-8">
                 <ButtonSm>
-                  <a href="/pl/produkty">Produkty</a>
+                  <a href="/pl/produkty">{products}</a>
                 </ButtonSm>
                 <ButtonSm>
-                  <a href="/pl/uslugi">Usługi</a>
+                  <a href="/pl/uslugi">{services}</a>
                 </ButtonSm>
                 <ButtonSm>
-                  <a href="/pl/kontakt">Kontakt</a>
+                  <a href="/pl/kontakt">{contact}</a>
                 </ButtonSm>
               </div>
               <div>
@@ -77,10 +92,8 @@ export default function WelcomeSection() {
       </div>
       <div className="w-full mx-0 mb-6 pt-10 flex flex-col gap-8 pl-10 lg:hidden">
         <div className="flex flex-col gap-4">
-          <h1 className="">Witamy w grupie Goliat</h1>
-          <p className="">
-            U nas dostaniesz sprawdzone produkty drewnopochodne!
-          </p>
+          <h1 className="">{title}</h1>
+          <p className="">{subtitle}</p>
         </div>
         <Image
           src="/welcome-content-mobile.png"
@@ -91,13 +104,13 @@ export default function WelcomeSection() {
         />
         <div className="w-[80%] flex flex-col gap-8">
           <ButtonSm>
-            <a href="/pl/produkty">Produkty</a>
+            <a href="/pl/produkty">{products}</a>
           </ButtonSm>
           <ButtonSm>
-            <a href="/pl/uslugi">Usługi</a>
+            <a href="/pl/uslugi">{services}</a>
           </ButtonSm>
           <ButtonSm>
-            <a href="/pl/kontakt">Kontakt</a>
+            <a href="/pl/kontakt">{contact}</a>
           </ButtonSm>
         </div>
         <Image
