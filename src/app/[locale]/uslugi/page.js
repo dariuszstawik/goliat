@@ -11,12 +11,16 @@ export default function Uslugi({ params: { locale } }) {
   const t = useTranslations("Homepage");
   const ti = useTranslations("Icons");
   const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
   return (
     <div>
       <HeroSection
         backgroundImage="/foto-uslugi.jpg"
         heroCircle="/hero-circle-uslugi.png"
         isServicesPage
+        services1={ti("services1")}
+        services2={ti("services2")}
+        services3={ti("services3")}
       />
 
       <ParagraphWithImage
@@ -24,7 +28,7 @@ export default function Uslugi({ params: { locale } }) {
         icon="/icon-ciecie-proste.svg"
         productCardImg="/pila-panelowa1.jpg"
         productCardTitle="piła panelowa SCM Gabbiani Galaxy 105T"
-        lang={locale}
+        locale={locale}
       >
         <p className="mb-9">
           {/* Maszyna posiada obrotnicę do cięcia paneli w dwóch płaszczyznach
@@ -59,7 +63,7 @@ export default function Uslugi({ params: { locale } }) {
         productCardImg="/pila-panelowa2.jpg"
         productCardTitle="piła panelowa SCM Gabbiani Galaxy T3110"
         hasGrayBg
-        lang={locale}
+        locale={locale}
       >
         <p className="mb-9">
           {/* Solidna i kompaktowa podstawa maszyny zapewnia precyzyjne
@@ -83,7 +87,7 @@ export default function Uslugi({ params: { locale } }) {
         productCardImg="/centrum-obrobcze-cnc.jpg"
         productCardTitle="Centrum obrobcze
           3121 PRO PLUS InfoTEC CNC"
-        lang={locale}
+        locale={locale}
       >
         <p className="mb-9">
           {/* Maszyny CNC wyspecjalizowane do ciężkiej pracy. Znajdują one
@@ -110,7 +114,7 @@ export default function Uslugi({ params: { locale } }) {
         productCardImg="/okleiniarka-ott-twister1.png"
         productCardTitle="okleiniarka OTT twister"
         hasGrayBg
-        lang={locale}
+        locale={locale}
       >
         <p className="mb-9">
           {/* Agregat okleinujący producenta Ott do zakładów rzemieślniczych do
@@ -157,7 +161,7 @@ export default function Uslugi({ params: { locale } }) {
         productCardImg="/pila-formatowa.jpg"
         productCardTitle="Piła Formatowa z podcinakiem 
           REMA DMMS 40/340 SPECIAL"
-        lang={locale}
+        locale={locale}
       >
         <p className="mb-4">
           {/* Oklejanie krawędzi za pomocą kleju termotopliwego na krawędziach w
@@ -217,7 +221,11 @@ export default function Uslugi({ params: { locale } }) {
           locale={locale}
         />
       </div>
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
     </div>
   );
 }

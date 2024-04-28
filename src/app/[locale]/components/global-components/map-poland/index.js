@@ -1,7 +1,12 @@
 "use client";
 import { useState } from "react";
 
-const MapPoland = () => {
+const MapPoland = ({
+  salesDirector,
+  salesRepresentative,
+  headOfSalesDepartment,
+  locale,
+}) => {
   const [isHovered, setHovered] = useState("mazowieckie");
   const [isClicked, setClicked] = useState("mazowieckie");
 
@@ -276,7 +281,7 @@ const MapPoland = () => {
               isClicked === "lubelskie") && (
               <div className="flex flex-col gap-2">
                 <h3>Piotr Smętek</h3>
-                <h4>Dyrektor sprzedaży</h4>
+                <h4>{salesDirector}</h4>
                 <h4>+48 578 211 001</h4>
                 <h4>ps@goliat.pl</h4>
               </div>
@@ -288,13 +293,13 @@ const MapPoland = () => {
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-2">
                   <h3>Krzysztof Zosik</h3>
-                  <h4>Handlowiec</h4>
+                  <h4>{salesRepresentative}</h4>
                   <h4>+48 519 542 292</h4>
                   <h4>kz@goliat.pl</h4>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3>Piotr Smętek</h3>
-                  <h4>Dyrektor sprzedaży</h4>
+                  <h4>{salesDirector}</h4>
                   <h4>+48 578 211 001</h4>
                   <h4>ps@goliat.pl</h4>
                 </div>
@@ -311,13 +316,13 @@ const MapPoland = () => {
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-2">
                   <h3>Mariusz Śródka</h3>
-                  <h4>Handlowiec</h4>
+                  <h4>{salesRepresentative}</h4>
                   <h4>+48 533 308 878</h4>
                   <h4>biuro@goliat.pl</h4>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3>Piotr Smętek</h3>
-                  <h4>Dyrektor sprzedaży</h4>
+                  <h4>{salesDirector}</h4>
                   <h4>+48 578 211 001</h4>
                   <h4>ps@goliat.pl</h4>
                 </div>
@@ -328,7 +333,7 @@ const MapPoland = () => {
               isClicked === "podlaskie") && (
               <div className="flex flex-col gap-2">
                 <h3>Piotr Łaski</h3>
-                <h4>Kierownik Działu Handlowego</h4>
+                <h4>{headOfSalesDepartment}</h4>
                 <h4>+48 502 266 492</h4>
                 <h4>pl@goliat.pl</h4>
               </div>
@@ -608,7 +613,7 @@ const MapPoland = () => {
               isClicked === "lubelskie") && (
               <div className="flex flex-col gap-2">
                 <h3>Piotr Smętek</h3>
-                <h4>Dyrektor sprzedaży</h4>
+                <h4>{salesDirector}</h4>
                 <h4>+48 578 211 001</h4>
                 <h4>ps@goliat.pl</h4>
               </div>
@@ -620,13 +625,13 @@ const MapPoland = () => {
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-2">
                   <h3>Krzysztof Zosik</h3>
-                  <h4>Handlowiec</h4>
+                  <h4>{salesRepresentative}</h4>
                   <h4>+48 519 542 292</h4>
                   <h4>kz@goliat.pl</h4>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3>Piotr Smętek</h3>
-                  <h4>Dyrektor sprzedaży</h4>
+                  <h4>{salesDirector}</h4>
                   <h4>+48 578 211 001</h4>
                   <h4>ps@goliat.pl</h4>
                 </div>
@@ -643,13 +648,13 @@ const MapPoland = () => {
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-2">
                   <h3>Mariusz Śródka</h3>
-                  <h4>Handlowiec</h4>
+                  <h4>{salesRepresentative}</h4>
                   <h4>+48 533 308 878</h4>
                   <h4>biuro@goliat.pl</h4>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3>Piotr Smętek</h3>
-                  <h4>Dyrektor sprzedaży</h4>
+                  <h4>{salesDirector}</h4>
                   <h4>+48 578 211 001</h4>
                   <h4>ps@goliat.pl</h4>
                 </div>
@@ -660,7 +665,7 @@ const MapPoland = () => {
               isClicked === "podlaskie") && (
               <div className="flex flex-col gap-2">
                 <h3>Piotr Łaski</h3>
-                <h4>Kierownik Działu Handlowego</h4>
+                <h4>{headOfSalesDepartment}</h4>
                 <h4>+48 502 266 492</h4>
                 <h4>pl@goliat.pl</h4>
               </div>

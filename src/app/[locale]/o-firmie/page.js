@@ -13,6 +13,7 @@ export default function OFirmie({ params: { locale } }) {
   const t = useTranslations("about");
   const ti = useTranslations("Icons");
   const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
 
   return (
     <div>
@@ -28,6 +29,7 @@ export default function OFirmie({ params: { locale } }) {
         title={t("section1Title")}
         icon="/icon-logo1.svg"
         img="/europa4.svg"
+        locale={locale}
       >
         <p className="mb-8">{t("section1Paragraph1")}</p>
         <p>
@@ -52,6 +54,7 @@ export default function OFirmie({ params: { locale } }) {
         title={t("section2Title")}
         img="/other-categories-asset.svg"
         isReverse
+        locale={locale}
       >
         <p className="mb-8">{t("section2Paragraph1")}</p>
         <p>{t("section2Paragraph2")}</p>
@@ -68,6 +71,7 @@ export default function OFirmie({ params: { locale } }) {
         title={t("section3Title")}
         img="/circled-left-arrow.svg"
         isOnAboutPage
+        locale={locale}
       >
         <p className="mb-8">{t("section3Paragraph1")}</p>
         <p>{t("section3Paragraph2")}</p>
@@ -84,7 +88,11 @@ export default function OFirmie({ params: { locale } }) {
         content="productCategories"
         title="Sprawdź ofertę naszych płyt drewnopochodnych"
       />
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
       <ContactForm
         locale={locale}
         name={tc("name")}

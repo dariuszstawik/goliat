@@ -12,6 +12,7 @@ export default function ProductCard({
   isRed,
   href,
   isInCarousel,
+  locale,
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -73,7 +74,7 @@ export default function ProductCard({
               href={href ? href : ""}
               className={`${!isRed && isHovered && "text-primaryRed"}`}
             >
-              Zobacz więcej
+              {locale === "en" ? "Read more" : "Zobacz więcej"}
             </Link>
           ) : (
             ""

@@ -4,22 +4,41 @@ import HeroSection from "@/app/[locale]/components/global-components/hero-sectio
 import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
-import plytyPilsniowe from "@/app/[locale]/data/plyty-pilsniowe";
+import {
+  plytyPilsniowe,
+  plytyPilsnioweEn,
+} from "@/app/[locale]/data/plyty-pilsniowe";
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  const slugs = plytyPilsniowe.map((product) => ({
-    slug: product.slug,
-  }));
+export function generateStaticParams({ params }) {
+  const slugs =
+    params === "en"
+      ? plytyPilsniowe.map((product) => ({
+          slug: product.slug,
+        }))
+      : plytyPilsnioweEn.map((product) => ({
+          slug: product.slug,
+        }));
 
   return slugs;
 }
 
 export default function PlytaPilsniowa({ params }) {
-  const product = plytyPilsniowe.find(
-    (product) => product.slug === params.slug
-  );
+  const locale = params.locale;
+
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Homepage");
+  const ti = useTranslations("Icons");
+  const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
+
+  const product =
+    params.locale === "en"
+      ? plytyPilsnioweEn.find((product) => product.slug === params.slug)
+      : plytyPilsniowe.find((product) => product.slug === params.slug);
 
   return (
     <div>
@@ -27,6 +46,10 @@ export default function PlytaPilsniowa({ params }) {
         backgroundImage="/hero-plyty-pilsniowe.jpg"
         productIcon="/product-icon6.svg"
         hasRedBg
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
       />
       <ParagraphWithImage
         title={product.name}
@@ -34,9 +57,10 @@ export default function PlytaPilsniowa({ params }) {
         hasNoTitleIcon
         productCardImg={product.img}
         productCardTitle={product.name}
-        productCardSubtitle="płyta pilśniowa"
+        productCardSubtitle={product.category}
         href={product.href}
         isRed
+        locale={locale}
       >
         <p className="mb-9">{product.description}</p>
         {product.description2Paragraph && (
@@ -53,17 +77,31 @@ export default function PlytaPilsniowa({ params }) {
           Przejdź na stronę główną naszych usług
         </ButtonWithArrows>
       </div>
-      <ContactForm />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
       <ProductsCarousel
-        title="Sprawdź pozostałe płyty pilśniowe"
+        title={t("fiberBoardsCheckOther")}
         content="plytyPilsniowe"
+        locale={locale}
       />
       <div className="mb-8">
         <ButtonWithArrows href="/pl/produkty/plyty-pilsniowe" isRed>
-          Wróć do oferty płyt pilśniowych
+          {t("backToFiberBoards")}
         </ButtonWithArrows>
       </div>
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
     </div>
   );
 }

@@ -19,6 +19,7 @@ export default function Home({ params: { locale } }) {
   const t = useTranslations("Homepage");
   const ti = useTranslations("Icons");
   const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
 
   return (
     <>
@@ -54,7 +55,7 @@ export default function Home({ params: { locale } }) {
             productCardImg="/plyta-wiorowa.jpg"
             productCardTitle="płyta wiórowa laminowana biała"
             href="/pl/produkty/plyty-meblowe"
-            lang={locale}
+            locale={locale}
           >
             <p className="mb-9">
               {/* Płyty meblowe, jak sama nazwa wskazuje - idealnie nadadzą się do
@@ -103,7 +104,7 @@ export default function Home({ params: { locale } }) {
             productCardTitle="płyta Durelis - P5"
             href="/pl/produkty/plyty-budowlane"
             isRed
-            lang={locale}
+            locale={locale}
           >
             <p className="mb-9">
               {/* Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
@@ -140,7 +141,7 @@ export default function Home({ params: { locale } }) {
             productCardImg="/plyta-mdf.jpg"
             productCardTitle="płyta MDF ognioodporna"
             href="/pl/produkty/plyty-specjalistyczne"
-            lang={locale}
+            locale={locale}
           >
             <p className="mb-9">
               {/* Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
@@ -180,7 +181,7 @@ export default function Home({ params: { locale } }) {
             productCardTitle="sklejka antypoślizgowa HEXA"
             href="/pl/produkty/sklejki"
             isRed
-            lang={locale}
+            locale={locale}
           >
             <p className="mb-9">
               {/* Sklejka jest materiałem drewnopochodnym często wykorzystywanym w
@@ -222,7 +223,7 @@ export default function Home({ params: { locale } }) {
           productCardImg="/plyta-hdf-surowa2.jpg"
           productCardTitle="płyta HDF surowa"
           href="/pl/produkty/plyty-opakowaniowe"
-          lang={locale}
+          locale={locale}
         >
           <p className="mb-9">
             {/* Niektóre płyty drewnopochodne wykorzystywane są w przemyśle
@@ -261,7 +262,7 @@ export default function Home({ params: { locale } }) {
             productCardTitle="płyta pilśniowa surowa twarda"
             href="/pl/produkty/plyty-pilsniowe"
             isRed
-            lang={locale}
+            locale={locale}
           >
             <p className="mb-9">
               {/* Płyty pilśniowe - zwane potocznie dyktą, to wyrób z drewna w
@@ -305,7 +306,7 @@ export default function Home({ params: { locale } }) {
           icon="icon-ciecie-proste.svg"
           productCardImg="/pila-panelowa1.jpg"
           productCardTitle="piła panelowa SCM Gabbiani Galaxy 105T"
-          lang={locale}
+          locale={locale}
         >
           <p className="mb-9">
             {/* Maszyna posiada obrotnicę do cięcia paneli w dwóch płaszczyznach
@@ -340,7 +341,7 @@ export default function Home({ params: { locale } }) {
           productCardImg="/pila-panelowa2.jpg"
           productCardTitle="piła panelowa SCM Gabbiani Galaxy T3110"
           hasGrayBg
-          lang={locale}
+          locale={locale}
         >
           <p className="mb-9">
             {/* Solidna i kompaktowa podstawa maszyny zapewnia precyzyjne
@@ -364,7 +365,7 @@ export default function Home({ params: { locale } }) {
           productCardImg="/centrum-obrobcze-cnc.jpg"
           productCardTitle="Centrum obrobcze
           3121 PRO PLUS InfoTEC CNC"
-          lang={locale}
+          locale={locale}
         >
           <p className="mb-9">
             {/* Maszyny CNC wyspecjalizowane do ciężkiej pracy. Znajdują one
@@ -391,7 +392,7 @@ export default function Home({ params: { locale } }) {
           productCardImg="/okleiniarka-ott-twister1.png"
           productCardTitle="okleiniarka OTT twister"
           hasGrayBg
-          lang={locale}
+          locale={locale}
         >
           <p className="mb-9">
             {/* Agregat okleinujący producenta Ott do zakładów rzemieślniczych do
@@ -438,7 +439,7 @@ export default function Home({ params: { locale } }) {
           productCardImg="/pila-formatowa.jpg"
           productCardTitle="Piła Formatowa z podcinakiem 
           REMA DMMS 40/340 SPECIAL"
-          lang={locale}
+          locale={locale}
         >
           <p className="mb-4">
             {/* Oklejanie krawędzi za pomocą kleju termotopliwego na krawędziach w
@@ -489,7 +490,11 @@ export default function Home({ params: { locale } }) {
           submit={tc("submit")}
         />
 
-        <MapPoland />
+        <MapPoland
+          salesDirector={tm("salesDirector")}
+          salesRepresentative={tm("salesRepresentative")}
+          headOfSalesDepartment={tm("headOfSalesDepartment")}
+        />
       </div>
     </>
   );

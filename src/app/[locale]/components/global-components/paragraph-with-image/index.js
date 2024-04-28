@@ -14,7 +14,7 @@ export default function ParagraphWithImage({
   isRed,
   hasGrayBg,
   children,
-  lang,
+  locale,
 }) {
   return (
     <div
@@ -39,6 +39,7 @@ export default function ParagraphWithImage({
             href={href}
             productCardSubtitle={productCardSubtitle}
             isRed={isRed}
+            locale={locale}
           />
         )}
 
@@ -61,7 +62,7 @@ export default function ParagraphWithImage({
           </div>
           <div>{children}</div>
           <div className="flex items-center ml-auto mt-4 ">
-            {lang === "en" ? (
+            {locale === "en" ? (
               <h4 className="">Talk to a sales representative</h4>
             ) : (
               <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>

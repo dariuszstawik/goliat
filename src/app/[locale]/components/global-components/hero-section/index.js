@@ -16,6 +16,9 @@ export default function HeroSection({
   icon2,
   icon3,
   icon4,
+  services1,
+  services2,
+  services3,
 }) {
   return (
     <section className="relative pt-32 w-screen min-h-[90vh] flex flex-col bg-green-400 z-20">
@@ -108,7 +111,11 @@ export default function HeroSection({
       {/* <div className="w-full h-40 bg-yellow-400"></div> */}
 
       {isServicesPage ? (
-        <ServicesBar />
+        <ServicesBar
+          services1={services1}
+          services2={services2}
+          services3={services3}
+        />
       ) : (
         <HeroIconsBar
           hasRedBg={hasRedBg}

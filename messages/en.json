@@ -79,6 +79,8 @@
       "pilsniowe2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of fiberboards or call us and discuss the details with our sales representative!",
       "sampleFiberBoards": "Sample fiberboards",
       "fiberBoardsFullOffer": "Full offer of fiberboards",
+      "fiberBoardsCheckOther": "Check out other fibreboards",
+      "backToFiberBoards": "Back to fibreboard offer",
 
       "panelSaw1": "Panel saw 1",
       "panelSaw11Paragraph": "The machine has a turntable for cutting panels in two planes. Automatic loading possible from three sides (left, right and rear)",
@@ -116,8 +118,12 @@
       "formatSawLi8": "main disc spindle diameter 30 mm",
       "formatSawLi9": "disc speed adjustable 3500 / 4500 / 6000 RPM",
       "formatSawLi10": "undercutter rotational speed 8000 RPM",
-      "formatSawLi11": "spigot diameter 80 mm and 120 mm"
+      "formatSawLi11": "spigot diameter 80 mm and 120 mm",
        
+      "otherCategories":  "Other categories",
+      "otherCategoriesParagraph1": "Check out the detailed offer of our other boards. There you will find building boards, specialist boards, packaging boards, plywood and fiberboard. In each category you will find a detailed description of the discs you are interested in.",
+      "otherCategoriesParagraph2": "Information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of wood-based boards or call our sales representative and discuss the details!"
+
     },
 
     "ContactForm": {
@@ -145,5 +151,11 @@
     "contact": {
       "paragraph1": "Contact us directly by clicking on the phone number or e-mail address, or fill out the form below and we will contact you with a direct offer for our wood-based boards and cutting services.",
       "paragraph2": "Below the form you will find a map with contacts to specific representatives of sales departments. You know what you are interested in - call directly to the salesperson responsible for your area."
+    },
+
+    "mapPoland": {
+      "salesDirector": "Sales Director",
+      "salesRepresentative": "Sales Representative",
+      "headOfSalesDepartment": "Head of Sales Department"
     }
 }

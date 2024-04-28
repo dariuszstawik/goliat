@@ -76,12 +76,14 @@
       "pilsniowe2Paragraph": "Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą płyt pilśniowych bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!",
       "sampleFiberBoards": "Przykładowe sklejki",
       "fiberBoardsFullOffer": "Pełna oferta sklejek",
+      "fiberBoardsCheckOther": "Sprawdź pozostałe płyty pilśniowe",
+      "backToFiberBoards": "Wróć do oferty płyt pilśniowych",
 
       "panelSaw1": "Piła panelowa 1",
       "panelSaw11Paragraph": "Maszyna posiada obrotnicę do cięcia paneli w dwóch płaszczyznach Załadunek automatyczny możliwy z trzech stron ( lewo , prawo i tył)",
-      "panelSaw1li1": "Maksymalny wymiar materiału 3200mm x 1850 mm (przy obracaniu)",
-      "panelSaw1li2": "Minimalny wymiar materiału przy obracaniu 1500mm x 1500mm",
-      "panelSaw1li3": "Maksymalna grubość cięcia paczki paneli – 90 mm",
+      "panelSaw1Li1": "Maksymalny wymiar materiału 3200mm x 1850 mm (przy obracaniu)",
+      "panelSaw1Li2": "Minimalny wymiar materiału przy obracaniu 1500mm x 1500mm",
+      "panelSaw1Li3": "Maksymalna grubość cięcia paczki paneli – 90 mm",
       "panelSaw12Paragraph": "Używane, cięcie: 4.300 mm x 4.300 m, wysokość cięcia 105 mm, 4 przednie tablice powietrza 2500 x 600 mm, winda.",
 
       "panelSaw2": "Piła panelowa 2",
@@ -113,7 +115,11 @@
       "formatSawLi8": "średnica wrzeciona tarczy głównej 30 mm",
       "formatSawLi9": "prędkość tarczy regulowana 3500 / 4500 / 6000 RPM",
       "formatSawLi10": "prędkość obrotowa podcinacza 8000 RPM",
-      "formatSawLi11": "średnica króćca 80 mm i 120 mm"
+      "formatSawLi11": "średnica króćca 80 mm i 120 mm",
+
+      "otherCategories":  "Pozostałe kategorie",
+      "otherCategoriesParagraph1": "Zapoznaj się ze szczegółową ofertą naszych pozostałych płyt. Znajdziesz tam płyty meblowe, płyty budowlane, płyty opakowaniowe, sklejki i płyty pilśniowe. W każdej kategorii poznasz szczegółowy opis płyt, które Cię interesują.",
+      "otherCategoriesParagraph2": "Informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą płyt drewnopochodnych bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!"
 },
 
 "ContactForm": {
@@ -143,6 +149,12 @@
 "contact": {
   "paragraph1": "Skontaktuj się z nami bezpośrednio, klikając na numer telefonu lub adres e-mail, bądź wypełnij poniższy formularz, a odezwiemy się do Ciebie z bezpośrednią ofertą na nasze płyty drewnopochodne i usługi cięcia.",
   "paragraph2": "Poniżej formularza znajdziesz mapkę z kontaktami do konkretnych przedstawicieli działów handlowych. Wiesz co Cię interesuje - wykonaj telefon bezpośrednio do handlowca odpowiedzialnego za twój rejon."
+},
+
+"mapPoland": {
+  "salesDirector": "Dyrektor sprzedaży",
+  "salesRepresentative": "Handlowiec",
+  "headOfSalesDepartment": "Kierownik Działu Handlowego"
 }
 
 }

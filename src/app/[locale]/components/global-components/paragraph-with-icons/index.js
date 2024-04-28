@@ -14,6 +14,7 @@ export default function ParagraphWithIcons({
   children,
   isOnAboutPage,
   isReverse,
+  locale,
 }) {
   return (
     <div className={`w-screen ${hasGrayBg && "bg-primaryGray"}`}>
@@ -71,7 +72,11 @@ export default function ParagraphWithIcons({
           </div>
           <div>{children}</div>
           <div className="flex items-center ml-auto mt-4">
-            <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>
+            {locale === "en" ? (
+              <h4 className="">Talk to a sales representative</h4>
+            ) : (
+              <h4 className="">Porozmawiaj z&nbsp;handlowcem</h4>
+            )}
             <span className="text-red-500 ml-4 mr-3">
               {"\u003E\u003E\u003E\u003E"}
             </span>

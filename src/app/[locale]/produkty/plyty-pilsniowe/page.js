@@ -1,3 +1,4 @@
+import { unstable_setRequestLocale } from "next-intl/server";
 import ContactForm from "../../components/global-components/contact-form";
 import HeroSection from "../../components/global-components/hero-section";
 import MapPoland from "../../components/global-components/map-poland";
@@ -5,47 +6,52 @@ import ParagraphWithIcons from "../../components/global-components/paragraph-wit
 import ParagraphWithImage from "../../components/global-components/paragraph-with-image";
 import ProductCard from "../../components/global-components/product-card";
 import ProductsCarousel from "../../components/global-components/products-carousel";
-import plytyPilsniowe from "../../data/plyty-pilsniowe";
+// import plytyPilsniowe from "../../data/plyty-pilsniowe";
+import { useTranslations } from "next-intl";
+import { plytyPilsniowe, plytyPilsnioweEn } from "../../data/plyty-pilsniowe";
 
-export default function PlytyPilsniowe() {
+export default function PlytyPilsniowe({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Homepage");
+  const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
+  const ti = useTranslations("Icons");
+
+  const plytyPilsnioweList =
+    locale === "en" ? plytyPilsnioweEn : plytyPilsniowe;
+
   return (
     <div>
       <HeroSection
         backgroundImage="/hero-plyty-pilsniowe.jpg"
         heroCircle="/hero-circle-plyty-pilsniowe.png"
         hasRedBg
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
       />
       <ParagraphWithImage
-        title="Płyty pilśniowe"
+        title={locale === "en" ? "Fiberboards" : "Płyty pilśniowe"}
         icon="/icon-plyty-pilsniowe.svg"
         whiteIcon={"/icon-plyty-pilsniowe-white.svg"}
         productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
-        productCardTitle="płyta pilśniowa surowa twarda"
+        productCardTitle={
+          locale === "en"
+            ? "raw hard fiberboard"
+            : "płyta pilśniowa surowa twarda"
+        }
         href="/pl/produkty/plyty-pilsniowe/plyta-pilsniowa-surowa-twarda"
         isRed
+        locale={locale}
       >
-        <p className="mb-9">
-          Płyty pilśniowe - zwane potocznie dyktą, to wyrób z drewna w postaci
-          płyty wykonanej z rozwłóknionej tkanki drzewnej przez spilśnienie jej
-          i uformowanie w odpowiedniej temperaturze pod (normalnym lub
-          zwiększonym) ciśnieniem. Powstaje tym samym zwarty i solidny produkt,
-          który ma wiele praktycznych zalet. Płyty pilśniowe służą jako materiał
-          do izolacji ścian, wygłuszenia stropów i poprawy parametrów
-          akustycznych pomieszczeń, a także jako okładziny ścienne, sufitowe
-          oraz materiał na podłogi. Płyty pilśniowe dzielą się na 3 kategorie:
-          miękka - porowata, twarda - surowa oraz lakierowana.
-        </p>
-        <p>
-          Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
-          zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
-          zapraszamy do zapoznania się z całą ofertą płyt pilśniowych bądź
-          wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-        </p>
+        <p className="mb-9">{t("pilsniowe1Paragraph")}</p>
+        <p>{t("pilsniowe2Paragraph")}</p>
       </ParagraphWithImage>
 
       <div className="w-screen bg-primaryGray py-16 flex justify-center">
         <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
-          {plytyPilsniowe.map((plyta) => (
+          {plytyPilsnioweList.map((plyta) => (
             <li key={plyta.id}>
               <ProductCard
                 productCardImg={plyta.img}
@@ -53,41 +59,45 @@ export default function PlytyPilsniowe() {
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
                 whiteIcon={plyta.whiteIcon}
-                href={`/pl/produkty/plyty-pilsniowe/${plyta.slug}`}
+                href={`/${locale}/produkty/plyty-pilsniowe/${plyta.slug}`}
                 isRed
+                locale={locale}
               />
             </li>
           ))}
         </ul>
       </div>
       <ParagraphWithIcons
-        title="Pozostałe kategorie"
+        title={t("otherCategories")}
         icon1="/icon-plyty-meblowe.svg"
         icon2="/icon-plyty-budowlane.svg"
         icon3="/icon-sklejki.svg"
         icon4="/icon-plyty-opakowaniowe.svg"
         icon5="/icon-plyty-specjalistyczne.svg"
         img="/other-categories-asset.svg"
+        locale={locale}
       >
-        <p className="mb-9">
-          Zapoznaj się ze szczegółową ofertą naszych pozostałych płyt.
-          Znajdziesz tam płyty meblowe, płyty budowlane, płyty opakowaniowe,
-          sklejki i płyty pilśniowe. W każdej kategorii poznasz szczegółowy opis
-          płyt, które Cię interesują.
-        </p>
-        <p>
-          Informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu
-          danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do
-          zapoznania się z całą ofertą płyt drewnopochodnych bądź wykonania
-          telefonu i rozmowy o szczegółach z naszym handlowcem!
-        </p>
+        <p className="mb-9">{t("otherCategoriesParagraph1")}</p>
+        <p>{t("otherCategoriesParagraph2")}</p>
       </ParagraphWithIcons>
       <div className="mb-8">
         <ProductsCarousel content="productCategories" />
       </div>
-      <ContactForm />
-
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
     </div>
   );
 }

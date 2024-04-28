@@ -10,6 +10,7 @@ export default function Kontakt({ params: { locale } }) {
   const t = useTranslations("contact");
   const tc = useTranslations("ContactForm");
   const ti = useTranslations("Icons");
+  const tm = useTranslations("mapPoland");
 
   return (
     <div>
@@ -26,7 +27,11 @@ export default function Kontakt({ params: { locale } }) {
         paragraph1={t("paragraph1")}
         paragraph2={t("paragraph2")}
       />
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
       <ContactForm
         locale={locale}
         name={tc("name")}

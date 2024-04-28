@@ -7,13 +7,21 @@ import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
 import plytyBudowlane from "@/app/[locale]/data/plyty-budowlane";
 import plytySpecjalistyczne from "@/app/[locale]/data/plyty-specjalistyczne";
 import plytyOpakowaniowe from "@/app/[locale]/data/plyty-opakowaniowe";
-import plytyPilsniowe from "@/app/[locale]/data/plyty-pilsniowe";
+
 import sklejki from "@/app/[locale]/data/sklejki";
 import productCategories from "@/app/[locale]/data/product-categories";
 import servicesData from "@/app/[locale]/data/services";
 import productsMain from "@/app/[locale]/data/products-main";
+import {
+  plytyPilsniowe,
+  plytyPilsnioweEn,
+} from "@/app/[locale]/data/plyty-pilsniowe";
+import PlytyPilsniowe from "@/app/[locale]/produkty/plyty-pilsniowe/page";
 
-export default function ProductsCarousel({ title, content }) {
+export default function ProductsCarousel({ title, content, locale }) {
+  const plytyPilsnioweList =
+    locale === "en" ? plytyPilsnioweEn : plytyPilsniowe;
+
   const settings2xl = {
     dots: false,
     arrows: true,
@@ -131,7 +139,7 @@ export default function ProductsCarousel({ title, content }) {
               ))}
 
             {content === "plytyPilsniowe" &&
-              plytyPilsniowe.map((plyta) => (
+              plytyPilsnioweList.map((plyta) => (
                 <li key={plyta.id}>
                   <ProductCard
                     productCardImg={plyta.img}
@@ -139,9 +147,10 @@ export default function ProductsCarousel({ title, content }) {
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
                     whiteIcon={plyta.whiteIcon}
-                    href={`/pl/produkty/plyty-pilsniowe/${plyta.slug}`}
+                    href={`/${locale}/produkty/plyty-pilsniowe/${plyta.slug}`}
                     isRed
                     isInCarousel
+                    locale={locale}
                   />
                 </li>
               ))}
