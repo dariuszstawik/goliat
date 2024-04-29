@@ -94,8 +94,8 @@ const ContactForm = ({
       >
         <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-9">
           <input
-            id="userName"
-            name="userName"
+            id="user_name"
+            name="user_name"
             type="text"
             required
             placeholder={name}
@@ -104,8 +104,8 @@ const ContactForm = ({
           ></input>
 
           <input
-            id="userPhone"
-            name="userPhone"
+            id="user_phone"
+            name="user_phone"
             type="text"
             required
             placeholder={phone}
@@ -114,8 +114,8 @@ const ContactForm = ({
           ></input>
 
           <input
-            id="userEmail"
-            name="userEmail"
+            id="user_email"
+            name="user_email"
             // type="text"
             type="email"
             required
