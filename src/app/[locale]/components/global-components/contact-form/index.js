@@ -27,21 +27,43 @@ const ContactForm = ({
     }
   }, [showNotification]);
 
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm(
+  //     process.env.EMAILJS_SERVICE_ID,
+  //     process.env.EMAILJS_TEMPLATE_ID,
+  //     form.current,
+  //     {
+  //       publicKey: process.env.EMAILJS_PUBLIC_KEY,
+  //     }
+  //   );
+
+  //   setShowNotification(true);
+
+  //   e.target && e.target.reset();
+  // };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      process.env.EMAILJS_SERVICE_ID,
-      process.env.EMAILJS_TEMPLATE_ID,
-      form.current,
-      {
-        publicKey: process.env.EMAILJS_PUBLIC_KEY,
-      }
-    );
-
-    setShowNotification(true);
-
-    e.target && e.target.reset();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   // const form = useRef(null);
@@ -136,7 +158,8 @@ const ContactForm = ({
                 <input
                   type="checkbox"
                   id="marketingTermsCheckbox"
-                  required
+                  name="marketingTermsCheckbox"
+                  // required
                   className=""
                 />
                 <label
