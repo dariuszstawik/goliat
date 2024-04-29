@@ -11,7 +11,7 @@ export default function Footer({ locale }) {
   return (
     <section className="text-base w-full px-10 md:px-20 lg:px-32 py-10 flex flex-col gap-10">
       <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-16 xl:gap-32">
-        <Logo hasNoMargin />
+        <Logo hasNoMargin locale={locale} />
         <div className="flex gap-4 shrink-0 items-center">
           <a href="https://www.facebook.com/GoliatPolska/">
             <Image src="/fb-icon.svg" width={42} height={42} alt="facebook" />

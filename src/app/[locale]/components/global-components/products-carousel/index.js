@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../product-card";
-import productsMain from "@/app/[locale]/data/products-main";
 import {
   plytyPilsniowe,
   plytyPilsnioweEn,
@@ -31,6 +30,10 @@ import {
   plytyOpakowaniowe,
   plytyOpakowanioweEn,
 } from "@/app/[locale]/data/plyty-opakowaniowe";
+import {
+  productsMain,
+  productsMainEn,
+} from "@/app/[locale]/data/products-main";
 
 export default function ProductsCarousel({ title, content, locale }) {
   const plytyMebloweList = locale === "en" ? plytyMebloweEn : plytyMeblowe;
@@ -53,6 +56,8 @@ export default function ProductsCarousel({ title, content, locale }) {
 
   const productCategoriesList =
     locale === "en" ? productCategoriesEn : productCategories;
+
+  const productsMainList = locale === "en" ? productsMainEn : productsMain;
 
   const settings2xl = {
     dots: false,
@@ -222,7 +227,7 @@ export default function ProductsCarousel({ title, content, locale }) {
               ))}
 
             {content === "productsMain" &&
-              productsMain.map((plyta) => (
+              productsMainList.map((plyta) => (
                 <li key={plyta.id}>
                   <ProductCard
                     productCardImg={plyta.img}

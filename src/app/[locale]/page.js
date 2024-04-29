@@ -45,6 +45,7 @@ export default function Home({ params: { locale } }) {
         <ProductsCarousel
           // title="Przykładowe płyty meblowe"
           content="productsMain"
+          locale={locale}
         />
 
         {/* <ProductCard /> */}

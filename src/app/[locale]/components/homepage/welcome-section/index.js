@@ -51,7 +51,7 @@ export default function WelcomeSection({
               height={494}
               className="-translate-y-16 w-[90%]"
             />
-            <Logo v2 />
+            <Logo v2 locale={locale} />
           </div>
           <div className="flex flex-col gap-16">
             <Image
