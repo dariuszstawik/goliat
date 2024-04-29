@@ -26,7 +26,11 @@ export default function Home({ params: { locale } }) {
       <div>
         <HeroSection
           backgroundImage="/hero-homepage.jpg"
-          heroCircle="/hero-circle-homepage.png"
+          heroCircle={
+            locale === "en"
+              ? "/hero-circle-homepage-en.svg"
+              : "/hero-circle-homepage.png"
+          }
           icon1={ti("shortLeadTimes")}
           icon2={ti("consulting")}
           icon3={ti("wideRange")}
