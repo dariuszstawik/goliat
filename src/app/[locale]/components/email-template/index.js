@@ -9,7 +9,7 @@ export const EmailTemplate = ({ message, userName, email, phone }) => (
           {userName} {email} {phone}
         </span>
       </h3>
-      <p>{message}</p>{" "}
+      <p>{message}</p>
     </div>
   </div>
 );

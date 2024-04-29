@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Button from "../button";
 import ButtonSm from "../button-sm";
+// import { EmailJSResponseStatus } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = ({
   name,
@@ -14,8 +16,41 @@ const ContactForm = ({
   submit,
 }) => {
   const form = useRef(null);
-
   const [showNotification, setShowNotification] = useState(false);
+
+  useEffect(() => {
+    if (showNotification) {
+      const timer = setTimeout(() => {
+        setShowNotification(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showNotification]);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+        ? process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+        : "",
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+        ? process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+        : " ",
+      form.current ? form.current : "",
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        ? process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        : ""
+    );
+
+    setShowNotification(true);
+
+    e.target && e.target.reset();
+  };
+
+  // const form = useRef(null);
+
+  // const [showNotification, setShowNotification] = useState(false);
 
   // useEffect(() => {
   //   if (showNotification) {
@@ -51,10 +86,10 @@ const ContactForm = ({
   // };
 
   return (
-    <>
+    <div>
       <form
         ref={form}
-        // onSubmit={sendEmail}
+        onSubmit={sendEmail}
         className="text-sm lg:text-base w-full bg-primaryYellow flex flex-col justify-center items-center lg:items-start lg:flex-row gap-14 py-9 px-14"
       >
         <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-9">
@@ -81,7 +116,8 @@ const ContactForm = ({
           <input
             id="userEmail"
             name="userEmail"
-            type="text"
+            // type="text"
+            type="email"
             required
             placeholder={email}
             className="w-full rounded-full border border-black leading-8 px-4"
@@ -140,7 +176,11 @@ const ContactForm = ({
           </div>
         </div>
       </form>
-
+      {showNotification && (
+        <div className="text-green-500 py-2 px-4 absolute top-100 right-0 mt-2 mr-2 rounded">
+          Wiadomość wysłana. Dziękujemy!
+        </div>
+      )}
       {/* <section
         className=" pt-[112px] flex flex-col gap-2 relative"
         id="contactSection"
@@ -236,7 +276,7 @@ const ContactForm = ({
           )}
         </form>
       </section> */}
-    </>
+    </div>
   );
 };
 
