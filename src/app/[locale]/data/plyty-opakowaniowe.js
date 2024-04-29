@@ -2,11 +2,12 @@ export const plytyOpakowaniowe = [
   {
     id: 1,
     name: "płyta OSB",
+    type: "plyty-budowlane",
     slug: "plyta-osb",
     img: "/plyta-osb.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
     whiteIcon: "/icon-plyty-budowlane-white.svg",
-    href: "/pl/produkty/plyty-budowlane/plyta-osb",
+    // href: "/pl/produkty/plyty-budowlane/plyta-osb",
     description:
       "OSB to jedna z najpopularniejszych i najczęściej wykorzystywanych w budownictwie płyt drewnopochodnych. Płyta OSB składa się z płaskich wiórów, które są ułożone w trzech warstwach, a następnie zaprasowane w warunkach wysokich temperatur i wysokiego ciśnienia. Jako spoiwo stosuje się żywice syntetyczne. Wióry są ukierunkowane wzdłuż dłuższej krawędzi płyty w warstwach zewnętrznych, natomiast w warstwie wewnętrznej są ułożone poprzecznie. Ze względu na ukierunkowanie wiórów w warstwach wyróżnia się dwie osie wytrzymałości mechanicznej - oś główną (wzdłuż dłuższej krawędzi) i boczną (wzdłuż krótszej krawędzi). Płytę OSB cechują bardzo dobre parametry wytrzymałościowe, odporność na uderzenia, bardzo dobra izolacyjność cieplna i akustyczna, stabilność kształtu i wymiarów. Jest idealnym materiałem drewnopochodnym do szerokiego spektrum zastosowań w budownictwie, ale także w przemyśle meblarskim, produkcji opakowań oraz przemyśle motoryzacyjnym.",
     content: (
@@ -46,6 +47,7 @@ export const plytyOpakowaniowe = [
   {
     id: 2,
     name: "płyta wiórowa surowa",
+    type: "plyty-meblowe",
     slug: "plyta-wiorowa-surowa",
     img: "/plyta-wiorowa-surowa.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
@@ -54,6 +56,7 @@ export const plytyOpakowaniowe = [
   {
     id: 3,
     name: "sklejka suchotrwała",
+    type: "sklejki",
     slug: "sklejka-suchotrwala",
     img: "/plyta-suchotrwala.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
@@ -98,6 +101,7 @@ export const plytyOpakowaniowe = [
   {
     id: 4,
     name: "płyta hdf surowa",
+    type: "plyty-meblowe",
     slug: "plyta-hdf-surowa",
     img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
@@ -130,6 +134,7 @@ export const plytyOpakowanioweEn = [
   {
     id: 1,
     name: "OSB",
+    type: "plyty-budowlane",
     slug: "plyta-osb",
     img: "/plyta-osb.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -174,6 +179,7 @@ export const plytyOpakowanioweEn = [
   {
     id: 2,
     name: "płyta wiórowa surowa",
+    type: "plyty-meblowe",
     slug: "plyta-wiorowa-surowa",
     img: "/plyta-wiorowa-surowa.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
@@ -182,6 +188,7 @@ export const plytyOpakowanioweEn = [
   {
     id: 3,
     name: "interior plywood",
+    type: "sklejki",
     slug: "sklejka-suchotrwala",
     img: "/plyta-suchotrwala.jpg",
     icon: "/icon-sklejki.svg",
@@ -226,6 +233,7 @@ export const plytyOpakowanioweEn = [
   {
     id: 4,
     name: "raw hdf board",
+    type: "plyty-meblowe",
     slug: "plyta-hdf-surowa",
     img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-meblowe.svg",

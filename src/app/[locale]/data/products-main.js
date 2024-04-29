@@ -2,6 +2,7 @@ export const productsMain = [
   {
     id: 1,
     name: "sklejka suchotrwała",
+    type: "sklejki",
     slug: "sklejka-suchotrwala",
     img: "/plyta-suchotrwala.jpg",
     icon: "/icon-sklejki.svg",
@@ -46,6 +47,7 @@ export const productsMain = [
   {
     id: 2,
     name: "sklejka antypoślizgowa",
+    type: "sklejki",
     slug: "sklejka-antyposlizgowa",
     img: "/plyta-antyposlizgowa.jpg",
     icon: "/icon-sklejki.svg",
@@ -67,6 +69,7 @@ export const productsMain = [
   {
     id: 3,
     name: "sklejka wodoodporna",
+    type: "sklejki",
     slug: "sklejka-wodoodporna",
     img: "/sklejka-wodoodporna.jpg",
     icon: "/icon-sklejki.svg",
@@ -111,6 +114,7 @@ export const productsMain = [
   {
     id: 4,
     name: "płyta Durelis - P5",
+    type: "plyty-budowlane",
     slug: "plyta-durelis-p5",
     img: "/plyta-durelis.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -133,6 +137,7 @@ export const productsMain = [
   {
     id: 5,
     name: "płyta cementowo-wiórowa",
+    type: "plyty-budowlane",
     slug: "plyta-cementowo-wiorowa",
     img: "/plyta-wiorowo-cementowa.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -157,9 +162,10 @@ export const productsMain = [
   {
     id: 6,
     name: "płyta o zwiększonej gęstości na antresole",
+    type: "plyty-specjalistyczne",
     slug: "plyta-o-zwiekszonej-gestosci-na-antresole",
     img: "/plyta-o-zwiekszonej-gestosci-na-antresole.jpg",
-    icon: "/icon-plyty-budowlane.svg",
+    icon: "/icon-plyty-specjalistyczne.svg",
     href: "",
     description:
       'Płyta o zwiększonej gęstości na antresole to płyta idealnie nadająca się na poszycia podestu. Jest to płyta wiórowa o podwyższonej zdolności do przenoszenia obciążeń, przeznaczona do użytkowania w warunkach suchych. Użycie odpowiednich płyt ma ogromne znaczenie dla funkcjonalności i bezpieczeństwa podestu magazynowego. Przykładowe parametry płyty: 38mm P6 R10 AC4 Bfl-s1, B-s1,d0. Wytłumaczenie: 38 mm (grubość płyty), P6 - twardość płyty (od P1 do P7), R10 - antypoślizgowość (od R9 do R13) - płyta antypoślizgowa dla użytkowania przy kącie nachylenia nawet 10-19°, do stosowania w pomieszczeniach magazynowych. AC4 – klasa ścieralności (od AC1 do AC6) - in wyższa klasa tym lepiej, AC4 cechuję wysoką klasę ścieralności nawet w pomieszczeniach bardzo często użytkowanych. Bfl - klasyfikacja ogniowa (od A1 do F) - płyta Bfl jest bardzo trudno zapalna (niektóre źródła nazywają to nawet płytą niezapalną) i posiada właściwości ograniczonego udziału w pożarze, nie powoduje rozgorzenia ognia. s1 – wytwarzanie dymu (od S1 do S3) – tzn., "prawie bez dymu", d0 – wytwarzanie płonących kropli (od d0 do d2) – w przypadku d0 nie ma w ogóle płonących kropli.',
@@ -176,6 +182,7 @@ export const productsMain = [
   {
     id: 8,
     name: "płyta wiórowa laminowana",
+    type: "plyty-meblowe",
     slug: "plyta-wiorowa-laminowana",
     img: "/plyta-wiorowa-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -219,6 +226,7 @@ export const productsMain = [
   {
     id: 9,
     name: "płyta mdf surowa",
+    type: "plyty-meblowe",
     slug: "plyta-mdf-surowa",
     img: "/plyta-mdf-surowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -251,6 +259,7 @@ export const productsMain = [
   {
     id: 10,
     name: "płyta mdf 2-stronnie laminowana",
+    type: "plyty-meblowe",
     slug: "plyta-mdf-2-stronnie-laminowana",
     img: "/plyta-mdf-2stronnie-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -283,6 +292,8 @@ export const productsMain = [
   {
     id: 11,
     name: "płyta pilśniowa surowa twarda",
+    category: "płyta pilśniowa",
+    type: "plyty-pilsniowe",
     slug: "plyta-pilsniowa-surowa-twarda",
     img: "/plyta-pilsniowa-surowa-twarda.jpg",
     icon: "/icon-plyty-pilsniowe.svg",
@@ -323,6 +334,8 @@ export const productsMain = [
   {
     id: 12,
     name: "płyta pilśniowa lakierowana",
+    category: "płyta pilśniowa",
+    type: "plyty-pilsniowe",
     slug: "plyta-pilsniowa-lakierowana",
     img: "/plyta-hdf-lakierowana.jpg",
     icon: "/icon-plyty-pilsniowe.svg",
@@ -345,6 +358,7 @@ export const productsMain = [
   {
     id: 13,
     name: "płyta hdf surowa",
+    type: "plyty-meblowe",
     slug: "plyta-hdf-surowa",
     img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -374,6 +388,7 @@ export const productsMain = [
   {
     id: 14,
     name: "płyta komórkowa",
+    type: "plyty-meblowe",
     slug: "plyta-komorkowa",
     img: "/plyta-komorkowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -396,6 +411,7 @@ export const productsMainEn = [
   {
     id: 1,
     name: "interior plywood",
+    type: "sklejki",
     slug: "sklejka-suchotrwala",
     img: "/plyta-suchotrwala.jpg",
     icon: "/icon-sklejki.svg",
@@ -440,6 +456,7 @@ export const productsMainEn = [
   {
     id: 2,
     name: "anti-slip plywood",
+    type: "sklejki",
     slug: "sklejka-antyposlizgowa",
     img: "/plyta-antyposlizgowa.jpg",
     icon: "/icon-sklejki.svg",
@@ -461,6 +478,7 @@ export const productsMainEn = [
   {
     id: 3,
     name: "waterproof  plywood",
+    type: "sklejki",
     slug: "sklejka-wodoodporna",
     img: "/sklejka-wodoodporna.jpg",
     icon: "/icon-sklejki.svg",
@@ -505,6 +523,7 @@ export const productsMainEn = [
   {
     id: 4,
     name: "Durelis board",
+    type: "plyty-budowlane",
     slug: "plyta-durelis-p5",
     img: "/plyta-durelis.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -527,6 +546,7 @@ export const productsMainEn = [
   {
     id: 5,
     name: "cement particleboard",
+    type: "plyty-budowlane",
     slug: "plyta-cementowo-wiorowa",
     img: "/plyta-wiorowo-cementowa.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -551,6 +571,7 @@ export const productsMainEn = [
   {
     id: 6,
     name: "increased density board for the mezzroom",
+    type: "plyty-specjalistyczne",
     slug: "plyta-o-zwiekszonej-gestosci-na-antresole",
     img: "/plyta-o-zwiekszonej-gestosci-na-antresole.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -570,6 +591,7 @@ export const productsMainEn = [
   {
     id: 8,
     name: "laminated chipboard",
+    type: "plyty-meblowe",
     slug: "plyta-wiorowa-laminowana",
     img: "/plyta-wiorowa-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -613,6 +635,7 @@ export const productsMainEn = [
   {
     id: 9,
     name: "raw mdf board",
+    type: "plyty-meblowe",
     slug: "plyta-mdf-surowa",
     img: "/plyta-mdf-surowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -645,6 +668,7 @@ export const productsMainEn = [
   {
     id: 10,
     name: "2-side laminated mdf board",
+    type: "plyty-meblowe",
     slug: "plyta-mdf-2-stronnie-laminowana",
     img: "/plyta-mdf-2stronnie-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -677,6 +701,7 @@ export const productsMainEn = [
   {
     id: 11,
     name: "raw hard fiberboard",
+    type: "plyty-pilsniowe",
     category: "fiberboard",
     slug: "plyta-pilsniowa-surowa-twarda",
     img: "/plyta-pilsniowa-surowa-twarda.jpg",
@@ -718,6 +743,7 @@ export const productsMainEn = [
   {
     id: 12,
     name: "varnished fiberboard",
+    type: "plyty-pilsniowe",
     category: "fiberboard",
     slug: "plyta-pilsniowa-lakierowana",
     img: "/plyta-hdf-lakierowana.jpg",
@@ -741,6 +767,7 @@ export const productsMainEn = [
   {
     id: 13,
     name: "raw hdf board",
+    type: "plyty-meblowe",
     slug: "plyta-hdf-surowa",
     img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -771,6 +798,7 @@ export const productsMainEn = [
   {
     id: 14,
     name: "corriboard",
+    type: "plyty-meblowe",
     slug: "plyta-komorkowa",
     img: "/plyta-komorkowa.jpg",
     icon: "/icon-plyty-meblowe.svg",

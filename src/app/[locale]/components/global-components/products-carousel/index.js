@@ -172,7 +172,7 @@ export default function ProductsCarousel({ title, content, locale }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
-                    href={plyta.href}
+                    href={`/${locale}/produkty/${plyta.type}/${plyta.slug}`}
                     isInCarousel
                   />
                 </li>
@@ -234,7 +234,7 @@ export default function ProductsCarousel({ title, content, locale }) {
                     alt={plyta.name}
                     productCardTitle={plyta.name}
                     icon={plyta.icon}
-                    href={plyta.href}
+                    href={`/${locale}/produkty/${plyta.type}/${plyta.slug}`}
                     isInCarousel
                   />
                 </li>

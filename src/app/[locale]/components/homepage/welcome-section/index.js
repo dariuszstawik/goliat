@@ -68,13 +68,13 @@ export default function WelcomeSection({
             <div className="flex flex-col gap-12 pr-32">
               <div className="flex gap-8">
                 <ButtonSm>
-                  <a href="/pl/produkty">{products}</a>
+                  <a href={`/${locale}/produkty`}>{products}</a>
                 </ButtonSm>
                 <ButtonSm>
-                  <a href="/pl/uslugi">{services}</a>
+                  <a href={`/${locale}/uslugi`}>{services}</a>
                 </ButtonSm>
                 <ButtonSm>
-                  <a href="/pl/kontakt">{contact}</a>
+                  <a href={`/${locale}/kontakt`}>{contact}</a>
                 </ButtonSm>
               </div>
               <div>
@@ -104,13 +104,13 @@ export default function WelcomeSection({
         />
         <div className="w-[80%] flex flex-col gap-8">
           <ButtonSm>
-            <a href="/pl/produkty">{products}</a>
+            <a href={`/${locale}/produkty`}>{products}</a>
           </ButtonSm>
           <ButtonSm>
-            <a href="/pl/uslugi">{services}</a>
+            <a href={`/${locale}/uslugi`}>{services}</a>
           </ButtonSm>
           <ButtonSm>
-            <a href="/pl/kontakt">{contact}</a>
+            <a href={`/${locale}/kontakt`}>{contact}</a>
           </ButtonSm>
         </div>
         <Image
