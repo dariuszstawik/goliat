@@ -22,7 +22,11 @@ export default function Sklejki({ params: { locale } }) {
     <div>
       <HeroSection
         backgroundImage="/foto-sklejki.jpg"
-        heroCircle="/hero-circle-sklejki.png"
+        heroCircle={
+          locale === "en"
+            ? "/hero-circle-sklejki-en.svg"
+            : "/hero-circle-sklejki.png"
+        }
         hasRedBg
         icon1={ti("shortLeadTimes")}
         icon2={ti("consulting")}

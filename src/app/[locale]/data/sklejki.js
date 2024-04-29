@@ -2,6 +2,7 @@ export const sklejki = [
   {
     id: 1,
     name: "sklejka antypoślizgowa",
+    category: "sklejka",
     slug: "sklejka-antyposlizgowa",
     img: "/plyta-antyposlizgowa.jpg",
     icon: "/icon-sklejki.svg",
@@ -22,6 +23,7 @@ export const sklejki = [
   {
     id: 2,
     name: "sklejka suchotrwała",
+    category: "sklejka",
     slug: "sklejka-suchotrwala",
     img: "/plyta-suchotrwala.jpg",
     icon: "/icon-sklejki.svg",
@@ -65,6 +67,7 @@ export const sklejki = [
   {
     id: 3,
     name: "sklejka szalunkowa",
+    category: "sklejka",
     slug: "sklejka-szalunkowa",
     img: "/plyta-szalunkowa.jpg",
     icon: "/icon-sklejki.svg",
@@ -87,6 +90,7 @@ export const sklejki = [
   {
     id: 4,
     name: "sklejka melaminowana",
+    category: "sklejka",
     slug: "sklejka-melaminowana",
     img: "/sklejka-melaminowana.jpg",
     icon: "/icon-sklejki.svg",
@@ -159,6 +163,7 @@ export const sklejki = [
   {
     id: 5,
     name: "sklejka fornirowana",
+    category: "sklejka",
     slug: "sklejka-fornirowana",
     img: "/sklejka-fornirowana.jpg",
     icon: "/icon-sklejki.svg",
@@ -200,6 +205,7 @@ export const sklejki = [
   {
     id: 6,
     name: "sklejka gruboogłobowa",
+    category: "sklejka",
     slug: "sklejka-grubooblogowa",
     img: "/sklejka-grubooblogowa2.jpg",
     icon: "/icon-sklejki.svg",
@@ -220,6 +226,7 @@ export const sklejki = [
   {
     id: 7,
     name: "sklejka wodoodporna",
+    category: "sklejka",
     slug: "sklejka-wodoodporna",
     img: "/sklejka-wodoodporna.jpg",
     icon: "/icon-sklejki.svg",
@@ -263,6 +270,7 @@ export const sklejki = [
   {
     id: 8,
     name: "sklejka antypoślizgowa HEXA",
+    category: "sklejka",
     slug: "sklejka-antyposlizgowa-hexa",
     img: "/sklejki.jpg",
     icon: "/icon-sklejki.svg",
@@ -286,6 +294,7 @@ export const sklejkiEN = [
   {
     id: 1,
     name: "anti-slip plywood",
+    category: "plywood",
     slug: "sklejka-antyposlizgowa",
     img: "/plyta-antyposlizgowa.jpg",
     icon: "/icon-sklejki.svg",
@@ -306,6 +315,7 @@ export const sklejkiEN = [
   {
     id: 2,
     name: "interior plywood",
+    category: "plywood",
     slug: "sklejka-suchotrwala",
     img: "/plyta-suchotrwala.jpg",
     icon: "/icon-sklejki.svg",
@@ -349,6 +359,7 @@ export const sklejkiEN = [
   {
     id: 3,
     name: "shuttering plywood",
+    category: "plywood",
     slug: "sklejka-szalunkowa",
     img: "/plyta-szalunkowa.jpg",
     icon: "/icon-sklejki.svg",
@@ -371,6 +382,7 @@ export const sklejkiEN = [
   {
     id: 4,
     name: "melaminated plywood",
+    category: "plywood",
     slug: "sklejka-melaminowana",
     img: "/sklejka-melaminowana.jpg",
     icon: "/icon-sklejki.svg",
@@ -439,6 +451,7 @@ export const sklejkiEN = [
   {
     id: 5,
     name: "veneered plywood",
+    category: "plywood",
     slug: "sklejka-fornirowana",
     img: "/sklejka-fornirowana.jpg",
     icon: "/icon-sklejki.svg",
@@ -480,6 +493,7 @@ export const sklejkiEN = [
   {
     id: 6,
     name: "thick plywood",
+    category: "plywood",
     slug: "sklejka-grubooblogowa",
     img: "/sklejka-grubooblogowa2.jpg",
     icon: "/icon-sklejki.svg",
@@ -500,6 +514,7 @@ export const sklejkiEN = [
   {
     id: 7,
     name: "waterproof  plywood",
+    category: "plywood",
     slug: "sklejka-wodoodporna",
     img: "/sklejka-wodoodporna.jpg",
     icon: "/icon-sklejki.svg",
@@ -543,6 +558,7 @@ export const sklejkiEN = [
   {
     id: 8,
     name: "HEXA anti-slip plywood",
+    category: "plywood",
     slug: "sklejka-antyposlizgowa-hexa",
     img: "/sklejki.jpg",
     icon: "/icon-sklejki.svg",

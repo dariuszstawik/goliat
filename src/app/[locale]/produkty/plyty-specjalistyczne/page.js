@@ -26,7 +26,11 @@ export default function PlytySpecjalistyczne({ params: { locale } }) {
     <div>
       <HeroSection
         backgroundImage="/foto-specjalistyczne.jpg"
-        heroCircle="/hero-circle-plyty-specjalistyczne.png"
+        heroCircle={
+          locale === "en"
+            ? "/hero-circle-plyty-specjalistyczne-en.svg"
+            : "/hero-circle-plyty-specjalistyczne.png"
+        }
         icon1={ti("shortLeadTimes")}
         icon2={ti("consulting")}
         icon3={ti("wideRange")}

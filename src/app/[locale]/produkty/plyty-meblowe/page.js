@@ -22,7 +22,11 @@ export default function PlytyMeblowe({ params: { locale } }) {
     <div>
       <HeroSection
         backgroundImage="/foto-plyty-meblowe.jpg"
-        heroCircle="/hero-circle-plyty-meblowe.png"
+        heroCircle={
+          locale === "en"
+            ? "/hero-circle-plyty-meblowe-en.svg"
+            : "/hero-circle-plyty-meblowe.png"
+        }
         icon1={ti("shortLeadTimes")}
         icon2={ti("consulting")}
         icon3={ti("wideRange")}

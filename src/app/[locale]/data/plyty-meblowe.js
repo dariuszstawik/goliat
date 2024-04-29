@@ -9,6 +9,7 @@ export const plytyMeblowe = [
   {
     id: 2,
     name: "płyta wiórowa laminowana",
+    category: "płyta meblowa",
     slug: "plyta-wiorowa-laminowana",
     img: "/plyta-wiorowa-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -51,6 +52,7 @@ export const plytyMeblowe = [
   {
     id: 3,
     name: "płyta wiórowa fornirowana",
+    category: "płyta meblowa",
     slug: "plyta-wiorowa-fornirowana",
     img: "/plyta-wiorowa-fornirowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -72,6 +74,7 @@ export const plytyMeblowe = [
   {
     id: 4,
     name: "płyta wiórowa połyskowa akrylowa",
+    category: "płyta meblowa",
     slug: "plyta-wiorowa-polyskowa-akrylowa",
     img: "/plyta-wiorowa-polyskowa-akrylowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -93,6 +96,7 @@ export const plytyMeblowe = [
   {
     id: 5,
     name: "płyta wiórowa połyskowa melaminowana",
+    category: "płyta meblowa",
     slug: "plyta-wiorowa-polyskowa-melaminowana",
     img: "/plyta-wiorowa-polyskowa-melaminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -114,6 +118,7 @@ export const plytyMeblowe = [
   {
     id: 6,
     name: "płyta mdf surowa",
+    category: "płyta meblowa",
     slug: "plyta-mdf-surowa",
     img: "/plyta-mdf-surowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -146,6 +151,7 @@ export const plytyMeblowe = [
   {
     id: 7,
     name: "płyta mdf 1-stronnie laminowana",
+    category: "płyta meblowa",
     slug: "plyta-mdf-1-stronnie-laminowana",
     img: "/plyta-mdf-1stronnie-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -178,6 +184,7 @@ export const plytyMeblowe = [
   {
     id: 8,
     name: "płyta mdf 2-stronnie laminowana",
+    category: "płyta meblowa",
     slug: "plyta-mdf-2-stronnie-laminowana",
     img: "/plyta-mdf-2stronnie-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -210,6 +217,7 @@ export const plytyMeblowe = [
   {
     id: 9,
     name: "płyta mdf barwiona w masie",
+    category: "płyta meblowa",
     slug: "plyta-mdf-barwiona-w-masie",
     img: "/plyta-mdf-barwiona-w-masie.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -230,6 +238,7 @@ export const plytyMeblowe = [
   {
     id: 10,
     name: "płyta mdf fornirowana",
+    category: "płyta meblowa",
     slug: "plyta-mdf-fornirowana",
     img: "/plyta-mdf-fornirowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -249,6 +258,7 @@ export const plytyMeblowe = [
   {
     id: 11,
     name: "płyta połyskowa mdf laminowana",
+    category: "płyta meblowa",
     slug: "plyta-polyskowa-mdf-laminowana",
     img: "/plyta-polyskowa-mdf-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -268,6 +278,7 @@ export const plytyMeblowe = [
   {
     id: 12,
     name: "płyta hdf surowa",
+    category: "płyta meblowa",
     slug: "plyta-hdf-surowa",
     img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -328,6 +339,7 @@ export const plytyMeblowe = [
   {
     id: 14,
     name: "płyta HDF lakierowana",
+    category: "płyta meblowa",
     slug: "plyta-hdf-lakierowana",
     img: "/plyta-hdf-lakierowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -356,6 +368,7 @@ export const plytyMeblowe = [
   {
     id: 15,
     name: "płyta komórkowa",
+    category: "płyta meblowa",
     slug: "plyta-komorkowa",
     img: "/plyta-komorkowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -385,6 +398,7 @@ export const plytyMebloweEn = [
   {
     id: 2,
     name: "laminated chipboard",
+    category: "furniture board",
     slug: "plyta-wiorowa-laminowana",
     img: "/plyta-wiorowa-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -427,6 +441,7 @@ export const plytyMebloweEn = [
   {
     id: 3,
     name: "Veneered chipboard",
+    category: "furniture board",
     slug: "plyta-wiorowa-fornirowana",
     img: "/plyta-wiorowa-fornirowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -438,7 +453,7 @@ export const plytyMebloweEn = [
         <div className="w-[80%] flex flex-col mx-auto">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubości:</span> <span>19 mm</span>
+            <span className="text-xl">thickness:</span> <span>19 mm</span>
           </div>
         </div>
       </>
@@ -448,6 +463,7 @@ export const plytyMebloweEn = [
   {
     id: 4,
     name: "gloss acrylic clipboard",
+    category: "furniture board",
     slug: "plyta-wiorowa-polyskowa-akrylowa",
     img: "/plyta-wiorowa-polyskowa-akrylowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -459,7 +475,7 @@ export const plytyMebloweEn = [
         <div className="w-[80%] flex flex-col mx-auto">
           <span className="text-[44px] font-semibold my-8">2800x1300</span>
           <div>
-            <span className="text-xl">grubości:</span> <span>16/18 mm</span>
+            <span className="text-xl">thickness:</span> <span>16/18 mm</span>
           </div>
         </div>
       </>
@@ -469,6 +485,7 @@ export const plytyMebloweEn = [
   {
     id: 5,
     name: "gloss melaminated chipboard",
+    category: "furniture board",
     slug: "plyta-wiorowa-polyskowa-melaminowana",
     img: "/plyta-wiorowa-polyskowa-melaminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -480,7 +497,7 @@ export const plytyMebloweEn = [
         <div className="w-[80%] flex flex-col mx-auto">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubości:</span> <span>19 mm</span>
+            <span className="text-xl">thickness:</span> <span>19 mm</span>
           </div>
         </div>
       </>
@@ -490,6 +507,7 @@ export const plytyMebloweEn = [
   {
     id: 6,
     name: "raw mdf board",
+    category: "furniture board",
     slug: "plyta-mdf-surowa",
     img: "/plyta-mdf-surowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -501,7 +519,7 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 6 / 8 / 10 / 12 / 16 / 18</span>
           </div>
           <span> 22 / 25 / 28 / 30 / 32 / 36 / 38 / 44</span>
@@ -510,7 +528,7 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x1840</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 6 / 8 / 10 / 12 / 16 / 18</span>
           </div>
           <span> 22 / 25 / 28 / 30 / 32 / 36 / 38 / 44</span>
@@ -522,6 +540,7 @@ export const plytyMebloweEn = [
   {
     id: 7,
     name: "1-side laminated mdf board",
+    category: "furniture board",
     slug: "plyta-mdf-1-stronnie-laminowana",
     img: "/plyta-mdf-1stronnie-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -533,7 +552,7 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 8 / 10 / 12 / 16 / 18 / 22</span>
           </div>
           <span> 25 / 28 / 30 / 32 / 36 / 38</span>
@@ -542,7 +561,7 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x1840</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 8 / 10 / 12 / 16 / 18 / 22</span>
           </div>
           <span> 25 / 28 / 30 / 32 / 36 / 38</span>
@@ -554,6 +573,7 @@ export const plytyMebloweEn = [
   {
     id: 8,
     name: "2-side laminated mdf board",
+    category: "furniture board",
     slug: "plyta-mdf-2-stronnie-laminowana",
     img: "/plyta-mdf-2stronnie-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -565,7 +585,7 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 8 / 10 / 12 / 16 / 18 / 22</span>
           </div>
           <span> 25 / 28 / 30 / 32 / 36 / 38</span>
@@ -574,7 +594,7 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x1840</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 8 / 10 / 12 / 16 / 18 / 22</span>
           </div>
           <span> 25 / 28 / 30 / 32 / 36 / 38</span>
@@ -586,6 +606,7 @@ export const plytyMebloweEn = [
   {
     id: 9,
     name: "mdf colored board",
+    category: "furniture board",
     slug: "plyta-mdf-barwiona-w-masie",
     img: "/plyta-mdf-barwiona-w-masie.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -596,7 +617,7 @@ export const plytyMebloweEn = [
       <div className="w-[80%] flex flex-col mx-auto">
         <span className="text-[44px] font-semibold my-8">2800x2070</span>
         <div>
-          <span className="text-xl">grubości:</span>{" "}
+          <span className="text-xl">thickness:</span>{" "}
           <span>10 / 12 / 16 / 18 / 22 mm</span>
         </div>
       </div>
@@ -606,6 +627,7 @@ export const plytyMebloweEn = [
   {
     id: 10,
     name: "veneered mdf board",
+    category: "furniture board",
     slug: "plyta-mdf-fornirowana",
     img: "/plyta-mdf-fornirowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -616,7 +638,7 @@ export const plytyMebloweEn = [
       <div className="w-[80%] flex flex-col mx-auto">
         <span className="text-[44px] font-semibold my-8">2800x2070</span>
         <div>
-          <span className="text-xl">grubości:</span> <span>19 mm</span>
+          <span className="text-xl">thickness:</span> <span>19 mm</span>
         </div>
       </div>
     ),
@@ -625,6 +647,7 @@ export const plytyMebloweEn = [
   {
     id: 11,
     name: "gloss laminated mdf board",
+    category: "furniture board",
     slug: "plyta-polyskowa-mdf-laminowana",
     img: "/plyta-polyskowa-mdf-laminowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -633,9 +656,9 @@ export const plytyMebloweEn = [
       "MDF board is a wood-like board that is a substitute for natural wood. It is made of wood fibers enriched with organic hardening compounds and resins. These ingredients were pressed under high pressure and temperature, which resulted in high quality of the board. It is easy to process in various types - it can be cut, sawed, drilled, milled or shaped. MDF board has a smooth surface, which is perfect for the production of doors or furniture, as well as as a finishing element for interiors. It is also ideal for a worktop (for which you can choose the appropriate edging). MDF boards can be used to make shelves, wall panels, finishing strips and parts of construction joinery. High resistance to external factors allows products made of it to be used in places of intensive use.",
     content: (
       <div className="w-[80%] flex flex-col mx-auto">
-        <span className="text-[44px] font-semibold my-8">NA ZAMÓWIENIE</span>
+        <span className="text-[44px] font-semibold my-8">TO ORDER</span>
         <div>
-          <span className="text-xl">grubości:</span> <span>16 / 18 mm</span>
+          <span className="text-xl">thickness:</span> <span>16 / 18 mm</span>
         </div>
       </div>
     ),
@@ -644,6 +667,7 @@ export const plytyMebloweEn = [
   {
     id: 12,
     name: "raw hdf board",
+    category: "furniture board",
     slug: "plyta-hdf-surowa",
     img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -655,7 +679,7 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 1,5 / 2 / 2,5 / 3 / 4</span>
           </div>
         </div>
@@ -663,8 +687,8 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2100</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
           </div>
         </div>
       </div>
@@ -674,6 +698,7 @@ export const plytyMebloweEn = [
   {
     id: 14,
     name: "varnished hdf board",
+    category: "furniture board",
     slug: "plyta-hdf-lakierowana",
     img: "/plyta-hdf-lakierowana.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -685,14 +710,14 @@ export const plytyMebloweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubość:</span> <span> 3 mm</span>
+            <span className="text-xl">thickness:</span> <span> 3 mm</span>
           </div>
         </div>
 
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2850x2100</span>
           <div>
-            <span className="text-xl">grubość:</span> <span> 3 mm</span>
+            <span className="text-xl">thickness:</span> <span> 3 mm</span>
           </div>
         </div>
       </div>
@@ -702,6 +727,7 @@ export const plytyMebloweEn = [
   {
     id: 15,
     name: "corriboard",
+    category: "furniture board",
     slug: "plyta-komorkowa",
     img: "/plyta-komorkowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -712,7 +738,7 @@ export const plytyMebloweEn = [
       <>
         <div className="w-[80%] flex flex-col mx-auto">
           <span className="text-[44px] font-semibold my-8">
-            WYMIARY I GRUBOŚCI DOSTĘPNE NA ZAPYTANIE
+            DIMENSIONS AND THICKNESSES AVAILABLE ON REQUEST
           </span>
         </div>
       </>

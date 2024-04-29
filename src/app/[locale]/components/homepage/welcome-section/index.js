@@ -58,7 +58,7 @@ export default function WelcomeSection({
               src={
                 locale === "en"
                   ? "/welcome-content-en.svg"
-                  : "/welcome-content.png"
+                  : "/welcome-content.svg"
               }
               alt="Nieustannie odpowiadamy na potrzeby rynku płyt drewnopodobnych"
               width={658}

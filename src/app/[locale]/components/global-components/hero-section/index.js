@@ -33,7 +33,7 @@ export default function HeroSection({
           backgroundRepeat: "no-repeat",
         }}
       >
-        {heroCircle && (
+        {heroCircle ? (
           <Image
             // src="/hero-circle-homepage.svg"
             src={heroCircle}
@@ -42,6 +42,8 @@ export default function HeroSection({
             alt="hero-circle"
             className="w-64 md:w-96 lg:w-[465px]"
           />
+        ) : (
+          <div className="h-64 md:h-96 lg:h-[465px] opacity-full" />
         )}
         {contactIcon && (
           <Image

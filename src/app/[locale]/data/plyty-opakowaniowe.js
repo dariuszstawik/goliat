@@ -148,7 +148,7 @@ export const plytyOpakowanioweEn = [
           <div className="flex flex-col">
             <span className="text-[44px] font-semibold my-8">1250x2500</span>
             <div>
-              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span className="text-xl">thickness [mm]:</span>{" "}
               <span> 6 / 8 / 10</span>
             </div>
             <span> 12 / 15 / 18 / 22 / 25</span>
@@ -157,7 +157,7 @@ export const plytyOpakowanioweEn = [
           <div className="flex flex-col">
             <span className="text-[44px] font-semibold my-8">2500x5000</span>
             <div>
-              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span className="text-xl">thickness [mm]:</span>{" "}
               <span> 6 / 8 / 10</span>
             </div>
             <span> 12 / 15 / 18 / 22 / 25</span>
@@ -245,7 +245,7 @@ export const plytyOpakowanioweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2070</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
             <span> 1,5 / 2 / 2,5 / 3 / 4</span>
           </div>
         </div>
@@ -253,8 +253,8 @@ export const plytyOpakowanioweEn = [
         <div className="flex flex-col">
           <span className="text-[44px] font-semibold my-8">2800x2100</span>
           <div>
-            <span className="text-xl">grubości [mm]:</span>{" "}
-            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
+            <span className="text-xl">thickness [mm]:</span>{" "}
           </div>
         </div>
       </div>

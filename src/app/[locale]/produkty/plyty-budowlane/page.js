@@ -24,7 +24,11 @@ export default function PlytyBudowlane({ params: { locale } }) {
     <div>
       <HeroSection
         backgroundImage="/hero-plyty-budowlane.jpg"
-        heroCircle="/hero-circle-plyty-budowlane.png"
+        heroCircle={
+          locale === "en"
+            ? "/hero-circle-plyty-budowlane-en.svg"
+            : "/hero-circle-plyty-budowlane.png"
+        }
         hasRedBg
         icon1={ti("shortLeadTimes")}
         icon2={ti("consulting")}

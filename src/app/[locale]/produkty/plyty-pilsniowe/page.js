@@ -24,7 +24,11 @@ export default function PlytyPilsniowe({ params: { locale } }) {
     <div>
       <HeroSection
         backgroundImage="/hero-plyty-pilsniowe.jpg"
-        heroCircle="/hero-circle-plyty-pilsniowe.png"
+        heroCircle={
+          locale === "en"
+            ? "/hero-circle-plyty-pilsniowe-en.svg"
+            : "/hero-circle-plyty-pilsniowe.png"
+        }
         hasRedBg
         icon1={ti("shortLeadTimes")}
         icon2={ti("consulting")}

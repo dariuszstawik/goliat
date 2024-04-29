@@ -2,6 +2,7 @@ export const plytySpecjalistyczne = [
   {
     id: 1,
     name: "płyta MDF wilgociouodporniona",
+    category: "płyta specjalistyczna",
     slug: "plyta-mdf-wilgociouodporniona",
     img: "/plyta-mdf-wilgociouodporniona.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -21,6 +22,7 @@ export const plytySpecjalistyczne = [
   {
     id: 2,
     name: "płyta o zwiększonej gęstości na antresole",
+    category: "płyta specjalistyczna",
     slug: "plyta-o-zwiekszonej-gestosci-na-antresole",
     img: "/plyta-o-zwiekszonej-gestosci-na-antresole.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -39,6 +41,7 @@ export const plytySpecjalistyczne = [
   {
     id: 3,
     name: "płyta wiórowa o obniżonej gęstości",
+    category: "płyta specjalistyczna",
     slug: "plyta-wiorowa-o-obnizonej-gestosci",
     img: "/plyta-wiorowa-o-obnizonej-gestosci.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -62,6 +65,7 @@ export const plytySpecjalistyczne = [
   {
     id: 4,
     name: "płyta MDF ognioodporna",
+    category: "płyta specjalistyczna",
     slug: "plyta-mdf-ognioodporna",
     img: "/plyta-mdf.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -82,6 +86,7 @@ export const plytySpecjalistyczne = [
   {
     id: 5,
     name: "płyta hdf podłogowa",
+    category: "płyta specjalistyczna",
     slug: "plyta-hdf-podlogowa",
     img: "/plyta-hdf-podlogowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
@@ -104,6 +109,7 @@ export const plytySpecjalistyczneEn = [
   {
     id: 1,
     name: "moisture resistant MDF board",
+    category: "specialistic board",
     slug: "plyta-mdf-wilgociouodporniona",
     img: "/plyta-mdf-wilgociouodporniona.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -123,6 +129,7 @@ export const plytySpecjalistyczneEn = [
   {
     id: 2,
     name: "increased density board for the mezzroom",
+    category: "specialistic board",
     slug: "plyta-o-zwiekszonej-gestosci-na-antresole",
     img: "/plyta-o-zwiekszonej-gestosci-na-antresole.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -141,6 +148,7 @@ export const plytySpecjalistyczneEn = [
   {
     id: 3,
     name: "low density chipboard",
+    category: "specialistic board",
     slug: "plyta-wiorowa-o-obnizonej-gestosci",
     img: "/plyta-wiorowa-o-obnizonej-gestosci.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -164,6 +172,7 @@ export const plytySpecjalistyczneEn = [
   {
     id: 4,
     name: "fire-resistant MDF board",
+    category: "specialistic board",
     slug: "plyta-mdf-ognioodporna",
     img: "/plyta-mdf.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -184,6 +193,7 @@ export const plytySpecjalistyczneEn = [
   {
     id: 5,
     name: "hdf floor board",
+    category: "specialistic board",
     slug: "plyta-hdf-podlogowa",
     img: "/plyta-hdf-podlogowa.jpg",
     icon: "/icon-plyty-meblowe.svg",

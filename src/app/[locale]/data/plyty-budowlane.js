@@ -2,6 +2,7 @@ export const plytyBudowlane = [
   {
     id: 1,
     name: "płyta OSB",
+    category: "płyta budowlana",
     slug: "plyta-osb",
     img: "/plyta-osb.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -45,6 +46,7 @@ export const plytyBudowlane = [
   {
     id: 2,
     name: "płyta OSB P-W",
+    category: "płyta budowlana",
     slug: "plyta-osb-p-w",
     img: "/plyta-osb-p-w.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -87,6 +89,7 @@ export const plytyBudowlane = [
   {
     id: 3,
     name: "płyta Durelis - P5",
+    category: "płyta budowlana",
     slug: "plyta-durelis-p5",
     img: "/plyta-durelis.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -109,6 +112,7 @@ export const plytyBudowlane = [
   {
     id: 4,
     name: "płyta V100",
+    category: "płyta budowlana",
     slug: "plyta-v-100",
     img: "/plyta-v-100.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -130,6 +134,7 @@ export const plytyBudowlane = [
   {
     id: 5,
     name: "płyta cementowo-wiórowa",
+    category: "płyta budowlana",
     slug: "plyta-cementowo-wiorowa",
     img: "/plyta-wiorowo-cementowa.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -154,6 +159,7 @@ export const plytyBudowlane = [
   {
     id: 6,
     name: "płyta JSD",
+    category: "płyta budowlana",
     slug: "plyta-jsd",
     img: "/plyta-JSD.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -176,6 +182,7 @@ export const plytyBudowlane = [
   {
     id: 7,
     name: "płyta MFP",
+    category: "płyta budowlana",
     slug: "plyta-mfp",
     img: "/plyta-mfp.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -200,6 +207,7 @@ export const plytyBudowlaneEn = [
   {
     id: 1,
     name: "OSB",
+    category: "construction board",
     slug: "plyta-osb",
     img: "/plyta-osb.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -213,7 +221,7 @@ export const plytyBudowlaneEn = [
           <div className="flex flex-col">
             <span className="text-[44px] font-semibold my-8">1250x2500</span>
             <div>
-              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span className="text-xl">thickness [mm]:</span>{" "}
               <span> 6 / 8 / 10</span>
             </div>
             <span> 12 / 15 / 18 / 22 / 25</span>
@@ -222,7 +230,7 @@ export const plytyBudowlaneEn = [
           <div className="flex flex-col">
             <span className="text-[44px] font-semibold my-8">2500x5000</span>
             <div>
-              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span className="text-xl">thickness [mm]:</span>{" "}
               <span> 6 / 8 / 10</span>
             </div>
             <span> 12 / 15 / 18 / 22 / 25</span>
@@ -243,6 +251,7 @@ export const plytyBudowlaneEn = [
   {
     id: 2,
     name: "OSB P-W",
+    category: "construction board",
     slug: "plyta-osb-p-w",
     img: "/plyta-osb-p-w.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -266,7 +275,7 @@ export const plytyBudowlaneEn = [
           <div className="flex flex-col">
             <span className="text-[44px] font-semibold my-8">625x2500</span>
             <div>
-              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span className="text-xl">thickness [mm]:</span>{" "}
               <span> 12 / 15 / 18 / 22</span>
             </div>
           </div>
@@ -285,6 +294,7 @@ export const plytyBudowlaneEn = [
   {
     id: 3,
     name: "Durelis board",
+    category: "construction board",
     slug: "plyta-durelis-p5",
     img: "/plyta-durelis.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -307,6 +317,7 @@ export const plytyBudowlaneEn = [
   {
     id: 4,
     name: "V100 board",
+    category: "construction board",
     slug: "plyta-v-100",
     img: "/plyta-v-100.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -328,6 +339,7 @@ export const plytyBudowlaneEn = [
   {
     id: 5,
     name: "cement particleboard",
+    category: "construction board",
     slug: "plyta-cementowo-wiorowa",
     img: "/plyta-wiorowo-cementowa.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -352,6 +364,7 @@ export const plytyBudowlaneEn = [
   {
     id: 6,
     name: "JSD board",
+    category: "construction board",
     slug: "plyta-jsd",
     img: "/plyta-JSD.jpg",
     icon: "/icon-plyty-budowlane.svg",
@@ -374,6 +387,7 @@ export const plytyBudowlaneEn = [
   {
     id: 7,
     name: "MFP plate",
+    category: "construction board",
     slug: "plyta-mfp",
     img: "/plyta-mfp.jpg",
     icon: "/icon-plyty-budowlane.svg",

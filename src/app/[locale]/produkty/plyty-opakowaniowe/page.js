@@ -27,7 +27,11 @@ export default function PlytyOpakowaniowe({ params: { locale } }) {
     <div>
       <HeroSection
         backgroundImage="/foto-opakowaniowe.jpg"
-        heroCircle="/hero-circle-plyty-opakowaniowe.png"
+        heroCircle={
+          locale === "en"
+            ? "/hero-circle-plyty-opakowaniowe-en.svg"
+            : "/hero-circle-plyty-opakowaniowe.png"
+        }
         icon1={ti("shortLeadTimes")}
         icon2={ti("consulting")}
         icon3={ti("wideRange")}
