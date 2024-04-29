@@ -181,13 +181,10 @@ const ContactForm = ({
                   htmlFor="marketingTermsCheckbox"
                   className="-translate-y-2 relative before:content-['*'] before:text-smartOrange before:mr-2"
                 >
-                  <Link
-                    href="/polityka-prywatnosci"
-                    className="text-primaryGreen"
-                  >
-                    {/* zaakceptowanie polityki prywatności */}
-                    {privacy}
-                  </Link>
+                  {/* <Link href="" className="text-primaryGreen"> */}
+                  {/* zaakceptowanie polityki prywatności */}
+                  {privacy}
+                  {/* </Link> */}
                 </label>
               </span>
             </div>
