@@ -69,12 +69,13 @@ export default function PlytaPilsniowa({ params }) {
       </ParagraphWithImage>
       {product.content}
       <ProductsCarousel
-        title="Sprawdź usługi powiązane z tą płytą"
+        title={t("relatedServices")}
         content="servicesData"
+        locale={locale}
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/uslugi">
-          Przejdź na stronę główną naszych usług
+        <ButtonWithArrows href={`/${locale}/uslugi`}>
+          {t("goToServices")}
         </ButtonWithArrows>
       </div>
       <ContactForm
@@ -93,7 +94,7 @@ export default function PlytaPilsniowa({ params }) {
         locale={locale}
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/plyty-pilsniowe" isRed>
+        <ButtonWithArrows href={`/${locale}/produkty/plyty-pilsniowe`} isRed>
           {t("backToFiberBoards")}
         </ButtonWithArrows>
       </div>

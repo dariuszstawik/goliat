@@ -81,7 +81,7 @@ export default function PlytyPilsniowe({ params: { locale } }) {
         <p>{t("otherCategoriesParagraph2")}</p>
       </ParagraphWithIcons>
       <div className="mb-8">
-        <ProductsCarousel content="productCategories" />
+        <ProductsCarousel content="productCategories" locale={locale} />
       </div>
       <MapPoland
         salesDirector={tm("salesDirector")}

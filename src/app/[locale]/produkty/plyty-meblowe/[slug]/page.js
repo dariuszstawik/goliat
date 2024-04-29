@@ -4,26 +4,51 @@ import HeroSection from "@/app/[locale]/components/global-components/hero-sectio
 import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
-import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
+import {
+  plytyMeblowe,
+  plytyMebloweEn,
+} from "@/app/[locale]/data/plyty-meblowe";
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  const slugs = plytyMeblowe.map((product) => ({
-    slug: product.slug,
-  }));
+export function generateStaticParams({ params }) {
+  const slugs =
+    params === "en"
+      ? plytyMebloweEn.map((product) => ({
+          slug: product.slug,
+        }))
+      : plytyMeblowe.map((product) => ({
+          slug: product.slug,
+        }));
 
   return slugs;
 }
 
 export default function PlytaMeblowa({ params }) {
-  const product = plytyMeblowe.find((product) => product.slug === params.slug);
+  const locale = params.locale;
+
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Homepage");
+  const ti = useTranslations("Icons");
+  const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
+
+  const product =
+    params.locale === "en"
+      ? plytyMebloweEn.find((product) => product.slug === params.slug)
+      : plytyMeblowe.find((product) => product.slug === params.slug);
 
   return (
     <div>
       <HeroSection
         backgroundImage="/foto-plyty-meblowe.jpg"
         productIcon="/product-icon1.svg"
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
       />
       <ParagraphWithImage
         title={product.name}
@@ -31,35 +56,55 @@ export default function PlytaMeblowa({ params }) {
         hasNoTitleIcon
         productCardImg={product.img}
         productCardTitle={product.name}
-        productCardSubtitle="płyta meblowa"
+        productCardSubtitle={product.category}
         href={product.href}
+        locale={locale}
       >
-        <div className="mb-9">{product.description}</div>
+        {/* <div className="mb-9">{product.description}</div>
         {product.description1 && (
           <div className="mb-9">{product.description1}</div>
+        )} */}
+        <p className="mb-9">{product.description}</p>
+        {product.description2Paragraph && (
+          <div className="mb-9">{product.description2Paragraph}</div>
         )}
       </ParagraphWithImage>
       {product.content}
       <ProductsCarousel
-        title="Sprawdź usługi powiązane z tą płytą"
+        title={t("relatedServices")}
         content="servicesData"
+        locale={locale}
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/uslugi">
-          Przejdź na stronę główną naszych usług
+        <ButtonWithArrows href={`/${locale}/uslugi`}>
+          {t("goToServices")}
         </ButtonWithArrows>
       </div>
-      <ContactForm />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
       <ProductsCarousel
-        title="Sprawdź pozostałe płyty meblowe"
+        title={t("furnitureBoardsCheckOther")}
         content="plytyMeblowe"
+        locale={locale}
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/plyty-meblowe">
-          Wróć do oferty płyt meblowych
+        <ButtonWithArrows href={`/${locale}/produkty/plyty-meblowe`}>
+          {t("backTofurnitureBoards")}
         </ButtonWithArrows>
       </div>
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
     </div>
   );
 }

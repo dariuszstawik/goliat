@@ -4,22 +4,41 @@ import HeroSection from "@/app/[locale]/components/global-components/hero-sectio
 import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
-import plytyBudowlane from "@/app/[locale]/data/plyty-budowlane";
+import {
+  plytyBudowlane,
+  plytyBudowlaneEn,
+} from "@/app/[locale]/data/plyty-budowlane";
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  const slugs = plytyBudowlane.map((product) => ({
-    slug: product.slug,
-  }));
+export function generateStaticParams({ params }) {
+  const slugs =
+    params === "en"
+      ? plytyBudowlaneEn.map((product) => ({
+          slug: product.slug,
+        }))
+      : plytyBudowlane.map((product) => ({
+          slug: product.slug,
+        }));
 
   return slugs;
 }
 
 export default function PlytaBudowlana({ params }) {
-  const product = plytyBudowlane.find(
-    (product) => product.slug === params.slug
-  );
+  const locale = params.locale;
+
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Homepage");
+  const ti = useTranslations("Icons");
+  const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
+
+  const product =
+    params.locale === "en"
+      ? plytyBudowlaneEn.find((product) => product.slug === params.slug)
+      : plytyBudowlane.find((product) => product.slug === params.slug);
 
   return (
     <div>
@@ -28,6 +47,10 @@ export default function PlytaBudowlana({ params }) {
         // heroCircle="/hero-circle-plyty-budowlane.png"
         productIcon="/product-icon2.svg"
         hasRedBg
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
       />
       <ParagraphWithImage
         title={product.name}
@@ -35,9 +58,10 @@ export default function PlytaBudowlana({ params }) {
         hasNoTitleIcon
         productCardImg={product.img}
         productCardTitle={product.name}
-        productCardSubtitle="płyta budowlana"
+        productCardSubtitle={product.category}
         href={product.href}
         isRed
+        locale={locale}
       >
         <div className="mb-9">{product.description}</div>
         {product.description1 && (
@@ -46,25 +70,40 @@ export default function PlytaBudowlana({ params }) {
       </ParagraphWithImage>
       {product.content}
       <ProductsCarousel
-        title="Sprawdź usługi powiązane z tą płytą"
+        title={t("relatedServices")}
         content="servicesData"
+        locale={locale}
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/uslugi">
-          Przejdź na stronę główną naszych usług
+        <ButtonWithArrows href={`/${locale}/uslugi`}>
+          {t("goToServices")}
         </ButtonWithArrows>
       </div>
-      <ContactForm />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
       <ProductsCarousel
-        title="Sprawdź pozostałe płyty budowlane"
+        title={t("constructionBoardsCheckOther")}
         content="plytyBudowlane"
+        locale={locale}
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/plyty-budowlane" isRed>
-          Wróć do oferty płyt budowlanych
+        <ButtonWithArrows href={`/${locale}/produkty/plyty-budowlane`}>
+          {t("backToConstructionBoards")}
         </ButtonWithArrows>
       </div>
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
     </div>
   );
 }

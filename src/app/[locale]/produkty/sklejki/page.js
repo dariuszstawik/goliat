@@ -1,3 +1,4 @@
+import { unstable_setRequestLocale } from "next-intl/server";
 import ContactForm from "../../components/global-components/contact-form";
 import HeroSection from "../../components/global-components/hero-section";
 import MapPoland from "../../components/global-components/map-poland";
@@ -5,49 +6,50 @@ import ParagraphWithIcons from "../../components/global-components/paragraph-wit
 import ParagraphWithImage from "../../components/global-components/paragraph-with-image";
 import ProductCard from "../../components/global-components/product-card";
 import ProductsCarousel from "../../components/global-components/products-carousel";
-import sklejki from "../../data/sklejki";
+import { useTranslations } from "next-intl";
+import { sklejki, sklejkiEN } from "../../data/sklejki";
 
-export default function Sklejki() {
+export default function Sklejki({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Homepage");
+  const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
+  const ti = useTranslations("Icons");
+
+  const sklejkiList = locale === "en" ? sklejkiEN : sklejki;
+
   return (
     <div>
       <HeroSection
         backgroundImage="/foto-sklejki.jpg"
         heroCircle="/hero-circle-sklejki.png"
         hasRedBg
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
       />
       <ParagraphWithImage
-        title="Sklejki"
+        title={t("sklejki")}
         icon="/icon-sklejki.svg"
         whiteIcon="/icon-sklejki-white.svg"
         productCardImg="/sklejki.jpg"
-        productCardTitle="sklejka antypoślizgowa HEXA"
-        href="/pl/produkty/sklejki/sklejka-antyposlizgowa-hexa"
+        productCardTitle={
+          locale === "en"
+            ? "HEXA anti-slip plywood"
+            : "sklejka antypoślizgowa HEXA"
+        }
+        href={`/${locale}/produkty/sklejki/sklejka-antyposlizgowa-hexa`}
+        locale={locale}
         isRed
       >
-        <p className="mb-9">
-          Sklejka jest materiałem drewnopochodnym często wykorzystywanym w
-          branży stolarskiej. Jej stosowanie pomaga uniknąć wielu niepożądanych
-          sytuacji. W porównaniu do litego drewna nie pęka i nie wypacza się.
-          Posiada wysoką wytrzymałość na gięcie statyczne, przez co często
-          sprawdza się lepiej niż stal. Sklejka powstaje ze sklejonych ze sobą
-          fornirów (cienkich warstw drewna). Układanie warstw następuje
-          naprzemiennie-krzyżowo (są zatem ułożone do siebie prostopadle).
-          Kolejne warstwy są klejone w prasach o dużym nacisku. Sklejka może
-          mieć od 3 do nawet 50 mm grubości. Sklejki dzielą się w zależności od
-          drewna, z którego są wytwarzane. W naszej ofercie znajdą Państwo
-          sklejkę brzozową, olchową, bukową i sosnową.
-        </p>
-        <p>
-          Szczegółowe informacje o materiałach, rozmiarach, grubościach,
-          parametrach oraz zastosowaniu danych sklejek znajdą Państwo w karcie
-          danego produktu - zapraszamy do zapoznania się z całą ofertą sklejek
-          bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-        </p>
+        <p className="mb-9">{t("sklejki1Paragraph")}</p>
+        <p>{t("sklejki2Paragraph")}</p>
       </ParagraphWithImage>
 
       <div className="w-screen bg-primaryGray py-16 flex justify-center">
         <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
-          {sklejki.map((plyta) => (
+          {sklejkiList.map((plyta) => (
             <li key={plyta.id}>
               <ProductCard
                 productCardImg={plyta.img}
@@ -55,41 +57,45 @@ export default function Sklejki() {
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
                 whiteIcon={plyta.whiteIcon}
-                href={`/pl/produkty/sklejki/${plyta.slug}`}
+                href={`/${locale}/produkty/sklejki/${plyta.slug}`}
                 isRed
+                locale={locale}
               />
             </li>
           ))}
         </ul>
       </div>
       <ParagraphWithIcons
-        title="Pozostałe kategorie"
+        title={t("otherCategories")}
         icon1="/icon-plyty-meblowe.svg"
         icon2="/icon-plyty-budowlane.svg"
-        icon3="/icon-plyty-specjalistyczne.svg"
+        icon3="/icon-sklejki.svg"
         icon4="/icon-plyty-opakowaniowe.svg"
-        icon5="/icon-plyty-pilsniowe.svg"
+        icon5="/icon-plyty-specjalistyczne.svg"
         img="/other-categories-asset.svg"
+        locale={locale}
       >
-        <p className="mb-9">
-          Zapoznaj się ze szczegółową ofertą naszych pozostałych płyt.
-          Znajdziesz tam płyty budowlane, płyty specjalistyczne, płyty
-          opakowaniowe, płyty meblowe i płyty pilśniowe. W każdej kategorii
-          poznasz szczegółowy opis płyt, które Cię interesują.
-        </p>
-        <p>
-          Informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu
-          danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do
-          zapoznania się z całą ofertą płyt drewnopochodnych bądź wykonania
-          telefonu i rozmowy o szczegółach z naszym handlowcem!
-        </p>
+        <p className="mb-9">{t("otherCategoriesParagraph1")}</p>
+        <p>{t("otherCategoriesParagraph2")}</p>
       </ParagraphWithIcons>
       <div className="mb-8">
-        <ProductsCarousel content="productCategories" />
+        <ProductsCarousel content="productCategories" locale={locale} />
       </div>
-      <ContactForm />
-
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
     </div>
   );
 }

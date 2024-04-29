@@ -53,8 +53,12 @@ export default function Home({ params: { locale } }) {
             title={t("plytyMeblowe")}
             icon="icon-plyty-meblowe.svg"
             productCardImg="/plyta-wiorowa.jpg"
-            productCardTitle="płyta wiórowa laminowana biała"
-            href="/pl/produkty/plyty-meblowe"
+            productCardTitle={
+              locale === "en"
+                ? "laminated chipboard"
+                : "płyta wiórowa laminowana"
+            }
+            href={`/${locale}/produkty/plyty-meblowe`}
             locale={locale}
           >
             <p className="mb-9">
@@ -88,6 +92,7 @@ export default function Home({ params: { locale } }) {
           <ProductsCarousel
             title={t("sampleFurnitureBoards")}
             content="plytyMeblowe"
+            locale={locale}
           />
           <ButtonWithArrows href={`/${locale}/produkty/plyty-meblowe`}>
             {/* Pełna oferta płyt meblowych */}
@@ -101,8 +106,10 @@ export default function Home({ params: { locale } }) {
             icon="icon-plyty-budowlane.svg"
             whiteIcon="/icon-plyty-budowlane-white.svg"
             productCardImg="/plyta-durelis.jpg"
-            productCardTitle="płyta Durelis - P5"
-            href="/pl/produkty/plyty-budowlane"
+            productCardTitle={
+              locale === "en" ? "Durelis board" : "płyta Durelis - P5"
+            }
+            href={`/${locale}/produkty/plyty-budowlane/`}
             isRed
             locale={locale}
           >
@@ -128,6 +135,7 @@ export default function Home({ params: { locale } }) {
           <ProductsCarousel
             title={t("sampleConstructionBoards")}
             content="plytyBudowlane"
+            locale={locale}
           />
           <ButtonWithArrows href={`/${locale}/produkty/plyty-budowlane`}>
             {t("constructionBoardsFullOffer")}
@@ -139,32 +147,21 @@ export default function Home({ params: { locale } }) {
             title={t("plytySpecjalistyczne")}
             icon="icon-plyty-specjalistyczne.svg"
             productCardImg="/plyta-mdf.jpg"
-            productCardTitle="płyta MDF ognioodporna"
-            href="/pl/produkty/plyty-specjalistyczne"
+            productCardTitle={
+              locale === "en"
+                ? "fire-resistant MDF board"
+                : "płyta MDF ognioodporna"
+            }
+            href={`/${locale}/produkty/plyty-specjalistyczne/`}
             locale={locale}
           >
-            <p className="mb-9">
-              {/* Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej
-              ofercie płyt budowlanych znajdują się klasyczne rozwiązania na
-              bazie płyt drewnopochodnych takie jak: OSB, Durelis, V100, MFP,
-              JDS oraz płyty wiórowo-cementowe. Te ostatnie idealnie nadzadzą
-              się do prac zewnętrznych oraz wewnętrznych. Zbudowane są z betonu
-              lekkiego i mają obustronne zbrojenie siatką z włókna szklanego.
-              Sprawdź dokładny opis poszczególnych płyt i przekonaj się, która z
-              nich będzie najbardzej odpowiedna do twojego projektu. */}
-              {t("specjalistyczne1Paragraph")}
-            </p>
-            <p>
-              {/* Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
-              zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
-              zapraszamy do zapoznania się z całą ofertą płyt budowlanych bądź
-              wykonania telefonu i rozmowy o szczegółach z naszym handlowcem! */}
-              {t("specjalistyczne2Paragraph")}
-            </p>
+            <p className="mb-9">{t("specjalistyczne1Paragraph")}</p>
+            <p>{t("specjalistyczne2Paragraph")}</p>
           </ParagraphWithImage>
           <ProductsCarousel
             title={t("sampleSpecialisticBoards")}
             content="plytySpecjalistyczne"
+            locale={locale}
           />
           <ButtonWithArrows href={`/${locale}/produkty/plyty-specjalistyczne`}>
             {/* Pełna oferta płyt specjalistycznych */}
@@ -178,38 +175,22 @@ export default function Home({ params: { locale } }) {
             icon="icon-sklejki.svg"
             whiteIcon="/icon-sklejki-white.svg"
             productCardImg="/sklejki.jpg"
-            productCardTitle="sklejka antypoślizgowa HEXA"
-            href="/pl/produkty/sklejki"
-            isRed
+            productCardTitle={
+              locale === "en"
+                ? "HEXA anti-slip plywood"
+                : "sklejka antypoślizgowa HEXA"
+            }
+            href={`/${locale}/produkty/sklejki`}
             locale={locale}
+            isRed
           >
-            <p className="mb-9">
-              {/* Sklejka jest materiałem drewnopochodnym często wykorzystywanym w
-              branży stolarskiej. Jej stosowanie pomaga uniknąć wielu
-              niepożądanych sytuacji. W porównaniu do litego drewna nie pęka i
-              nie wypacza się. Posiada wysoką wytrzymałość na gięcie statyczne,
-              przez co często sprawdza się lepiej niż stal. Sklejka powstaje ze
-              sklejonych ze sobą fornirów (cienkich warstw drewna). Układanie
-              warstw następuje naprzemiennie-krzyżowo (są zatem ułożone do
-              siebie prostopadle). Kolejne warstwy są klejone w prasach o dużym
-              nacisku. Sklejka może mieć od 3 do nawet 50 mm grubości. Sklejki
-              dzielą się w zależności od drewna, z którego są wytwarzane. W
-              naszej ofercie znajdą Państwo sklejkę brzozową, olchową, bukową i
-              sosnową. */}
-              {t("sklejki1Paragraph")}
-            </p>
-            <p>
-              {/* Szczegółowe informacje o materiałach, rozmiarach, grubościach,
-              parametrach oraz zastosowaniu danych sklejek znajdą Państwo w
-              karcie danego produktu - zapraszamy do zapoznania się z całą
-              ofertą sklejek bądź wykonania telefonu i rozmowy o szczegółach z
-              naszym handlowcem! */}
-              {t("sklejki2Paragraph")}
-            </p>
+            <p className="mb-9">{t("sklejki1Paragraph")}</p>
+            <p>{t("sklejki2Paragraph")}</p>
           </ParagraphWithImage>
           <ProductsCarousel
             title={t("samplePlaywoodBoards")}
             content="sklejki"
+            locale={locale}
           />
           <ButtonWithArrows href={`/${locale}/produkty/sklejki`}>
             {/* Pełna oferta sklejek */}
@@ -222,7 +203,7 @@ export default function Home({ params: { locale } }) {
           icon="icon-plyty-opakowaniowe.svg"
           productCardImg="/plyta-hdf-surowa2.jpg"
           productCardTitle="płyta HDF surowa"
-          href="/pl/produkty/plyty-opakowaniowe"
+          href={`/${locale}/produkty/plyty-opakowaniowe`}
           locale={locale}
         >
           <p className="mb-9">
@@ -247,6 +228,7 @@ export default function Home({ params: { locale } }) {
         <ProductsCarousel
           title={t("samplePackagingBoards")}
           content="plytyOpakowaniowe"
+          locale={locale}
         />
         <ButtonWithArrows href={`/${locale}/produkty/plyty-opakowaniowe`}>
           {/* Pełna oferta płyt opakowaniowych */}
@@ -288,6 +270,7 @@ export default function Home({ params: { locale } }) {
           <ProductsCarousel
             title={t("sampleFiberBoards")}
             content="plytyPilsniowe"
+            locale={locale}
           />
           <ButtonWithArrows href={`/${locale}/produkty/plyty-pilsniowe`}>
             {/* Pełna oferta płyt pilśniowych */}
@@ -296,6 +279,7 @@ export default function Home({ params: { locale } }) {
         </div>
 
         <ServicesBar
+          services={ti("services")}
           services1={ti("services1")}
           services2={ti("services2")}
           services3={ti("services3")}
@@ -303,9 +287,13 @@ export default function Home({ params: { locale } }) {
 
         <ParagraphWithImage
           title={t("panelSaw1")}
-          icon="icon-ciecie-proste.svg"
+          icon="/icon-ciecie-proste.svg"
           productCardImg="/pila-panelowa1.jpg"
-          productCardTitle="piła panelowa SCM Gabbiani Galaxy 105T"
+          productCardTitle={
+            locale === "en"
+              ? "panel saw SCM Gabbiani Galaxy 105T"
+              : "piła panelowa SCM Gabbiani Galaxy 105T"
+          }
           locale={locale}
         >
           <p className="mb-9">
@@ -337,9 +325,13 @@ export default function Home({ params: { locale } }) {
 
         <ParagraphWithImage
           title={t("panelSaw2")}
-          icon="icon-ciecie-na-okraglo.svg"
+          icon="/icon-ciecie-na-okraglo.svg"
           productCardImg="/pila-panelowa2.jpg"
-          productCardTitle="piła panelowa SCM Gabbiani Galaxy T3110"
+          productCardTitle={
+            locale === "en"
+              ? "panel saw SCM Gabbiani Galaxy T3110"
+              : "piła panelowa SCM Gabbiani Galaxy T3110"
+          }
           hasGrayBg
           locale={locale}
         >
@@ -361,10 +353,13 @@ export default function Home({ params: { locale } }) {
 
         <ParagraphWithImage
           title={t("cncMachiningCenter")}
-          icon="icon-wycinanie-ksztaltow.svg"
+          icon="/icon-wycinanie-ksztaltow.svg"
           productCardImg="/centrum-obrobcze-cnc.jpg"
-          productCardTitle="Centrum obrobcze
-          3121 PRO PLUS InfoTEC CNC"
+          productCardTitle={
+            locale === "en"
+              ? "Machining center 3121 PRO PLUS InfoTEC CNC"
+              : "Centrum obrobcze 3121 PRO PLUS InfoTEC CNC"
+          }
           locale={locale}
         >
           <p className="mb-9">
@@ -388,9 +383,13 @@ export default function Home({ params: { locale } }) {
 
         <ParagraphWithImage
           title={t("ottTwister")}
-          icon="icon-ciecie-proste.svg"
+          icon="/icon-ciecie-proste.svg"
           productCardImg="/okleiniarka-ott-twister1.png"
-          productCardTitle="okleiniarka OTT twister"
+          productCardTitle={
+            locale === "en"
+              ? "OTT twister edgebander"
+              : "okleiniarka OTT twister"
+          }
           hasGrayBg
           locale={locale}
         >
@@ -435,10 +434,13 @@ export default function Home({ params: { locale } }) {
 
         <ParagraphWithImage
           title={t("formatSaw")}
-          icon="icon-ciecie-proste.svg"
+          icon="/icon-ciecie-proste.svg"
           productCardImg="/pila-formatowa.jpg"
-          productCardTitle="Piła Formatowa z podcinakiem 
-          REMA DMMS 40/340 SPECIAL"
+          productCardTitle={
+            locale === "en"
+              ? "Format saw with undercutter REMA DMMS 40/340 SPECIAL"
+              : "Piła Formatowa z podcinakiem REMA DMMS 40/340 SPECIAL"
+          }
           locale={locale}
         >
           <p className="mb-4">

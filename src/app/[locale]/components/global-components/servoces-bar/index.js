@@ -1,8 +1,13 @@
-export default function ServicesBar({ services1, services2, services3 }) {
+export default function ServicesBar({
+  services,
+  services1,
+  services2,
+  services3,
+}) {
   return (
     <>
       <div className="text-sm md:text-base w-full h-40 px-10 hidden lg:flex bg-primaryYellow justify-center items-center gap-32 shadow-lg">
-        <h2>Nasze usługi</h2>
+        <h2>{services}</h2>
         <ul className="h-full flex gap-16 justify-center items-center">
           <li className="flex justify-center items-center gap-4">
             <img src="/icon-ciecie-proste.svg" alt="icon" className="w-10" />

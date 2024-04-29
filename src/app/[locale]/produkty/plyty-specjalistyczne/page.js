@@ -1,3 +1,4 @@
+import { unstable_setRequestLocale } from "next-intl/server";
 import ContactForm from "../../components/global-components/contact-form";
 import HeroSection from "../../components/global-components/hero-section";
 import MapPoland from "../../components/global-components/map-poland";
@@ -5,85 +6,94 @@ import ParagraphWithIcons from "../../components/global-components/paragraph-wit
 import ParagraphWithImage from "../../components/global-components/paragraph-with-image";
 import ProductCard from "../../components/global-components/product-card";
 import ProductsCarousel from "../../components/global-components/products-carousel";
-import plytySpecjalistyczne from "../../data/plyty-specjalistyczne";
+import {
+  plytySpecjalistyczne,
+  plytySpecjalistyczneEn,
+} from "../../data/plyty-specjalistyczne";
+import { useTranslations } from "next-intl";
 
-export default function PlytySpecjalistyczne() {
+export default function PlytySpecjalistyczne({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Homepage");
+  const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
+  const ti = useTranslations("Icons");
+
+  const plytySpecjalistyczneList =
+    locale === "en" ? plytySpecjalistyczneEn : plytySpecjalistyczne;
+
   return (
     <div>
       <HeroSection
         backgroundImage="/foto-specjalistyczne.jpg"
         heroCircle="/hero-circle-plyty-specjalistyczne.png"
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
       />
       <ParagraphWithImage
-        title="Płyty specjalistyczne"
+        title={t("plytySpecjalistyczne")}
         icon="/icon-plyty-specjalistyczne.svg"
         productCardImg="/plyta-mdf.jpg"
-        productCardTitle="płyta MDF ognioodporna"
-        href="/pl/produkty/plyty-specjalistyczne/plyta-mdf-ognioodporna"
+        productCardTitle={
+          locale === "en"
+            ? "fire-resistant MDF board"
+            : "płyta MDF ognioodporna"
+        }
+        href={`/${locale}/produkty/plyty-specjalistyczne/plyta-mdf-ognioodporna`}
+        locale={locale}
       >
-        <p className="mb-9">
-          Płyty specjalistyczne to płyty drewnopochodne o zwiększonych
-          parametrach odporności na dane czynniki lub takie płyty, których waga
-          jest znacznie mniejsza niż w klasycznych płytach drewnopochodnych, a
-          parametry nośnośni balansują na tym samym poziomie. Pod hasłem płyty
-          specjalistyczne kryją się także płyty meblowe, które poprzez swoje
-          barwienie dają możliwość uzyskania pięknego frezu w danej kolorystyce.
-          Płyty specjalistyczne dzielą się na: ognioodporne, akystyczne,
-          komórkowe, wilgocioodporne, barwione w masie, płyty o obniżonej wadze
-          oraz antypoślizgowe i takie, które są idealnym rozwiązaniem na
-          antresole. Wiesz jakich płyt potrzebujesz do swojego projektu -
-          zadzwoń do naszego sprzedawcy i złóż zamówienie.
-        </p>
-        <p>
-          Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz
-          zastosowaniu danych płyt znajdą Państwo w karcie danego produktu -
-          zapraszamy do zapoznania się z całą ofertą płyt specjalistycznych bądź
-          wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!
-        </p>
+        <p className="mb-9">{t("specjalistyczne1Paragraph")}</p>
+        <p>{t("specjalistyczne2Paragraph")}</p>
       </ParagraphWithImage>
       <div className="w-screen bg-primaryGray py-16 flex justify-center">
         <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
-          {plytySpecjalistyczne.map((plyta) => (
+          {plytySpecjalistyczneList.map((plyta) => (
             <li key={plyta.id}>
               <ProductCard
                 productCardImg={plyta.img}
                 alt={plyta.name}
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
-                href={`/pl/produkty/plyty-specjalistyczne/${plyta.slug}`}
+                href={`/${locale}/produkty/plyty-specjalistyczne/${plyta.slug}`}
+                locale={locale}
               />
             </li>
           ))}
         </ul>
       </div>
       <ParagraphWithIcons
-        title="Pozostałe kategorie"
+        title={t("otherCategories")}
         icon1="/icon-plyty-meblowe.svg"
         icon2="/icon-plyty-budowlane.svg"
         icon3="/icon-sklejki.svg"
         icon4="/icon-plyty-opakowaniowe.svg"
-        icon5="/icon-plyty-pilsniowe.svg"
+        icon5="/icon-plyty-specjalistyczne.svg"
         img="/other-categories-asset.svg"
+        locale={locale}
       >
-        <p className="mb-9">
-          Zapoznaj się ze szczegółową ofertą naszych pozostałych płyt.
-          Znajdziesz tam płyty meblowe, płyty budowlane, płyty opakowaniowe,
-          sklejki i płyty pilśniowe. W każdej kategorii poznasz szczegółowy opis
-          płyt, które Cię interesują.
-        </p>
-        <p>
-          Informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu
-          danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do
-          zapoznania się z całą ofertą płyt drewnopochodnych bądź wykonania
-          telefonu i rozmowy o szczegółach z naszym handlowcem!
-        </p>
+        <p className="mb-9">{t("otherCategoriesParagraph1")}</p>
+        <p>{t("otherCategoriesParagraph2")}</p>
       </ParagraphWithIcons>
       <div className="mb-8">
-        <ProductsCarousel content="productCategories" />
+        <ProductsCarousel content="productCategories" locale={locale} />
       </div>
-      <ContactForm />
-
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
     </div>
   );
 }

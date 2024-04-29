@@ -18,6 +18,7 @@ export default function Uslugi({ params: { locale } }) {
         backgroundImage="/foto-uslugi.jpg"
         heroCircle="/hero-circle-uslugi.png"
         isServicesPage
+        services={ti("services")}
         services1={ti("services1")}
         services2={ti("services2")}
         services3={ti("services3")}
@@ -27,7 +28,11 @@ export default function Uslugi({ params: { locale } }) {
         title={t("panelSaw1")}
         icon="/icon-ciecie-proste.svg"
         productCardImg="/pila-panelowa1.jpg"
-        productCardTitle="piła panelowa SCM Gabbiani Galaxy 105T"
+        productCardTitle={
+          locale === "en"
+            ? "panel saw SCM Gabbiani Galaxy 105T"
+            : "piła panelowa SCM Gabbiani Galaxy 105T"
+        }
         locale={locale}
       >
         <p className="mb-9">
@@ -61,7 +66,11 @@ export default function Uslugi({ params: { locale } }) {
         title={t("panelSaw2")}
         icon="/icon-ciecie-na-okraglo.svg"
         productCardImg="/pila-panelowa2.jpg"
-        productCardTitle="piła panelowa SCM Gabbiani Galaxy T3110"
+        productCardTitle={
+          locale === "en"
+            ? "panel saw SCM Gabbiani Galaxy T3110"
+            : "piła panelowa SCM Gabbiani Galaxy T3110"
+        }
         hasGrayBg
         locale={locale}
       >
@@ -85,8 +94,11 @@ export default function Uslugi({ params: { locale } }) {
         title={t("cncMachiningCenter")}
         icon="/icon-wycinanie-ksztaltow.svg"
         productCardImg="/centrum-obrobcze-cnc.jpg"
-        productCardTitle="Centrum obrobcze
-          3121 PRO PLUS InfoTEC CNC"
+        productCardTitle={
+          locale === "en"
+            ? "Machining center 3121 PRO PLUS InfoTEC CNC"
+            : "Centrum obrobcze 3121 PRO PLUS InfoTEC CNC"
+        }
         locale={locale}
       >
         <p className="mb-9">
@@ -112,7 +124,9 @@ export default function Uslugi({ params: { locale } }) {
         title={t("ottTwister")}
         icon="/icon-ciecie-proste.svg"
         productCardImg="/okleiniarka-ott-twister1.png"
-        productCardTitle="okleiniarka OTT twister"
+        productCardTitle={
+          locale === "en" ? "OTT twister edgebander" : "okleiniarka OTT twister"
+        }
         hasGrayBg
         locale={locale}
       >
@@ -159,8 +173,11 @@ export default function Uslugi({ params: { locale } }) {
         title={t("formatSaw")}
         icon="/icon-ciecie-proste.svg"
         productCardImg="/pila-formatowa.jpg"
-        productCardTitle="Piła Formatowa z podcinakiem 
-          REMA DMMS 40/340 SPECIAL"
+        productCardTitle={
+          locale === "en"
+            ? "Format saw with undercutter REMA DMMS 40/340 SPECIAL"
+            : "Piła Formatowa z podcinakiem REMA DMMS 40/340 SPECIAL"
+        }
         locale={locale}
       >
         <p className="mb-4">

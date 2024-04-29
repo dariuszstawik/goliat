@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import NavbarAsset from "../navbar-asset";
 import Hamburger from "../hamburger";
 import Logo from "../logo";
+import LocaleSwitcher from "../locale-switcher";
 
 const Navbar = ({
   locale,
@@ -49,7 +50,7 @@ const Navbar = ({
       <div className="hidden xl:block">
         <NavbarAsset />
       </div>
-      <div className="flex justify-end items-center h-full">
+      <div className="flex justify-end items-center h-full gap-6">
         <ul
           className={
             isMobileMenuActive
@@ -192,6 +193,9 @@ const Navbar = ({
             </Link>
           </li>
         </ul>
+
+        <LocaleSwitcher />
+
         <Hamburger
           hasCloseIcon={isMobileMenuActive ? true : false}
           toggleMobileMenu={toggleMobileMenu}

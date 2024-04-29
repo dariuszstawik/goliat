@@ -1,24 +1,24 @@
-const productCategories = [
+export const productCategories = [
   {
     id: 1,
     name: "płyty meblowe",
     img: "/plyta-wiorowa.jpg",
     icon: "/icon-plyty-meblowe.svg",
-    href: "/pl/produkty/plyty-meblowe",
+    href: "/produkty/plyty-meblowe",
   },
   {
     id: 2,
     name: "płyty opakowaniowe",
     img: "/plyta-hdf-surowa2.jpg",
     icon: "/icon-plyty-opakowaniowe.svg",
-    href: "/pl/produkty/plyty-opakowaniowe",
+    href: "/produkty/plyty-opakowaniowe",
   },
   {
     id: 3,
     name: "płyty pilśniowe",
     img: "/plyta-pilsniowa-porowata.png",
     icon: "/icon-plyty-pilsniowe.svg",
-    href: "/pl/produkty/plyty-pilsniowe",
+    href: "/produkty/plyty-pilsniowe",
   },
 
   {
@@ -26,7 +26,7 @@ const productCategories = [
     name: "płyty budowlane",
     img: "/plyta-osb.jpg",
     icon: "/icon-plyty-budowlane.svg",
-    href: "/pl/produkty/plyty-budowlane",
+    href: "/produkty/plyty-budowlane",
   },
 
   {
@@ -34,7 +34,7 @@ const productCategories = [
     name: "płyty specjalistyczne",
     img: "/plyta-wiorowo-cementowa.jpg",
     icon: "/icon-plyty-specjalistyczne.svg",
-    href: "/pl/produkty/plyty-specjalistyczne",
+    href: "/produkty/plyty-specjalistyczne",
   },
 
   {
@@ -42,8 +42,54 @@ const productCategories = [
     name: "sklejki",
     img: "/sklejki.jpg",
     icon: "/icon-sklejki.svg",
-    href: "/pl/produkty/sklejki",
+    href: "/produkty/sklejki",
   },
 ];
 
-export default productCategories;
+export const productCategoriesEn = [
+  {
+    id: 1,
+    name: "furniture boards",
+    img: "/plyta-wiorowa.jpg",
+    icon: "/icon-plyty-meblowe.svg",
+    href: "/produkty/plyty-meblowe",
+  },
+  {
+    id: 2,
+    name: "packaging boards",
+    img: "/plyta-hdf-surowa2.jpg",
+    icon: "/icon-plyty-opakowaniowe.svg",
+    href: "/produkty/plyty-opakowaniowe",
+  },
+  {
+    id: 3,
+    name: "fiberboards",
+    img: "/plyta-pilsniowa-porowata.png",
+    icon: "/icon-plyty-pilsniowe.svg",
+    href: "/produkty/plyty-pilsniowe",
+  },
+
+  {
+    id: 4,
+    name: "construction boards",
+    img: "/plyta-osb.jpg",
+    icon: "/icon-plyty-budowlane.svg",
+    href: "/produkty/plyty-budowlane",
+  },
+
+  {
+    id: 5,
+    name: "specialistic boards",
+    img: "/plyta-wiorowo-cementowa.jpg",
+    icon: "/icon-plyty-specjalistyczne.svg",
+    href: "/produkty/plyty-specjalistyczne",
+  },
+
+  {
+    id: 6,
+    name: "plywood",
+    img: "/sklejki.jpg",
+    icon: "/icon-sklejki.svg",
+    href: "/produkty/sklejki",
+  },
+];

@@ -33,6 +33,7 @@
       "consulting": "Doradztwo, które pomoże Ci oszczędzić",
       "wideRange": "Szeroki asortyment produktów i usług",
       "quality": "Najwyższa jakość produktów",
+      "services": "Nasze usługi",
       "services1": "Cięcie proste + oklejanie krawędzi",
       "services2": "Cięcie na okrągło + oklejanie krawędzi",
       "services3": "Wycinanie kształtów na maszynie CNC"
@@ -50,22 +51,37 @@
       "talkTo": "Porozmawiaj z handlowcem",
       "sampleFurnitureBoards": "Przykładowe płyty meblowe",
       "furnitureBoardsFullOffer": "Pełna oferta płyt meblowych",
+      "furnitureBoardsCheckOther": "Sprawdź pozostałe płyty meblowe",
+      "backTofurnitureBoards": "Wróć do oferty płyt meblowych",
+
       "plytyBudowlane": "Płyty budowlane",
       "budowlane1Paragraph": "Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej ofercie płyt budowlanych znajdują się klasyczne rozwiązania na bazie płyt drewnopochodnych takie jak: OSB, Durelis, V100, MFP, JDS oraz płyty wiórowo-cementowe. Te ostatnie idealnie nadzadzą się do prac zewnętrznych oraz wewnętrznych. Zbudowane są z betonu lekkiego i mają obustronne zbrojenie siatką z włókna szklanego. Sprawdź dokładny opis poszczególnych płyt i przekonaj się, która z nich będzie najbardzej odpowiedna do twojego projektu.",
       "budowlane2Paragraph": "Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą płyt budowlanych bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!",
       "sampleConstructionBoards": "Przykładowe płyty budowlane",
       "constructionBoardsFullOffer": "Pełna oferta płyt budowlanych",
+      "constructionBoardsCheckOther": "Sprawdź pozostałe płyty budowlane",
+      "backToConstructionBoards": "Wróć do oferty płyt budowlanych",
+      
 
       "plytySpecjalistyczne": "Płyty specjalistyczne",
       "specjalistyczne1Paragraph": "Płyty budowlane to druga grupa płyt drewnopochodnych; W naszej ofercie płyt budowlanych znajdują się klasyczne rozwiązania na bazie płyt drewnopochodnych takie jak: OSB, Durelis, V100, MFP, JDS oraz płyty wiórowo-cementowe. Te ostatnie idealnie nadzadzą się do prac zewnętrznych oraz wewnętrznych. Zbudowane są z betonu lekkiego i mają obustronne zbrojenie siatką z włókna szklanego. Sprawdź dokładny opis poszczególnych płyt i przekonaj się, która z nich będzie najbardzej odpowiedna do twojego projektu.",
       "specjalistyczne2Paragraph": "Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą płyt budowlanych bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!",
       "sampleSpecialisticBoards": "Przykładowe płyty specjalistyczne",
       "specialisticBoardsFullOffer": "Pełna oferta płyt specjalistycznych",
+      "specialisticBoardsCheckOther": "Sprawdź pozostałe płyty specjalistyczne",
+      "backToSpecialisticBoards": "Wróć do oferty płyt specjalistycznych",
+
+
       "sklejki": "Sklejki",
       "sklejki1Paragraph": "Sklejka jest materiałem drewnopochodnym często wykorzystywanym w branży stolarskiej. Jej stosowanie pomaga uniknąć wielu niepożądanych sytuacji. W porównaniu do litego drewna nie pęka i nie wypacza się. Posiada wysoką wytrzymałość na gięcie statyczne, przez co często sprawdza się lepiej niż stal. Sklejka powstaje ze sklejonych ze sobą fornirów (cienkich warstw drewna). Układanie warstw następuje naprzemiennie-krzyżowo (są zatem ułożone do siebie prostopadle). Kolejne warstwy są klejone w prasach o dużym nacisku. Sklejka może mieć od 3 do nawet 50 mm grubości. Sklejki dzielą się w zależności od drewna, z którego są wytwarzane. W naszej ofercie znajdą Państwo sklejkę brzozową, olchową, bukową i sosnową.",
       "sklejki2Paragraph": "Szczegółowe informacje o materiałach, rozmiarach, grubościach, parametrach oraz zastosowaniu danych sklejek znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą sklejek bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!",
       "samplePlaywoodBoards": "Przykładowe sklejki",
       "playwoodBoardsFullOffer": "Pełna oferta sklejek",
+      "plywoodCheckOther": "Sprawdź pozostałe  sklejki",
+      "backToPlywoodBoards": "Wróć do oferty sklejek",
+
+
+
       "plytyOpakowaniowe": "Płyty opakowaniowe",
       "opakowaniowe1Paragraph": "Niektóre płyty drewnopochodne wykorzystywane są w przemyśle opakowaniowym. Najepszym materiałem do tego typu zastosowań są: płyta HDF surowa, płyta OSB, sklejki oraz surowa płyta wiórowa. Każda z tych płyt występuje w różnych grubościach oraz klasach. Nasi handlowcy zadbają o to, aby Państwa produkt został zapakowany w jak najbardziej ekonomiczny i bezpieczny sposób. Wycinamy otwory, tworzymy łuki oraz docinamy elementy w taki sposób, aby łatwo je było połączyć w dalszym procesie.",
       "opakowaniowe2Paragraph": "Szczegółowe informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą płyt opakowaniowych bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!",
@@ -119,7 +135,11 @@
 
       "otherCategories":  "Pozostałe kategorie",
       "otherCategoriesParagraph1": "Zapoznaj się ze szczegółową ofertą naszych pozostałych płyt. Znajdziesz tam płyty meblowe, płyty budowlane, płyty opakowaniowe, sklejki i płyty pilśniowe. W każdej kategorii poznasz szczegółowy opis płyt, które Cię interesują.",
-      "otherCategoriesParagraph2": "Informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą płyt drewnopochodnych bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!"
+      "otherCategoriesParagraph2": "Informacje o rozmiarach, grubościach, parametrach oraz zastosowaniu danych płyt znajdą Państwo w karcie danego produktu - zapraszamy do zapoznania się z całą ofertą płyt drewnopochodnych bądź wykonania telefonu i rozmowy o szczegółach z naszym handlowcem!",
+
+      "relatedServices": "Sprawdź usługi powiązane z tą płytą",
+      "goToServices": "Przejdź na stronę główną naszych usług"
+
 },
 
 "ContactForm": {

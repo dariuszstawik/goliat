@@ -4,21 +4,38 @@ import HeroSection from "@/app/[locale]/components/global-components/hero-sectio
 import MapPoland from "@/app/[locale]/components/global-components/map-poland";
 import ParagraphWithImage from "@/app/[locale]/components/global-components/paragraph-with-image";
 import ProductsCarousel from "@/app/[locale]/components/global-components/products-carousel";
-import plytyMeblowe from "@/app/[locale]/data/plyty-meblowe";
-import sklejki from "@/app/[locale]/data/sklejki";
+import { sklejki, sklejkiEN } from "@/app/[locale]/data/sklejki";
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  const slugs = sklejki.map((product) => ({
-    slug: product.slug,
-  }));
+export function generateStaticParams({ params }) {
+  const slugs =
+    params === "en"
+      ? sklejkiEN.map((product) => ({
+          slug: product.slug,
+        }))
+      : sklejki.map((product) => ({
+          slug: product.slug,
+        }));
 
   return slugs;
 }
 
 export default function Sklejka({ params }) {
-  const product = sklejki.find((product) => product.slug === params.slug);
+  const locale = params.locale;
+
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Homepage");
+  const ti = useTranslations("Icons");
+  const tc = useTranslations("ContactForm");
+  const tm = useTranslations("mapPoland");
+
+  const product =
+    params.locale === "en"
+      ? sklejkiEN.find((product) => product.slug === params.slug)
+      : sklejki.find((product) => product.slug === params.slug);
 
   return (
     <div>
@@ -26,6 +43,10 @@ export default function Sklejka({ params }) {
         backgroundImage="/foto-sklejki.jpg"
         productIcon="/product-icon4.svg"
         hasRedBg
+        icon1={ti("shortLeadTimes")}
+        icon2={ti("consulting")}
+        icon3={ti("wideRange")}
+        icon4={ti("quality")}
       />
       <ParagraphWithImage
         title={product.name}
@@ -33,8 +54,9 @@ export default function Sklejka({ params }) {
         hasNoTitleIcon
         productCardImg={product.img}
         productCardTitle={product.name}
-        productCardSubtitle="płyta meblowa"
+        productCardSubtitle={product.category}
         href={product.href}
+        locale={locale}
         isRed
       >
         <p className="mb-9">{product.description}</p>
@@ -43,23 +65,42 @@ export default function Sklejka({ params }) {
         )}
       </ParagraphWithImage>
       {product.content}
+
       <ProductsCarousel
-        title="Sprawdź usługi powiązane z tą płytą"
+        title={t("relatedServices")}
         content="servicesData"
+        locale={locale}
       />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/uslugi">
-          Przejdź na stronę główną naszych usług
+        <ButtonWithArrows href={`/${locale}/uslugi`}>
+          {t("goToServices")}
         </ButtonWithArrows>
       </div>
-      <ContactForm />
-      <ProductsCarousel title="Sprawdź pozostałe sklejki" content="sklejki" />
+      <ContactForm
+        locale={locale}
+        name={tc("name")}
+        phone={tc("phone")}
+        email={tc("email")}
+        message={tc("message")}
+        marketing={tc("marketing")}
+        privacy={tc("privacy")}
+        submit={tc("submit")}
+      />
+      <ProductsCarousel
+        title={t("plywoodCheckOther")}
+        content="sklejki"
+        locale={locale}
+      />
       <div className="mb-8">
-        <ButtonWithArrows href="/pl/produkty/sklejki" isRed>
-          Wróć do oferty sklejek
+        <ButtonWithArrows href={`/${locale}/produkty/sklejki`}>
+          {t("backToPlywoodBoards")}
         </ButtonWithArrows>
       </div>
-      <MapPoland />
+      <MapPoland
+        salesDirector={tm("salesDirector")}
+        salesRepresentative={tm("salesRepresentative")}
+        headOfSalesDepartment={tm("headOfSalesDepartment")}
+      />
     </div>
   );
 }

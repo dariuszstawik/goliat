@@ -16,6 +16,7 @@ export default function HeroSection({
   icon2,
   icon3,
   icon4,
+  services,
   services1,
   services2,
   services3,
@@ -112,6 +113,7 @@ export default function HeroSection({
 
       {isServicesPage ? (
         <ServicesBar
+          services={services}
           services1={services1}
           services2={services2}
           services3={services3}

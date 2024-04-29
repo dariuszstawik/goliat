@@ -33,6 +33,7 @@
       "consulting": "Consulting to help you save",
       "wideRange": "A wide range of products and services",
       "quality": "Top quality products",
+      "services": "Our services",
       "services1": "Straight cutting + edge banding",
       "services2": "Round cutting + edge banding",
       "services3": "Cutting shapes on a CNC machine"
@@ -50,23 +51,32 @@
       "talkTo": "Talk to a sales representative",
       "sampleFurnitureBoards": "Sample furniture boards",
       "furnitureBoardsFullOffer": "Full offer of furniture boards",
+      "furnitureBoardsCheckOther": "Check out other furniture boards",
+      "backTofurnitureBoards": "Back to furniture boards offer",
+
       "plytyBudowlane": "Construction boards",
       "budowlane1Paragraph": "Construction boards are the second group of wood-based boards; Our offer of construction boards includes classic solutions based on wood-based boards such as: OSB, Durelis, V100, MFP, JDS and particle-cement boards. The latter are ideal for external and internal works. They are made of lightweight concrete and reinforced with fiberglass mesh on both sides. Check the detailed description of individual boards and see which one will be most suitable for your project.",
       "budowlane2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of construcion boards or call our sales representative and discuss the details!",
       "sampleConstructionBoards": "Sample construction boards",
       "constructionBoardsFullOffer": "Full offer of construction boards",
+      "constructionBoardsCheckOther": "Check out other construction boards",
+      "backToConstructionBoards": "Back to construction boards offer",
 
       "plytySpecjalistyczne": "Specialistic boards",
       "specjalistyczne1Paragraph": "Specialistic boards are wood-based boards with increased parameters of resistance to given factors or boards whose weight is much lower than in classic wood-based boards, and the load-bearing parameters are at the same level. The term 'specialistic boards' also includes furniture boards which, through their coloring, make it possible to obtain a beautiful cut in a given color. Specialistic boards are divided into: fire-resistant, acoustic, cellular, moisture-resistant, mass-colored, low-weight and anti-slip boards, and those that are an ideal solution for mezzanines. You know what boards you need for your project - call our seller and place an order.",
       "specjalistyczne2Paragraph": "Detailed information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of specialist boards or call our sales representative and discuss the details!",
       "sampleSpecialisticBoards": "Sample specialistic boards",
       "specialisticBoardsFullOffer": "Full offer of specialistic boards",
+      "specialisticBoardsCheckOther": "Check out other specialistic boards",
+      "backToSpecialisticBoards": "Back to specialistic boards offer",
 
       "sklejki": "Plywood",
       "sklejki1Paragraph": "Plywood is a wood-based material often used in the carpentry industry. Its use helps to avoid many undesirable situations. Compared to solid wood, it does not crack or warp. It has high resistance to static bending, which is why it often performs better than steel. Plywood is made of veneers (thin layers of wood) glued together. The layers are arranged alternately and crosswise (they are arranged perpendicularly to each other). Subsequent layers are glued in presses with high pressure. Plywood can be from 3 to even 50 mm thick. Plywood is divided depending on the wood from which it is made. Our offer includes birch, alder, beech and pine plywood.",
       "sklejki2Paragraph": "Detailed information about the materials, sizes, thicknesses, parameters and applications of given plywood can be found in the product card of a given product - please see the entire offer of plywood or call us and discuss the details with our sales representative!",
       "samplePlaywoodBoards": "Sample plywood boards",
       "playwoodBoardsFullOffer": "Full offer of plywood boards",
+      "plywoodCheckOther": "Check out other plywood boards",
+      "backToPlywoodBoards": "Back to plywood boards offer",
 
       "plytyOpakowaniowe": "Packaging boards",
       "opakowaniowe1Paragraph": "Some wood-based boards are used in the packaging industry. The best materials for this type of application are: raw HDF board, OSB board, plywood and raw chipboard. Each of these boards comes in different thicknesses and classes. Our salespeople will ensure that your product is packed in the most economical and safe way possible. We cut holes, create arches and cut elements in such a way that they can be easily connected in the further process.",
@@ -122,7 +132,10 @@
        
       "otherCategories":  "Other categories",
       "otherCategoriesParagraph1": "Check out the detailed offer of our other boards. There you will find building boards, specialist boards, packaging boards, plywood and fiberboard. In each category you will find a detailed description of the discs you are interested in.",
-      "otherCategoriesParagraph2": "Information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of wood-based boards or call our sales representative and discuss the details!"
+      "otherCategoriesParagraph2": "Information about the sizes, thicknesses, parameters and applications of given boards can be found in the product card of a given product - please see the entire offer of wood-based boards or call our sales representative and discuss the details!",
+
+      "relatedServices": "Check out the related services",
+"goToServices": "Go to the main page of our services"
 
     },
 

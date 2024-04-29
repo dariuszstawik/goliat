@@ -1,4 +1,4 @@
-const plytyOpakowaniowe = [
+export const plytyOpakowaniowe = [
   {
     id: 1,
     name: "płyta OSB",
@@ -126,4 +126,130 @@ const plytyOpakowaniowe = [
   },
 ];
 
-export default plytyOpakowaniowe;
+export const plytyOpakowanioweEn = [
+  {
+    id: 1,
+    name: "OSB",
+    slug: "plyta-osb",
+    img: "/plyta-osb.jpg",
+    icon: "/icon-plyty-budowlane.svg",
+    whiteIcon: "/icon-plyty-budowlane-white.svg",
+    href: "",
+    description:
+      "OSB is one of the most popular and most frequently used wood-based boards in construction. OSB consists of flat chips that are arranged in three layers and then pressed under conditions of high temperatures and high pressure. Synthetic resins are used as a binder. The chips are oriented along the long edge of the board in the outer layers, while in the inner layer they are arranged transversely. Due to the orientation of chips in the layers, there are two axes of mechanical strength - the main axis (along the longer edge) and the side axis (along the shorter edge). OSB boards are characterized by very good strength parameters, impact resistance, very good thermal and acoustic insulation, and shape and dimensional stability. It is an ideal wood-based material for a wide range of applications in construction, but also in the furniture industry, packaging production and the automotive industry.",
+    content: (
+      <>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-[80%] gap-6 mx-auto mb-24">
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">1250x2500</span>
+            <div>
+              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span> 6 / 8 / 10</span>
+            </div>
+            <span> 12 / 15 / 18 / 22 / 25</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2500x5000</span>
+            <div>
+              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span> 6 / 8 / 10</span>
+            </div>
+            <span> 12 / 15 / 18 / 22 / 25</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2800x2070</span>
+            <div>
+              <span className="text-xl">thickness [mm]:</span>{" "}
+              <span> 6 / 8 / 10</span>
+            </div>
+            <span> 12 / 15 / 18 / 22 / 25</span>
+          </div>
+        </div>
+      </>
+    ),
+  },
+
+  {
+    id: 2,
+    name: "płyta wiórowa surowa",
+    slug: "plyta-wiorowa-surowa",
+    img: "/plyta-wiorowa-surowa.jpg",
+    icon: "/icon-plyty-opakowaniowe.svg",
+  },
+
+  {
+    id: 3,
+    name: "interior plywood",
+    slug: "sklejka-suchotrwala",
+    img: "/plyta-suchotrwala.jpg",
+    icon: "/icon-sklejki.svg",
+    whiteIcon: "/icon-sklejki-white.svg",
+    href: "",
+    description:
+      "Interior plywood is made of the highest quality birch, alder, pine or exotic tree species. It consists of 1.4 mm thick veneers arranged with cross grain. This board is not resistant to weather conditions. Designed for use in dry conditions. Interior plywood is produced on the basis of urea-formaldehyde resins. These resins meet E1 standards regarding formaldehyde emissions. Interior plywood can be used in the furniture industry for the production of drawers or structural elements of upholstered furniture, as well as as a building material for loft furniture or as a material for decorative wall finishing. Plywood is also used in the packaging industry. This plywood is easy to process. Suitable for cutting on CNC machines. There are several classes of dry-resistant plywood, which are strictly defined according to the PN-EN 635 standard: The plywood class first determines the class of the right surface, and then the class of the left surface, e.g. class II / III. In the case of imported products marked with classes B, S, BB and WG in accordance with the SFS 2413 standard, the following class relationship is assumed: class B (I), class S (II), class BB (III) and class WG (IV). Quality classes only determine the external appearance of the first veneer. The classes do not affect the strength parameters of plywood.",
+    content: (
+      <>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-[80%] gap-6 mx-auto mb-24">
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">1525x1525</span>
+            <div>
+              <span className="text-xl">thickness [mm]:</span>{" "}
+              <span> 3 / 4 / 6 / 8 / 10</span>
+            </div>
+            <span> 12 / 15 / 18 / 21 / 27 / 30</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">1250x2500</span>
+            <div>
+              <span className="text-xl">thickness [mm]:</span>{" "}
+              <span> 3 / 4 / 6 / 8 / 10</span>
+            </div>
+            <span> 12 / 15 / 18 / 21 / 27 / 30</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">1220x2440</span>
+            <div>
+              <span className="text-xl">thickness [mm]:</span>{" "}
+              <span> 3 / 4 / 6 / 8 / 10</span>
+            </div>
+            <span> 12 / 15 / 18 / 21 / 27 / 30</span>
+          </div>
+        </div>
+      </>
+    ),
+  },
+
+  {
+    id: 4,
+    name: "raw hdf board",
+    slug: "plyta-hdf-surowa",
+    img: "/plyta-hdf-surowa2.jpg",
+    icon: "/icon-plyty-meblowe.svg",
+    // href: "",
+    description:
+      "Raw HDF board is a popular material used in construction and carpentry. It is made of high-quality wood from deciduous and coniferous species, which is pressed under high pressure and temperature. This makes the board very dense and has low humidity, which prevents deformations and cracks. Raw boards are extremely versatile, they can be used for the production of furniture, floors, doors, but also for the construction of partition walls and suspended ceilings. They are available in various sizes, which allows you to select the appropriate board for specific applications. Raw HDF has a smooth surface, which facilitates processing and assembly, as well as painting and varnishing. They can also be cut, drilled and milled, which allows for precise adjustment to the dimensions of the project. HDF board is a good choice for people looking for a universal and durable material for various applications in construction and carpentry.",
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-[80%] gap-6 mx-auto mb-24">
+        <div className="flex flex-col">
+          <span className="text-[44px] font-semibold my-8">2800x2070</span>
+          <div>
+            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span> 1,5 / 2 / 2,5 / 3 / 4</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col">
+          <span className="text-[44px] font-semibold my-8">2800x2100</span>
+          <div>
+            <span className="text-xl">grubości [mm]:</span>{" "}
+            <span className="text-xl">grubości [mm]:</span>{" "}
+          </div>
+        </div>
+      </div>
+    ),
+  },
+];
