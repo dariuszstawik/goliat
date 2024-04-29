@@ -60,7 +60,7 @@ export default function PlytyOpakowaniowe({ params: { locale } }) {
                 alt={plyta.name}
                 productCardTitle={plyta.name}
                 icon={plyta.icon}
-                href={plyta.href}
+                href={`/${locale}/produkty/${plyta.type}/${plyta.slug}`}
                 locale={locale}
               />
             </li>

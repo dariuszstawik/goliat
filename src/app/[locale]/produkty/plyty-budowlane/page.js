@@ -44,7 +44,7 @@ export default function PlytyBudowlane({ params: { locale } }) {
         productCardTitle={
           locale === "en" ? "Durelis board" : "płyta Durelis - P5"
         }
-        href={`/${locale}/produkty/plyty-budowlane/plyta-durelis`}
+        href={`/${locale}/produkty/plyty-budowlane/plyta-durelis-p5`}
         locale={locale}
         isRed
       >

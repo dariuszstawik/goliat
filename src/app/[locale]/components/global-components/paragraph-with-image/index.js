@@ -48,7 +48,7 @@ export default function ParagraphWithImage({
             img && "w-[80%] lg:pr-16 xl:pr-32 mx-auto -mt-20 lg:mt-0"
           } flex flex-col grow`}
         >
-          <div className="flex gap-16 mb-9">
+          <div className="flex gap-12 lg:gap-16 mb-9">
             <h2 className="mt-auto leading-tight">{title}</h2>
             {!hasNoTitleIcon && (
               <img
@@ -56,7 +56,7 @@ export default function ParagraphWithImage({
                 alt="icon"
                 // width={72}
                 // height={66}
-                className={`w-14 lg:w-16 ${img && "hidden lg:block"}`}
+                className={`w-12 lg:w-16 ${img && "hidden lg:block"}`}
               />
             )}
           </div>

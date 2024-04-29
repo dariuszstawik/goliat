@@ -180,6 +180,49 @@ export const productsMain = [
   },
 
   {
+    id: 7,
+    name: "płyta wiórowa surowa",
+    // category: "płyta meblowa",
+    slug: "plyta-wiorowa-surowa",
+    img: "/plyta-wiorowa-surowa.jpg",
+    icon: "/icon-plyty-meblowe.svg",
+    description:
+      "Płyta wiórowa surowa to podstawowy materiał konstrukcyjny dla przemysłu meblarskiego i budownictwa. Płyty wiórowe wytwarzane są z wiórów drzewnych, pochodzących ze zdrowego drewna drobnogabarytowego lub odpadowego. Wióry sprasowane są z dodatkiem żywic przy użyciu ciśnienia i temperatury. Dzięki użytym technologiom płyta wiórowa zachowuje stabilność parametrów fizykomechanicznych i wymiarowych, jest łatwa w obróbce, a zastosowane na zewnętrznej warstwie drobne frakcje drewna czynią powierzchnię gładką i gotową do uszlachetniania. Płytę wiórową z powodzeniem możemy stosować do produkcji paneli podłogowych, blatów, parapetów, opakowań, ścianek działowych, a przede wszystkim do produkcji mebli tapicerowanych i skrzyniowych. Po uszlachetnieniu laminowaniem, fornirowaniem, czy lakierowaniem doskonale nadaje się na korpusy i fronty.",
+    content: (
+      <>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-[80%] gap-6 mx-auto mb-24">
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2800x2070</span>
+            <div>
+              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span> 10 / 12 / 15 / 16 / 18 / 19</span>
+            </div>
+            <span> 22 / 25 / 28 / 30 / 32 / 36 / 38</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2840x1830</span>
+            <div>
+              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span> 10 / 12 / 15 / 16 / 18 / 19</span>
+            </div>
+            <span> 22 / 25 / 28 / 30 / 32 / 36 / 38</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2750x1830</span>
+            <div>
+              <span className="text-xl">grubości [mm]:</span>{" "}
+              <span> 10 / 12 / 15 / 16 / 18 / 19</span>
+            </div>
+            <span> 22 / 25 / 28 / 30 / 32 / 36 / 38</span>
+          </div>
+        </div>
+      </>
+    ),
+  },
+
+  {
     id: 8,
     name: "płyta wiórowa laminowana",
     type: "plyty-meblowe",
@@ -585,6 +628,49 @@ export const productsMainEn = [
           <span className="text-xl">thickness [mm]:</span> <span>28 / 38</span>
         </div>
       </div>
+    ),
+  },
+
+  {
+    id: 1,
+    name: "raw chipboard",
+    category: "furniture board",
+    slug: "plyta-wiorowa-surowa",
+    img: "/plyta-wiorowa-surowa.jpg",
+    icon: "/icon-plyty-meblowe.svg",
+    description:
+      "Raw chipboard is the basic construction material for the furniture and construction industries. Chipboards are made of wood chips from healthy, small-sized or waste wood. The chips are pressed with the addition of resins using pressure and temperature. Thanks to the technologies used, the chipboard maintains the stability of its physical, mechanical and dimensional parameters, is easy to process, and the fine wood fractions used on the outer layer make the surface smooth and ready for refinement. We can successfully use chipboard for the production of floor panels, countertops, window sills, packaging, partition walls and, above all, for the production of upholstered and box furniture. After refinement by lamination, veneering or varnishing, it is perfect for bodies and fronts",
+    content: (
+      <>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-[80%] gap-6 mx-auto mb-24">
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2800x2070</span>
+            <div>
+              <span className="text-xl">thickness [mm]:</span>{" "}
+              <span> 10 / 12 / 15 / 16 / 18 / 19</span>
+            </div>
+            <span> 22 / 25 / 28 / 30 / 32 / 36 / 38</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2840x1830</span>
+            <div>
+              <span className="text-xl">thickness [mm]:</span>{" "}
+              <span> 10 / 12 / 15 / 16 / 18 / 19</span>
+            </div>
+            <span> 22 / 25 / 28 / 30 / 32 / 36 / 38</span>
+          </div>
+
+          <div className="flex flex-col">
+            <span className="text-[44px] font-semibold my-8">2750x1830</span>
+            <div>
+              <span className="text-xl">thickness [mm]:</span>{" "}
+              <span> 10 / 12 / 15 / 16 / 18 / 19</span>
+            </div>
+            <span> 22 / 25 / 28 / 30 / 32 / 36 / 38</span>
+          </div>
+        </div>
+      </>
     ),
   },
 
