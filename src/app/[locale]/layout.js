@@ -17,8 +17,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Goliat",
-  description: "",
+  title: "Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
 };
 
 export function generateStaticParams() {
