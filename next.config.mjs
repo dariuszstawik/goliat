@@ -8,6 +8,11 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    formats: ["image/webp"],
+  },
+};
 
 export default withNextIntl(nextConfig);
