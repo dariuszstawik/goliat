@@ -9,9 +9,8 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   images: {
-    formats: ["image/webp"],
+    formats: ["image/avif", "image/webp"],
   },
 };
 
