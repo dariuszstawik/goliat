@@ -24,8 +24,16 @@ export default function ParagraphWithIcons({
         } flex flex-col lg:flex-row gap-0 lg:gap-16 lg:justify-center lg:items-center
       }`}
       >
-        <div className="w-[372px] h-[488px] shrink-0 justify-center items-center hidden lg:flex">
-          <img src={img} alt="asset" className={`${isOnAboutPage && "w-64"}`} />
+        <div className="w-[372px] h-[488px] shrink-0 justify-center items-center hidden lg:flex relative">
+          <Image
+            src={img}
+            width={372}
+            height={488}
+            // fill
+            sizes={372}
+            alt="asset"
+            className={`${isOnAboutPage && "w-64"}`}
+          />
         </div>
         <div className="flex flex-col">
           <div className="flex flex-col md:flex-row lg:flex-col 2xl:flex-row gap-2 md:gap-8 lg:gap-2 2xl:gap-8 mb-9">

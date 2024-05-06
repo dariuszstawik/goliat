@@ -1,3 +1,4 @@
+// "use client";
 import Image from "next/image";
 
 export default function ContactParagraph({
@@ -13,8 +14,16 @@ export default function ContactParagraph({
         className={`w-[80%] mx-auto py-16 flex flex-col lg:flex-row gap-0 lg:gap-16 lg:justify-center lg:items-center
       }`}
       >
-        <div className="w-[372px] h-[488px] justify-center items-center shrink-0 hidden lg:flex">
-          <img src={img} alt="asset" className="" />
+        <div className="w-[372px] h-[488px] justify-center items-center shrink-0 hidden lg:flex relative">
+          <Image
+            src={img}
+            // width={372}
+            // height={488}
+            fill
+            sizes={488}
+            alt="asset"
+            className="w-full h-full"
+          />
         </div>
         <div className="flex flex-col">
           <div className="flex flex-col gap-10 mb-9">

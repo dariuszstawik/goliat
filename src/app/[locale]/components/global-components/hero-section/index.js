@@ -39,6 +39,7 @@ export default function HeroSection({
             src={heroCircle}
             width={465}
             height={465}
+            priority={true}
             alt="hero-circle"
             className="w-64 md:w-96 lg:w-[465px]"
           />
@@ -50,6 +51,7 @@ export default function HeroSection({
             src={contactIcon}
             width={140}
             height={140}
+            priority={true}
             alt="contact-icon"
             className="absolute top-10 right-20 hidden md:block"
           />
@@ -62,18 +64,21 @@ export default function HeroSection({
                 src="/product-icon1.svg"
                 width={140}
                 height={140}
+                priority={true}
                 alt="contact-icon"
               />
               <Image
                 src="/product-icon2.svg"
                 width={140}
                 height={140}
+                priority={true}
                 alt="contact-icon"
               />
               <Image
                 src="/product-icon3.svg"
                 width={140}
                 height={140}
+                priority={true}
                 alt="contact-icon"
               />
             </div>
@@ -82,18 +87,21 @@ export default function HeroSection({
                 src="/product-icon4.svg"
                 width={140}
                 height={140}
+                priority={true}
                 alt="contact-icon"
               />
               <Image
                 src="/product-icon5.svg"
                 width={140}
                 height={140}
+                priority={true}
                 alt="contact-icon"
               />
               <Image
                 src="/product-icon6.svg"
                 width={140}
                 height={140}
+                priority={true}
                 alt="contact-icon"
               />
             </div>
@@ -105,6 +113,7 @@ export default function HeroSection({
             src={productIcon}
             width={140}
             height={140}
+            priority={true}
             alt="contact-icon"
             className="absolute top-10 right-20"
           />

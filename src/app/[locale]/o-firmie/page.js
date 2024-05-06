@@ -46,6 +46,7 @@ export default function OFirmie({ params: { locale } }) {
           src="/smiling-man.jpg"
           alt="zdjęcie pracownika"
           fill={true}
+          sizes={"100vw"}
           className="w-full object-cover"
         />
       </div>
@@ -64,6 +65,7 @@ export default function OFirmie({ params: { locale } }) {
           src="/foto-ofirmie2.jpg"
           alt="zdjęcie pracownika"
           fill={true}
+          sizes={"100vw"}
           className="w-full object-cover"
         />
       </div>
@@ -81,6 +83,7 @@ export default function OFirmie({ params: { locale } }) {
           src="/foto-ofirmie3.jpg"
           alt="zdjęcie pracownika"
           fill={true}
+          sizes={"100vw"}
           className="w-full object-cover"
         />
       </div>
