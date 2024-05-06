@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -32,9 +33,13 @@ export default function ProductCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="h-[312px] overflow-hidden">
-        <img
+      <div className="h-[312px] overflow-hidden relative">
+        <Image
           src={productCardImg ? productCardImg : "/plyta-budowlana-osb.png"}
+          // width={500}
+          // height={500}
+          fill
+          sizes={312}
           alt={alt ? alt : "product-card"}
           className="min-h-full object-cover"
         />
