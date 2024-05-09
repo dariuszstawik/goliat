@@ -13,6 +13,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 
 export const dynamicParams = false;
 
+export const runtime = "edge";
 export function generateStaticParams({ params }) {
   const slugs =
     params === "en"

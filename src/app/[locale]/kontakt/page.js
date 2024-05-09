@@ -5,6 +5,8 @@ import HeroSection from "../components/global-components/hero-section";
 import MapPoland from "../components/global-components/map-poland";
 import { unstable_setRequestLocale } from "next-intl/server";
 
+export const runtime = "edge";
+
 export default function Kontakt({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("contact");

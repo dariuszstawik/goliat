@@ -10,6 +10,8 @@ import ProductsCarousel from "../../components/global-components/products-carous
 import { useTranslations } from "next-intl";
 import { plytyBudowlane, plytyBudowlaneEn } from "../../data/plyty-budowlane";
 
+export const runtime = "edge";
+
 export default function PlytyBudowlane({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

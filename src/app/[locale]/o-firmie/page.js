@@ -8,6 +8,8 @@ import ProductsCarousel from "../components/global-components/products-carousel"
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
+export const runtime = "edge";
+
 export default function OFirmie({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("about");

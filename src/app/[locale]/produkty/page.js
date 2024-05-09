@@ -6,6 +6,7 @@ import ProductsCarousel from "../components/global-components/products-carousel"
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
 export default function Produkty({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

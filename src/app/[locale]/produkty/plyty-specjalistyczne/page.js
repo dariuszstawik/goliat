@@ -12,6 +12,7 @@ import {
 } from "../../data/plyty-specjalistyczne";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
 export default function PlytySpecjalistyczne({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

@@ -9,6 +9,7 @@ import ProductsCarousel from "../../components/global-components/products-carous
 import { useTranslations } from "next-intl";
 import { sklejki, sklejkiEN } from "../../data/sklejki";
 
+export const runtime = "edge";
 export default function Sklejki({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

@@ -10,6 +10,7 @@ import ProductsCarousel from "../../components/global-components/products-carous
 import { useTranslations } from "next-intl";
 import { plytyPilsniowe, plytyPilsnioweEn } from "../../data/plyty-pilsniowe";
 
+export const runtime = "edge";
 export default function PlytyPilsniowe({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

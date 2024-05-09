@@ -13,6 +13,7 @@ import {
   plytyOpakowanioweEn,
 } from "../../data/plyty-opakowaniowe";
 
+export const runtime = "edge";
 export default function PlytyOpakowaniowe({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

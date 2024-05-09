@@ -6,6 +6,8 @@ import ParagraphWithImage from "../components/global-components/paragraph-with-i
 import WelcomeSection from "../components/homepage/welcome-section";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
+
 export default function Uslugi({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

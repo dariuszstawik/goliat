@@ -14,6 +14,8 @@ import ProductsCarousel from "./components/global-components/products-carousel";
 import ServicesBar from "./components/global-components/servoces-bar";
 import CardCarousel from "./components/global-components/card-carousel";
 
+export const runtime = "edge";
+
 export default function Home({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

@@ -9,6 +9,7 @@ import ProductsCarousel from "../../components/global-components/products-carous
 import { plytyMeblowe, plytyMebloweEn } from "../../data/plyty-meblowe";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
 export default function PlytyMeblowe({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");
