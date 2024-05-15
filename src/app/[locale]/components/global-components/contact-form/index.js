@@ -58,12 +58,15 @@ const ContactForm = ({
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          console.log("Email sent!");
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
+    setShowNotification(true);
+
+    e.target && e.target.reset();
   };
 
   // const form = useRef(null);
