@@ -10,6 +10,13 @@ import { useTranslations } from "next-intl";
 import { sklejki, sklejkiEN } from "../../data/sklejki";
 
 export const runtime = "edge";
+
+export const metadata = {
+  title: "Sklejki | Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+};
+
 export default function Sklejki({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

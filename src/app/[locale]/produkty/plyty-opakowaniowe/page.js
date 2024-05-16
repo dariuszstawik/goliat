@@ -14,6 +14,13 @@ import {
 } from "../../data/plyty-opakowaniowe";
 
 export const runtime = "edge";
+
+export const metadata = {
+  title: "Płyty opakowaniowe | Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty opakowaniowe: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+};
+
 export default function PlytyOpakowaniowe({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

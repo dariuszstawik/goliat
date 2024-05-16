@@ -10,6 +10,13 @@ import { plytyMeblowe, plytyMebloweEn } from "../../data/plyty-meblowe";
 import { useTranslations } from "next-intl";
 
 export const runtime = "edge";
+
+export const metadata = {
+  title: "Płyty meblowe | Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+};
+
 export default function PlytyMeblowe({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

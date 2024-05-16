@@ -11,6 +11,13 @@ import { unstable_setRequestLocale } from "next-intl/server";
 export const dynamicParams = false;
 export const runtime = "edge";
 
+export const metadata = {
+  title: {
+    en: "Sklejka | Goliat Sp. z o.o.",
+    pl: "Sklejka | Goliat Sp. z o.o.",
+  },
+};
+
 export function generateStaticParams({ params }) {
   const slugs =
     params === "en"

@@ -12,6 +12,12 @@ import { plytyBudowlane, plytyBudowlaneEn } from "../../data/plyty-budowlane";
 
 export const runtime = "edge";
 
+export const metadata = {
+  title: "Płyty budowlane | Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+};
+
 export default function PlytyBudowlane({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

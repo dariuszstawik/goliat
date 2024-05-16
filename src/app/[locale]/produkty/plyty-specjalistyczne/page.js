@@ -13,6 +13,13 @@ import {
 import { useTranslations } from "next-intl";
 
 export const runtime = "edge";
+
+export const metadata = {
+  title: "Płyty specjalistyczne | Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty specjalistyczne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+};
+
 export default function PlytySpecjalistyczne({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");

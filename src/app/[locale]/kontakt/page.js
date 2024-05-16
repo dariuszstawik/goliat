@@ -7,6 +7,12 @@ import { unstable_setRequestLocale } from "next-intl/server";
 
 export const runtime = "edge";
 
+export const metadata = {
+  title: "Kontakt | Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+};
+
 export default function Kontakt({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("contact");

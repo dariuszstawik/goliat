@@ -10,6 +10,12 @@ import { unstable_setRequestLocale } from "next-intl/server";
 
 export const runtime = "edge";
 
+export const metadata = {
+  title: "O firmie | Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+};
+
 export default function OFirmie({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("about");

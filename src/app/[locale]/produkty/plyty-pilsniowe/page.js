@@ -6,11 +6,17 @@ import ParagraphWithIcons from "../../components/global-components/paragraph-wit
 import ParagraphWithImage from "../../components/global-components/paragraph-with-image";
 import ProductCard from "../../components/global-components/product-card";
 import ProductsCarousel from "../../components/global-components/products-carousel";
-// import plytyPilsniowe from "../../data/plyty-pilsniowe";
 import { useTranslations } from "next-intl";
 import { plytyPilsniowe, plytyPilsnioweEn } from "../../data/plyty-pilsniowe";
 
 export const runtime = "edge";
+
+// export const metadata = {
+//   title: "Płyty pilśniowe | Goliat Sp. z o.o.",
+//   description:
+//     "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+// };
+
 export default function PlytyPilsniowe({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");
