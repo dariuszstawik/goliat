@@ -2,7 +2,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { unstable_setRequestLocale } from "next-intl/server";
 import { client } from "../../../../lib/contentful/client";
 
-// export const runtime = "edge";
+export const runtime = "edge";
 
 async function getContentfulContent() {
   const res = await client.getEntries({
