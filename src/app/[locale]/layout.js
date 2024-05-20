@@ -4,6 +4,9 @@ import "./globals.css";
 import Navbar from "./components/global-components/navbar";
 import Footer from "./components/global-components/footer";
 import { useTranslations } from "next-intl";
+import CookieConsent from "./components/cookie-consent";
+import { useCookies } from "react-cookie";
+import Script from "next/script";
 
 const locales = ["en", "de", "pl"];
 
@@ -49,8 +52,12 @@ export default function LocaleLayout({ children, params: { locale } }) {
         />
 
         {children}
+
         <Footer locale={locale} />
       </body>
+      <Script
+        src={`https://cdn-cookieyes.com/client_data/9205946e2a20a50abcb59d70/script.js`}
+      ></Script>
     </html>
   );
 }

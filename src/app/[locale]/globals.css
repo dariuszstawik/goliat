@@ -32,7 +32,7 @@ article p, ol, ul, li {
   @apply mt-2
 }
 
-article ul {
+article ul  {
   @apply list-disc pl-6
 }
 
