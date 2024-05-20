@@ -1,7 +1,6 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { unstable_setRequestLocale } from "next-intl/server";
-
-const { client } = require("../../../../lib/contentdul/client");
+import { client } from "../../../../lib/contentful/client";
 
 async function getContentfulContent() {
   const res = await client.getEntries({
