@@ -22,35 +22,20 @@
   h4 {
     @apply text-xl font-semibold
   }
+
+  article h2 {
+    @apply text-xl lg:text-2xl mt-4 mb-2}
+
 }
 
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+article p, ol, ul, li {
+  @apply mt-2
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+article ul {
+  @apply list-disc pl-6
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+article ol {
+  @apply list-decimal pl-6
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
