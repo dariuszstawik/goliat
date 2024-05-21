@@ -78,11 +78,9 @@ export default function Footer({ locale }) {
               <p>KRS: 0000251074</p>
             </div>
             <div>
-              <p>
-                <Link href={`/${locale}/polityka-prywatnosci-goliat`}>
-                  {t("privacyPolicy")}
-                </Link>
-              </p>
+              <Link href={`/${locale}/polityka-prywatnosci-goliat`}>
+                {t("privacyPolicy")}
+              </Link>
             </div>
           </div>
           <div>
