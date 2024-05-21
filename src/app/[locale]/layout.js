@@ -54,9 +54,9 @@ export default function LocaleLayout({ children, params: { locale } }) {
 
         <Footer locale={locale} />
       </body>
-      {/* <Script
+      <Script
         src={`https://cdn-cookieyes.com/client_data/9205946e2a20a50abcb59d70/script.js`}
-      ></Script> */}
+      ></Script>
     </html>
   );
 }
