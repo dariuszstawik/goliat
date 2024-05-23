@@ -11,10 +11,7 @@ export default function ServicesBar({
         <ul className="h-full flex gap-16 justify-center items-center">
           <li className="flex justify-center items-center gap-4">
             <img src="/icon-ciecie-proste.svg" alt="icon" className="w-10" />
-            <span className="w-48 font-semibold">
-              {/* Cięcie proste + oklejanie krawędzi */}
-              {services1}
-            </span>
+            <span className="w-48 font-semibold">{services1}</span>
           </li>
 
           <li className="flex justify-center items-center gap-4">
@@ -23,10 +20,7 @@ export default function ServicesBar({
               alt="icon"
               className="w-10"
             />
-            <span className="w-48 font-semibold">
-              {/* Cięcie na okrągło + oklejanie krawędzi */}
-              {services2}
-            </span>
+            <span className="w-48 font-semibold">{services2}</span>
           </li>
 
           <li className="flex justify-center items-center gap-4">
@@ -35,10 +29,7 @@ export default function ServicesBar({
               alt="icon"
               className="w-10"
             />
-            <span className="w-48 font-semibold">
-              {/* Wycinanie kształtów na maszynie CNC */}
-              {services3}
-            </span>
+            <span className="w-48 font-semibold">{services3}</span>
           </li>
         </ul>
       </div>
@@ -48,13 +39,11 @@ export default function ServicesBar({
       >
         <ul className="w-full h-full p-6 grid grid-cols-1 md:grid-cols-2 lg:flex gap-6 lg:gap-16 justify-center items-center">
           <li className="flex justify-center items-center gap-4">
-            <h2>Nasze usługi</h2>
+            <h2>{services}</h2>
           </li>
           <li className="flex justify-center items-center gap-4">
             <img src="/icon-ciecie-proste.svg" alt="icon" className="w-10" />
-            <span className="w-48 font-semibold">
-              Cięcie proste + oklejanie krawędzi
-            </span>
+            <span className="w-48 font-semibold">{services1}</span>
           </li>
           <li className="flex justify-center items-center gap-4">
             <img
@@ -62,9 +51,7 @@ export default function ServicesBar({
               alt="icon"
               className="w-10"
             />
-            <span className="w-48 font-semibold">
-              Cięcie na okrągło + oklejanie krawędzi
-            </span>
+            <span className="w-48 font-semibold">{services2}</span>
           </li>
           <li className="flex justify-center items-center gap-4">
             <img
@@ -72,9 +59,7 @@ export default function ServicesBar({
               alt="icon"
               className="w-10"
             />
-            <span className="w-48 font-semibold">
-              Wycinanie kształtów na maszynie CNC
-            </span>
+            <span className="w-48 font-semibold">{services3}</span>
           </li>
         </ul>
       </div>

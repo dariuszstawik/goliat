@@ -26,7 +26,6 @@ export default function HeroSection({
       <div
         className="relative w-full bg-primaryGray flex justify-center items-center grow"
         style={{
-          // backgroundImage: "url('/hero-homepage.jpg')",
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -35,7 +34,6 @@ export default function HeroSection({
       >
         {heroCircle ? (
           <Image
-            // src="/hero-circle-homepage.svg"
             src={heroCircle}
             width={465}
             height={465}
@@ -119,8 +117,6 @@ export default function HeroSection({
           />
         )}
       </div>
-
-      {/* <div className="w-full h-40 bg-yellow-400"></div> */}
 
       {isServicesPage ? (
         <ServicesBar
