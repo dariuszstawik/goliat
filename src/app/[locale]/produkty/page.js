@@ -24,7 +24,11 @@ export default function Produkty({ params: { locale } }) {
     <div>
       <HeroSection
         backgroundImage="/foto-produkty.jpg"
-        heroCircle="/hero-circle-produkty.png"
+        heroCircle={
+          locale === "en"
+            ? "/hero-circle-produkty-en.svg"
+            : "/hero-circle-produkty.png"
+        }
         hasRedBg
         icon1={ti("shortLeadTimes")}
         icon2={ti("consulting")}
