@@ -16,6 +16,15 @@ import CardCarousel from "./components/global-components/card-carousel";
 
 export const runtime = "edge";
 
+export const metadata = {
+  title: "Goliat Sp. z o.o.",
+  description:
+    "Sprawdzone płyty drewnopochodne: płyty meblowe, płyty specjalistyczne, płyty budowlane.",
+  other: {
+    "google-site-verification": "67Cr1wiEQFmVwgHiV2_Z5geHdkPT9CqNTQpTHzA0kWM",
+  },
+};
+
 export default function Home({ params: { locale } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");
