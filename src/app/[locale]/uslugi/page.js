@@ -160,6 +160,7 @@ export default function Uslugi({ params: { locale } }) {
         salesDirector={tm("salesDirector")}
         salesRepresentative={tm("salesRepresentative")}
         headOfSalesDepartment={tm("headOfSalesDepartment")}
+        locale={locale}
       />
     </div>
   );

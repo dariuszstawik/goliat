@@ -103,6 +103,7 @@ export default function PlytaPilsniowa({ params }) {
         salesDirector={tm("salesDirector")}
         salesRepresentative={tm("salesRepresentative")}
         headOfSalesDepartment={tm("headOfSalesDepartment")}
+        locale={locale}
       />
     </div>
   );

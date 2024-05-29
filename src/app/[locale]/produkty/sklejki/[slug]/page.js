@@ -108,6 +108,7 @@ export default function Sklejka({ params }) {
         salesDirector={tm("salesDirector")}
         salesRepresentative={tm("salesRepresentative")}
         headOfSalesDepartment={tm("headOfSalesDepartment")}
+        locale={locale}
       />
     </div>
   );

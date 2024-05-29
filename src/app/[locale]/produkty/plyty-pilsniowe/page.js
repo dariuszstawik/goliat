@@ -98,6 +98,7 @@ export default function PlytyPilsniowe({ params: { locale } }) {
         salesDirector={tm("salesDirector")}
         salesRepresentative={tm("salesRepresentative")}
         headOfSalesDepartment={tm("headOfSalesDepartment")}
+        locale={locale}
       />
       <ContactForm
         locale={locale}

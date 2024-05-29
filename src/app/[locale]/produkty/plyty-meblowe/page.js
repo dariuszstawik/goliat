@@ -47,7 +47,7 @@ export default function PlytyMeblowe({ params: { locale } }) {
         productCardTitle={
           locale === "en" ? "laminated chipboard" : "płyta wiórowa laminowana"
         }
-        href={`/${locale}/produkty/plyty-meblowe`}
+        href={`/${locale}/produkty/plyty-meblowe/plyta-wiorowa-laminowana`}
         locale={locale}
       >
         <p className="mb-9">{t("meblowe1Paragraph")}</p>
@@ -90,6 +90,7 @@ export default function PlytyMeblowe({ params: { locale } }) {
         salesDirector={tm("salesDirector")}
         salesRepresentative={tm("salesRepresentative")}
         headOfSalesDepartment={tm("headOfSalesDepartment")}
+        locale={locale}
       />
       <ContactForm
         locale={locale}
