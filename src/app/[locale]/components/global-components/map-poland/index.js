@@ -28,7 +28,7 @@ const MapPoland = ({
                 <h4>ps@goliat.pl</h4>
               </div>
               <img
-                src="contact-map-asset.svg"
+                src="contact-map-asset3.svg"
                 className="object-cover my-auto xl:h-[60%] w-1/3 xl:w-auto shrink"
               />
             </div>
