@@ -61,7 +61,8 @@ export default function Footer({ locale }) {
                 goliat@goliat.pl
               </p>
               <p>
-                <span className="text-primaryRed">tel.:</span> +48 62 737 64 80
+                <span className="text-primaryRed">{t("phone")}:</span> +48 62
+                737 64 80
               </p>
             </div>
             <div className="flex flex-col gap-0">

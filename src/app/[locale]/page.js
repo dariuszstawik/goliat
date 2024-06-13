@@ -171,7 +171,9 @@ export default function Home({ params: { locale } }) {
           title={t("plytyOpakowaniowe")}
           icon="icon-plyty-opakowaniowe.svg"
           productCardImg="/plyta-hdf-surowa2.jpg"
-          productCardTitle="płyta HDF surowa"
+          productCardTitle={
+            locale === "en" ? "raw hdf board" : "płyta HDF surowa"
+          }
           href={`/${locale}/produkty/plyty-opakowaniowe`}
           locale={locale}
         >
@@ -193,7 +195,11 @@ export default function Home({ params: { locale } }) {
             icon="icon-plyty-pilsniowe.svg"
             whiteIcon={"/icon-plyty-pilsniowe-white.svg"}
             productCardImg="/plyta-pilsniowa-surowa-twarda.jpg"
-            productCardTitle="płyta pilśniowa surowa twarda"
+            productCardTitle={
+              locale === "en"
+                ? "raw hard fiberboard"
+                : "płyta pilśniowa surowa twarda"
+            }
             href="/pl/produkty/plyty-pilsniowe"
             isRed
             locale={locale}

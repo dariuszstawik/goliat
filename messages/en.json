@@ -17,6 +17,7 @@
     },
 
     "Footer": {
+      "phone": "phone",
       "groupLine1": "Goliat Group - wholesale",
       "groupLine2": "and retail",
       "headOffice": "Head office",
