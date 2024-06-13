@@ -17,7 +17,7 @@ const MapPoland = ({
           <div className="lg:h-80 w-screen bg-primaryGray overflow-x-hidden py-10 lg:py-0">
             <div className="w-[80%] lg:w-[90%] xl:w-[80%] h-full flex flex-col lg:flex-row justify-between gap-10 mx-auto">
               <img
-                src="contact-map-new.png"
+                src="/contact-map-new.png"
                 alt="map"
                 className="object-cover h-full hidden lg:block w-1/2 lg:w-auto"
               />
@@ -28,7 +28,7 @@ const MapPoland = ({
                 <h4>ps@goliat.pl</h4>
               </div>
               <img
-                src="contact-map-asset3.svg"
+                src="/contact-map-asset3.svg"
                 className="object-cover my-auto xl:h-[60%] w-1/3 xl:w-auto shrink"
               />
             </div>
