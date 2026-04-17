@@ -344,12 +344,12 @@ const MapPoland = ({
                   isClicked === "lodzkie" ||
                   isClicked === "swietokrzyskie") && (
                   <div className="flex flex-col gap-8">
-                    <div className="flex flex-col gap-2">
+                    {/* <div className="flex flex-col gap-2">
                       <h3>Mariusz Śródka</h3>
                       <h4>{salesRepresentative}</h4>
                       <h4>+48 533 308 878</h4>
                       <h4>biuro@goliat.pl</h4>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col gap-2">
                       <h3>Piotr Smętek</h3>
                       <h4>{salesDirector}</h4>
@@ -686,12 +686,12 @@ const MapPoland = ({
                   isClicked === "lodzkie" ||
                   isClicked === "swietokrzyskie") && (
                   <div className="flex flex-col gap-8">
-                    <div className="flex flex-col gap-2">
+                    {/* <div className="flex flex-col gap-2">
                       <h3>Mariusz Śródka</h3>
                       <h4>{salesRepresentative}</h4>
                       <h4>+48 533 308 878</h4>
                       <h4>biuro@goliat.pl</h4>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col gap-2">
                       <h3>Piotr Smętek</h3>
                       <h4>{salesDirector}</h4>
