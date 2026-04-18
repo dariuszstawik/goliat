@@ -350,6 +350,7 @@ const MapPoland = ({
                       <h4>+48 533 308 878</h4>
                       <h4>biuro@goliat.pl</h4>
                     </div> */}
+
                     <div className="flex flex-col gap-2">
                       <h3>Piotr Smętek</h3>
                       <h4>{salesDirector}</h4>
